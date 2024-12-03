@@ -77,4 +77,14 @@ label start:
             prot "Terima kasih untuk makannya, Dehen"
             deh "Tak masalah teman"
             jump Membaca_Jurnal
+
+label Me_Time:
+
+
+    
+label Membaca_Jurnal:
+
+
+
+    
         
