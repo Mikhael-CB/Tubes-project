@@ -62,4 +62,19 @@ label start:
 
     deh "Entahlah, mungkin aku akan menonton tv dan bersantai di rumah"
     
-    return
+    menu Free_time:
+        "Bersantai untuk menikmati me time":
+            prot "Yah, sepertinya aku juga akan melakukan hal yang sama. Aku ingin menonton serial favoritku"
+            deh "Baiklah, selamat me time, aku pamit pulang"
+            prot "Terima kasih untuk makannya, Dehan"
+            deh "Tak masalah teman"
+            jump Me_Time
+        "Membaca jurnal ilmiah":
+            prot "Sepertinya menyenangkan. Aku ingin membaca jurnal saja, mengejar impianku menjadi pemenang nobel tahun ini. Penelitian Pak Wisnu membuatku terjeda melakukan penelitianku sendiri"
+            Dehen "Semoga kau segera menjadi pemenang nobel. Jangan terlalu memaksakan dirimu juga kawan"
+            prot "Tak apa, aku sudah terbiasa dengan ini semua"
+            deh "Baiklah aku pulang dulu sekarang"
+            prot "Terima kasih untuk makannya, Dehen"
+            deh "Tak masalah teman"
+            jump Membaca_Jurnal
+        
