@@ -5,7 +5,7 @@
 
 define prot = Character("protagonis")
 define deh = Character("Dehen") 
-
+default remember = 0
 # The game starts here.
 
 label start:
@@ -81,10 +81,28 @@ label start:
 label Me_Time:
 
 
-    
+
 label Membaca_Jurnal:
+    menu choice1:
+        " Anda membuka google dan membaca…"
 
+        "pilihan 1":
+            $ remember = 1
 
+        "pilihan 2":
+
+        "pilihan 3":
+    
+    
+    "Saat hendak tidur Anda teringat.."
+
+    if remember == 1:
+        "pilihan 1"
+    elif remember == 2:
+        "pilihan 2"
+    elif remember == 3:
+        "pilihan 3"
+        
 
     
         
