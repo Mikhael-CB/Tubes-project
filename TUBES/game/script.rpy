@@ -24,10 +24,10 @@ label start:
     #show
     
     
-    "Anda tinggal di Samarinda dan bekerja untuk Dr. W.R. Wisnu Raksa, ilmuwan paling cerdas di negara ini. /n
+    "Anda tinggal di Samarinda dan bekerja untuk Dr. W.R. Wisnu Raksa, ilmuwan paling cerdas di negara ini.
     Impianmu adalah menjadi ilmuwan terkemuka dan mampu memenangkan nobel di tahun ini."
 
-    prot "Aduh, proyek dari Pak Wisnu besar sekali, aku merasa sangat lelah. /n
+    prot "Aduh, proyek dari Pak Wisnu besar sekali, aku merasa sangat lelah.
     Sudah 5 hari aku tidur di laboratoriumnya yang sangat dingin itu"
 
     "Anda saat ini sedang menuju perjalanan ke rumah setelah 5 hari tidak pulang." 
@@ -38,14 +38,14 @@ label start:
     "Sesampainya di rumah, anda segera mandi, memakai baju, lalu tidur karena kelelahan."
     "Anda dikejutkan dengan telepon yang masuk, ternyata dari rekan sejawat Anda, Dehen"
     
-    prot "haaah, baru saja aku memejamkan mata." 
+    prot "Haaah, baru saja aku memejamkan mata." 
     prot "Halo Dehen, mengapa kau menelponku."
 
     deh "Aku ada di depan rumahmu dengan membawa makanan, cepat buka"    
     
     #show dehen #pending asset
     deh "Aku tahu kau pasti tidak sempat membeli makan karena lembur 5 hari, jadi aku membelikannya untukmu."
-    deh "yok makan bersama"
+    deh "Yok makan bersama"
 
     prot "Waw, terima kasih teman"
 
@@ -66,18 +66,22 @@ label start:
     deh "Entahlah, mungkin aku akan menonton tv dan bersantai di rumah"
    
     menu Free_time:
+        "Apa yang ingin kamu lakukan?"
         "Bersantai untuk menikmati me time":
             prot "Yah, sepertinya aku juga akan melakukan hal yang sama. Aku ingin menonton serial favoritku"
             deh "Baiklah, selamat me time, aku pamit pulang"
             prot "Terima kasih untuk makannya, Dehan"
             deh "Tak masalah teman"
-            "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya. Setelah Dehen pulang Anda masuk kamar dan mulai menyalakan TV. Setelah menunggu beberapa jam, akhirnya serial favorit Anda mulai tayang. Anda sangat senang karena sudah 5 hari melewatkannya"
+            "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya."
+            "Setelah Dehen pulang Anda masuk kamar dan mulai menyalakan TV. Setelah menunggu beberapa jam, akhirnya serial favorit Anda mulai tayang. "
+            "Anda sangat senang karena sudah 5 hari melewatkannya"
             prot "Akhirnya aku bisa menontonnya kembali"
             "Baru 15 menit menonton, terjadi pemadaman listrik di kecamatan Anda, hal itu membuat anda kesal"
             prot "Kenapa sih harus terjadi pemadaman sekarang? Padahal serial ini tidak di upload di Youtube, aku melewatkannya lagi"
             "Anda pun hanya diam menatap lampu emergensi yang menyala. Di tengah kesunyian akibat pemadaman listrik Anda pun berpikir seandainya jumlah listrik di Indonesia sangat besar, pasti tidak akan terjadi pemadaman"
             prot "Kenapa Indonesia tidak memiliki listrik yang cukup dari Sabang hingga Merauke ya? Padahal kan semua orang membayar listrik, jika padam begini aktivitas masyarakat akan terganggu. Apalagi zaman modern ini, siapa coba yang ga pake listrik?"
-            "Sempat terbesit di pikiran Anda seandainya ada daya listrik yang besar namun murah di seluruh penjuru di Indonesia. Semakin lama, mata Anda semakin berat dan Anda pun tertidur"
+            "Sempat terbesit di pikiran Anda seandainya ada daya listrik yang besar namun murah di seluruh penjuru di Indonesia."
+            "Semakin lama, mata Anda semakin berat dan Anda pun tertidur"
         "Mengajak Dehen menikmati karnaval":
             prot "Kudengar nanti malam akan ada karnaval di Taman Samarendah, apakah kau berminat pergi kesana?"
             deh "Sudah lama aku tidak melihat karnaval. Sepertinya menyenangkan"
@@ -87,20 +91,27 @@ label start:
             deh "Baiklah aku pulang dulu sekarang"
             prot "Terima kasih untuk makanannya, Dehen"
             deh "Tak masalah teman"
-            "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya. Setelah Dehan pulang Anda masuk kamar dan mulai menyalakan TV untuk bersantai sebentar. Setelah pukul 18.30 Anda bersiap untuk berangkat menuju Taman Samarendah. Sesampainya di sana, Anda melihat Dehen sudah berada di depan pintu masuk"
+            "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya."
+            "Setelah Dehan pulang Anda masuk kamar dan mulai menyalakan TV untuk bersantai sebentar."
+            #setelah beberapa saat 
+            "Setelah pukul 18.30 Anda bersiap untuk berangkat menuju Taman Samarendah. Sesampainya di sana, Anda melihat Dehen sudah berada di depan pintu masuk"
             deh "Hey, cepat parkir di sana, lalu kita masuk. Aku tak sabar mencoba semua permainan di karnaval ini"
             prot "Ya, tunggu sebentar"
             "Anda dan Dehen pun membeli karcis masuk dan memilih wahana yang ingin dicoba"
             port "Sepertinya naik bianglala sebagai awalan permainan di karnaval ini menyenangkan"
             deh "Boleh saja"
-            "Anda dan Dehen menaiki bianglala, namun baru 3x berputar bianglala tersebut berhenti dan lampunya padam akibat terjadinya MCB. Tak lama kemudian bianglala beroperasi kembali setelah masalah listrik itu selesai"
+            "Anda dan Dehen menaiki bianglala"
+            "namun baru 3x berputar bianglala tersebut berhenti dan lampunya padam akibat terjadinya MCB."
+            "Tak lama kemudian bianglala beroperasi kembali setelah masalah listrik itu selesai"
             deh "Seperti biasa, kalo acara rakyat begini bukan hal aneh kalo terjadi MCB"
             prot "Kau benar, mahal nya listrik membuat mereka tidak memiliki dana yang cukup untuk menambah Watt-nya. Tapi untunglah petugas di sini sigap memperbaikinya"
             deh "Seandainya listrik di Indonesia bisa lebih murah dan memiliki daya yang besar dari Sabang hingga Merauke"
             prot "Sudah lah, mari mencoba wahana lainnya"
 
-            "Anda dan Dehan mencoba semua wahana hingga karnaval tersebut tutup. Di perjalanan pulang, Anda sempat memikirkan ulang kata-kata dehan sebelumnya tentang daya listrik yang besar namun murah di seluruh penjuru di Indonesia. 
-            Sesampainya di rumah Anda berganti baju kemudian tidur."
+            "Anda dan Dehan mencoba semua wahana hingga karnaval tersebut tutup. "
+            #setelah beberapa saat (perlu ada chat sebelum pulang)
+            "Di perjalanan pulang, Anda sempat memikirkan ulang kata-kata dehan sebelumnya tentang daya listrik yang besar namun murah di seluruh penjuru di Indonesia." 
+            "Sesampainya di rumah Anda berganti baju kemudian tidur."
         "Membaca jurnal ilmiah":
             prot "Sepertinya menyenangkan. Aku ingin membaca jurnal saja, mengejar impianku menjadi pemenang nobel tahun ini. Penelitian Pak Wisnu membuatku terjeda melakukan penelitianku sendiri"
             deh "Semoga kau segera menjadi pemenang nobel. Jangan terlalu memaksakan dirimu juga kawan"
@@ -108,16 +119,20 @@ label start:
             deh "Baiklah aku pulang dulu sekarang"
             prot "Terima kasih untuk makannya, Dehen"
             deh "Tak masalah teman"
-            "Anda mulai menyalakan komputer yang berada di kamar Anda. Sambil menunggu komputer loading, Anda akan…"
+            "Anda mulai menyalakan komputer yang berada di kamar Anda."
+            "Sambil menunggu komputer loading, Anda akan…"
             menu menunggu_komputer_loading:
+                "Sambil menunggu komputer loading, Anda akan…"
                 "Menyeduh kopi dan mengambil snack di kulkas":
                     "Anda pun menyeduh kopi dan mengambil snack di kulkas"
                 "Membuat Teh dan mengambil biskuit di toples":
                     "Anda membuat Teh dan mengambil biskuit di toples"
                 "Memasak mie instan lengkap dengan telur mata sapi":
                     "Anda memasak mie instan lengkap dengan telur mata sapi"
-            "Kemudian Anda kembali ke kamar dan duduk di kursi yang berada di depan komputer Anda. Anda membuka google dan membaca…"
+            "Kemudian Anda kembali ke kamar dan duduk di kursi yang berada di depan komputer Anda."
+            "Anda membuka google dan membaca…"
             menu membuka_google:
+                "Anda membuka google dan membaca…"
                 "Jurnal para pemenang nobel tahun-tahun sebelumnya":
                     "Anda membaca jurnal para pemenang nobel tahun-tahun sebelumnya"
                     $ jawaban = "Enrico Fermi, seorang pemenang nobel fisika tahun 1938, karyanya mampu menjadi pionir dalam mengembangkan reaktor nuklir."
@@ -130,23 +145,34 @@ label start:
                 "Gosip artis yang sedang hangat":
                     "Anda membaca Gosip artis yang sedang hangat"
                     $ jawaban = "Artis yang sedang berlibur di luar negeri bercerita masyarakat di sana tidak pernah mengalami pemadaman listrik."
-            "Setelah kurang lebih 30 menit, Anda mulai membuka file penelitian Anda. Tampak informasi yang lengkap dan akurat mengenai nuklir. Anda mulai berkutat dengan berbagai jurnal dan video yang ada di youtube untuk mendukung kesuksesan penelitian nuklir Anda. Tak terasa waktu sudah menunjukan pukul 2 pagi. Anda pun mematikan komputer dan berjalan menuju tempat tidur untuk beristirahat." 
-            "Saat hendak tidur Anda teringat.."
+            "Setelah kurang lebih 30 menit, Anda mulai membuka file penelitian Anda. Tampak informasi yang lengkap dan akurat mengenai nuklir. "
+            "Anda mulai berkutat dengan berbagai jurnal dan video yang ada di youtube untuk mendukung kesuksesan penelitian nuklir Anda."
+            "Tak terasa waktu sudah menunjukan pukul 2 pagi. Anda pun mematikan komputer dan berjalan menuju tempat tidur untuk beristirahat." 
+            "Saat hendak tidur Anda teringat"
             "[jawaban]"
-    "Lagi-lagi Anda terbangun akibat dering di ponsel Anda. Ternyata pesan dari Dr.Wisnu yang mengabarkan akan mengadakan pertemuan penting bersama semua asistennya. Pertemuan akan dilakukan pukul 7.00 di laboratorium Dr. Wisnu"
-    "Anda pun bergegas mandi dan menghangatkan makanan yang diberikan Dehen kemarin dengan microwave. Setelah sarapan Anda berangkat ke laboratorium Dr. Wisnu. Sesampainya di sana, yang Anda lakukan…"
+    "Lagi-lagi Anda terbangun akibat dering di ponsel Anda. "
+    "Ternyata pesan dari Dr.Wisnu yang mengabarkan akan mengadakan pertemuan penting bersama semua asistennya."
+    "Pertemuan akan dilakukan pukul 7.00 di laboratorium Dr. Wisnu"
+    prot "huh, ada hal apa yang yang ingin dibicarakan?"
+    "Anda pun bergegas mandi dan menghangatkan makanan yang diberikan Dehen kemarin dengan microwave."
+    "Setelah sarapan Anda berangkat ke laboratorium Dr. Wisnu."
+    "Sesampainya di sana, yang Anda lakukan…"
     menu berangkat_ke_lab:
+        "Sesampainya di sana, yang Anda lakukan…"
         "menyapa dehen saja":
             "Hallo dehen"
         "menyapa semua asisten Dr. Wisnu":
             "Selamat pagi pak..."
         "Tidak menyapa siapapun, hanya menunggu Dr. Wisnu memasuki laboratorium":
             "..."
-    "Beberapa menit kemudian Dr. Wisnu masuk dan memberi informasi mengenai suatu proyek rahasia milik negara. Proyek ini disponsori langsung oleh BUMN dengan modal minimal 100 triliun rupiah."
-    "Dr. Wisnu berpesan untuk menjaga kerahasiaan proyek ini. Setelah mendengar informasi lengkap tentang proyek ini dan apa saja peran kalian pada proyek ini, Dr. Wisnu meminta semua asistennya untuk menandatangani MOU."
-    "Anda tidak menyangka PLTN yang semalam Anda pikirkan sekilas sebelum tidur kini benar-benar menjadi kenyataan di Indonesia. Anda pun merasa.."
+    "Beberapa menit kemudian Dr. Wisnu masuk dan memberi informasi mengenai suatu proyek rahasia milik negara."
+    "Proyek ini disponsori langsung oleh BUMN dengan modal minimal 100 triliun rupiah. Dr. Wisnu berpesan untuk menjaga kerahasiaan proyek ini."
+    "Setelah mendengar informasi lengkap tentang proyek ini dan apa saja peran kalian pada proyek ini, Dr. Wisnu meminta semua asistennya untuk menandatangani MOU."
+    "Anda tidak menyangka PLTN yang semalam Anda pikirkan sekilas sebelum tidur kini benar-benar menjadi kenyataan di Indonesia."
+    "Anda pun merasa.."
 
     menu merasa:
+        "Anda pun merasa.."
         "sangat jenius karena pernah memikirkannya":
             "gambar protagonis bangga"
         "biasa saja karena proyek itu sudah terlaksana di negara lain":
@@ -172,52 +198,86 @@ label start:
     deh "Ya, benar. Orang itu adalah anggota Panitia Penyelidikan Radioaktivitas dan Tenaga Atom yang diketuai langsung oleh Dr. Wisnu, namanya Maura."
     prot "Darimana kau tahu tentang hal sejauh ini?"
 
-    "Dehen tidak menjawab, ia hanya tersenyum tipis kepada Anda kemudian memalingkan mukanya. Anda tahu, pasti lagi-lagi Dehen menguping percakapan Dr. Wisnu, karena cuma dia yang bisa berbahasa Ambon. Dr. Wisnu sering menggunakan bahasa Ambon jika memberi informasi penting di teleponnya, tujuannya untuk menghindari penyadapan informasi. Sebab saat ini hanya sedikit orang yang bisa berbahasa daerah, itupun didominasi oleh bahasa jawa dan sunda saja. Mayoritas orang lebih tertarik mempelajari bahasa Inggris, mandarin, jerman, dan prancis."
+    "Dehen tidak menjawab, ia hanya tersenyum tipis kepada Anda kemudian memalingkan mukanya."
+    "Anda tahu, pasti lagi-lagi Dehen menguping percakapan Dr. Wisnu, karena cuma dia yang bisa berbahasa Ambon."
+    "Dr. Wisnu sering menggunakan bahasa Ambon jika memberi informasi penting di teleponnya, tujuannya untuk menghindari penyadapan informasi."
+    "Sebab saat ini hanya sedikit orang yang bisa berbahasa daerah, itupun didominasi oleh bahasa jawa dan sunda saja."
+    "Mayoritas orang lebih tertarik mempelajari bahasa Inggris, mandarin, jerman, dan prancis."
 
     "Setelah berbincang dengan Dehen, Anda pun…"
     menu setelah_berbincang:
+        "Setelah berbincang dengan Dehen, Anda pun…"
         "menikmati pemandangan dari dalam pesawat":
             "..."
         "tidur untuk menghemat tenaga":
             "..."
-    "Setelah transit di Jakarta dan menjalani penerbangan beberapa jam, akhirnya kalian tiba di Bandara Hanandjoeddin. Tak perlu menunggu lama, ada seseorang yang menggunakan pakaian dengan corak loreng menghampiri Dr. Wisnu dan memberi hormat. Dr. Wisnu pun memberi hormat balik kepadanya. Setelah percakapan diantara keduanya selesai, Dr. Wisnu memerintahkan semua asisten laboratoriumnya untuk segera naik helikopter, semua barang-barang yang ada di bagasi pesawat akan diurus oleh pihak militer yang bertugas."
+    "Setelah transit di Jakarta dan menjalani penerbangan beberapa jam, akhirnya kalian tiba di Bandara Hanandjoeddin."
+    "Tak perlu menunggu lama, ada seseorang yang menggunakan pakaian dengan corak loreng menghampiri Dr. Wisnu dan memberi hormat."
+    "Dr. Wisnu pun memberi hormat balik kepadanya dan keduanya berbincang untuk beberapa waktu."
+    "Setelah percakapan diantara keduanya selesai, Dr. Wisnu memerintahkan semua asisten laboratoriumnya untuk segera naik helikopter, semua barang-barang yang ada di bagasi pesawat akan diurus oleh pihak militer yang bertugas."
 
     prot "Dehen, apa yang akan kau lakukan setelah sampai di pulau itu?"
     deh "Membangun PLTN"
     prot "Bukan itu, maksudku"
-
+    #show prot kesal
+    
     "Dehen tertawa melihat ekspresiku yang kesal"
     deh "Malam ini aku akan membongkar barang-barangku dari dalam koper dan menatanya di mess, kemudian aku akan segera tidur. Kalau kau bagaimana?"
     "Anda akan.."
     menu anda_akan:
+        "Anda akan.."
         "mengikuti apa yang Deren lakukan":
             "aku akan mengikuti apa yang kamu lakukan"
-            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari. Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari. Penginapan yang dibangun juga dikhususkan untuk para pekerja saja. Selain itu, dari kejauhan terlihat kapal KRI Diponegoro (365)."
-            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih. Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing. Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
-            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi. Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
+            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
+            "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
+            "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
+            "Dari kejauhan terlihat kapal KRI Diponegoro (365)."
+            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
+            "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
+            "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
+            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
+            "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
             prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
             "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan. Selesai makan Anda kembali ke kamar untuk tidur."
         
         "menikmati pemandangan malam di tepi laut":
             "aku akan menikmati pemandangan malam di tepi laut"
-            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari. Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari. Penginapan yang dibangun juga dikhususkan untuk para pekerja saja. Selain itu, dari kejauhan terlihat kapal KRI Diponegoro (365)."
-            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih. Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing. Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
-            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi. Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
+            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
+            "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
+            "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
+            "Dari kejauhan terlihat kapal KRI Diponegoro (365)."
+            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
+            "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
+            "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
+            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
+            "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
             prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
-            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan. Selesai makan Anda memutuskan berjalan-jalan di pantai menikmati keindahan alam di malam hari. Suara ombak dan desir psir membuat otak Anda benar-benar relax. Anda melihat batu besar dan memutuskan untuk duduk di sana. Terlihat beberapa bayangan orang di dalam mercusuar"
+            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan."
+            "Selesai makan Anda memutuskan berjalan-jalan di pantai menikmati keindahan alam di malam hari."
+            "Suara ombak dan desir psir membuat otak Anda benar-benar relax."
+            "Anda melihat batu besar dan memutuskan untuk duduk di sana. Terlihat beberapa bayangan orang di dalam mercusuar"
             prot "Ketat sekal penjagaan di pulau ini, pasti mereka adalah orang yang mendapat tugas berjaga di shift malam"
             "Setelah puas menikmati pemandangan alam, Anda kembali ke mess untuk tidur"        
 
         "berjalan-jalan di sekitar mess":
             "aku akan berjalan-jalan di sekitar mess"
-            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari. Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari. Penginapan yang dibangun juga dikhususkan untuk para pekerja saja. Selain itu, dari kejauhan terlihat kapal KRI Diponegoro (365)."
-            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih. Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing. Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
-            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi. Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
+            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
+            "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
+            "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
+            "Dari kejauhan terlihat kapal KRI Diponegoro (365)."
+            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
+            "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
+            "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
+            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
+            "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
             prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
-            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan. Selesai makan Anda memutuskan berjalan-jalan di sekitar mess. Terdapat 3 mess dengan masing masing mess berisi 10 kamar. Banyak kamar kosong di mess itu, kamar anda berada di lantai 2 dan saling berhadapan dengan kamar Dehen."
+            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan."
+            "Selesai makan Anda memutuskan berjalan-jalan di sekitar mess."
+            "Terdapat 3 mess dengan masing masing mess berisi 10 kamar."
+            "Banyak kamar kosong di mess itu, kamar anda berada di lantai 2 dan saling berhadapan dengan kamar Dehen."
             prot "Senyap sekali kamar Dehen, pasti dia sudah tidur"
             "Setelah Anda puas berkeliling di sekitar mess, Anda memutuskan kembali ke kamar Anda untuk tidur"
-    "Anda terbangun sebelum matahari terbit, kali ini bukan karena suara ponsel yang mengganggu tidur Anda. namun, Anda memang terbangun karena tubuh Anda sudah merasa tidur yang cukup sehingga badan Anda terasa bugar."
+    "Anda terbangun sebelum matahari terbit, kali ini bukan karena suara ponsel yang mengganggu tidur Anda. Namun, Anda memang terbangun karena tubuh Anda sudah merasa tidur yang cukup sehingga badan Anda terasa bugar."
     prot "Selagi masih pagi pasti menyenangkan jogging di tepi pantai sambil menyaksikan sunrise"
     "Sebelum joging Anda menyempatkan untuk mengecek ponsel, ternyata sinyal 6G telah selesai terpasang. Anda menyalakan strava sambil joging di tepi pantai"
     "Sudah 1 jam anda joging, terlihat sebuah Helikopter Bell-412 menurunkan penumpang, seorang wanita dengan rambut panjang yang terurai"
@@ -237,7 +297,7 @@ label start:
 
             "Anda memutuskan untuk mandi dan sarapan. ketika sarapan Anda bertemu dengan Deren dan Maura yang sudah berada di meja makan. Ada asisten Dr. Wisnu lainnya juga di sana"
 
-        "kembali ke mess tanpa memperdulikan kedatangan Maura":
+        "kembali ke mess tanpa mempedulikan kedatangan Maura":
             "Anda segera kembali ke mess untuk membersihkan badan setelah jogging. Ketika sampai di depan kamar, Anda sempat melirik sebentar ke kamar Dehen"
 
             prot "Kenapa hening sekali? Sepertinya Deren belum bangun"
@@ -256,7 +316,8 @@ label start:
     "....."
     "Dr. Wisnu mengumpulkan semua asistennya termasuk Maura di suatu ruangan yang mirip Aula"
 
-    "Dr. Wisnu : Jarak 10 km ke utara dari mess ini, kalian akan menemukan lokasi proyek PLTN yang akan kita kerjakan. Beberapa mesin baru datang besok. Jika kalian penasaran dan ingin menuju ke sana hari ini, temui saja anggota militer yang sedang berjaga di sekitar sini. kalian akan diantar menggunakan jeep." 
+    wis "Jarak 10 km ke utara dari mess ini, kalian akan menemukan lokasi proyek PLTN yang akan kita kerjakan."
+    wis "Beberapa mesin baru datang besok. Jika kalian penasaran dan ingin menuju ke sana hari ini, temui saja anggota militer yang sedang berjaga di sekitar sini. kalian akan diantar menggunakan jeep." 
 
     "Setelah penjelasan dari Dr. Wisnu dan pembagian jobdesk masing-masing orang dalam tim ini selesai, Dr. Wisnu membubarkan semua orang di Aula." 
 
@@ -265,11 +326,14 @@ label start:
     mau "Aku akan ikut bersama kalian semua"
 
 
-    "Luas Area PLTN ini sekitar 2,5 juta meter persegi (2,5 km kuadrat), terdapat 5 reaktor yang akan berfungsi sebagai sumber energi panas yang dihasilkan dari reaksi fisi nuklir. Reaksi panas ini akan menghasilkan uap dan akan menggerakan turbin sehingga mampu menghasilkan listrik. Reaktor juga dilengkapi dengan sistem pendingin utama untuk menyalurkan panas dari inti reaktor ke penukar panas untuk mencegah overheating." 
+    "Luas Area PLTN ini sekitar 2,5 juta meter persegi (2,5 km persegi), terdapat 5 reaktor yang akan berfungsi sebagai sumber energi panas yang dihasilkan dari reaksi fisi nuklir."
+    "Reaksi panas ini akan menghasilkan uap dan akan menggerakan turbin sehingga mampu menghasilkan listrik. Reaktor juga dilengkapi dengan sistem pendingin utama untuk menyalurkan panas dari inti reaktor ke penukar panas untuk mencegah overheating." 
 
-    prot "Semoga dengan adanya proyek ini seluruh kebutuhan listrik di Indonesia terpenuhi. Semoga tidak ada lagi pemadaman listrik untuk penghematan, dan semoga biaya listrik setelah ini akan menjadi murah"
+    prot "Semoga dengan adanya proyek ini seluruh kebutuhan listrik di Indonesia terpenuhi. Semoga tidak ada lagi pemadaman listrik untuk penghematan dan biaya listrik setelah ini akan menjadi murah"
 
-    mau "Sudah jelas itu. Kebutuhan listrik di Indonesia sekitar 775 GWh / hari. Adanya PLTS, PLTB, PLTA, dan PLTP yang dibangun mampu memenuhi 23 persen jumlah kebutuhan total listrik harian. 1 Generator yang kita miliki mampu menghasilkan 3500 MWh / jam, sehingga 1 generator mampu menghasilkan listrik sebesar 84 GWh / hari. Kita memiliki 5 generator, jika ditotal listrik yang berhasil kita produksi sekitar 420 GWh / hari, jumlah ini akan jauh lebih banyak dibanding listrik yang kita butuhkan."
+    mau "Sudah jelas itu. Kebutuhan listrik di Indonesia sekitar 775 GWh / hari. Adanya PLTS, PLTB, PLTA, dan PLTP yang dibangun mampu memenuhi 23 persen jumlah kebutuhan total listrik harian."
+    mau "1 Generator yang kita miliki mampu menghasilkan 3500 MWh / jam, sehingga 1 generator mampu menghasilkan listrik sebesar 84 GWh / hari."
+    mau "Kita memiliki 5 generator, jika ditotal listrik yang berhasil kita produksi sekitar 420 GWh / hari, jumlah ini akan jauh lebih banyak dibanding listrik yang kita butuhkan."
 
     prot "Wow pemikiranmu hebat sekali Maura"
     mau "Kau mau tau apa yang lebih hebat dari perhitunganku?"
@@ -279,7 +343,8 @@ label start:
     mau "Dengan reaktor sebanyak ini, bukankah sayang jika Indonesia tidak memproduksi bom nuklir?"
     prot "Apa maksudmu?"
 
-    "Maura hanya tersenyum dan kembali ke jeep tanpa menjawab pertanyaan terakhir Anda. Anggota militer yang menjadi supir jeep memanggil kalian semua untuk kembali ke jeep dan melakukan perjalanan pulang kembali ke mess."
+    "Maura hanya tersenyum dan kembali ke jeep tanpa menjawab pertanyaan terakhir Anda."
+    "Anggota militer yang menjadi supir jeep memanggil kalian semua untuk kembali ke jeep dan melakukan perjalanan pulang kembali ke mess."
 
     prot "Dehen, entah mengapa aku merasa ada hal yang mengganjal dari perkataan Maura tadi"
     deh "Sudahlah jangan ambil pusing, anggap saja dia hanya bercanda. Ayo kita kembali ke jeep"
@@ -288,9 +353,9 @@ label start:
 
     "Semua orang turun dari jeep ketika jeep berhenti tepat di halaman mess." 
 
-    "Anda turun dari mess setelah Maura, dilanjut Dehen dan asisten laboratorium lainnya. Maura segera masuk ke mess tanpa memperdulikan yang lainnya, sedangkan Anda.."
-
-    "Anda melamun memperhatikan jejak ban dari mobil jeep. Suara Dr. Wisnu menyadarkan lamunan Anda"
+    "Anda turun dari jeep setelah Maura, dilanjut Dehen dan asisten laboratorium lainnya."
+    "Maura segera masuk ke mess tanpa memperdulikan yang lainnya."
+    "Anda melamun memperhatikan jejak ban dari mobil jeep dan suara Dr. Wisnu menyadarkan lamunan Anda"
 
     wis "Bagimana? Sudah melihat lokasi PLTN kita? Sangat menawan bukan?"
     prot "Anda hanya mengangguk"
@@ -303,13 +368,19 @@ label start:
 
             "Anda pun masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen, kali ini pintunya tidak tertutup. terdengar suara (You destroyed a turret)."
 
-            prot " dalam hati : Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain games"
+            prot "(Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain games)"
 
-            "Anda pun masuk kamar dan mandi. Setelah mandi Anda dan memakai pakaian Anda rebahan di ranjang. Anda membuka instagra, nampak berbagai instastory teman-teman Anda yang beragam seperti bermain bersama hewan peliharaan, jalan-jalan bersama pasangan, liburan dengan keluarga, olahraga, dan lainnya."
+            "Anda pun masuk kamar mess dan mandi."
+            "Setelah mandi Anda dan memakai pakaian Anda rebahan di ranjang."
+            "Anda membuka instagram, nampak berbagai instastory teman-teman Anda yang beragam." 
+            "Ada yang bermain bersama hewan peliharaan, jalan-jalan bersama pasangan, liburan dengan keluarga, olahraga, dan lainnya."
 
-            "Anda membuka galeri, nampak foto ketika matahari sunrise yang Anda ambil saat jogging tadi pagi, ada juga berbagai foto keindahan pulau Gelasa. Ketika Anda ingin membuat story di instagram, muncul foto-foto lokasi PLTN dan daerah yang sudah diploting untuk mesin-mesin tertentu. Anda pun mengurungkan niat untuk mengupload foto yang Anda ambil hari ini."
+            "Anda membuka galeri, nampak foto ketika matahari sunrise yang Anda ambil saat jogging tadi pagi, ada juga berbagai foto keindahan pulau Gelasa."
+            "Ketika Anda ingin membuat story di instagram, muncul foto-foto lokasi PLTN dan daerah yang sudah diploting untuk mesin-mesin tertentu."
+            "Anda pun mengurungkan niat untuk mengupload foto yang Anda ambil hari ini."
             
-            prot "Seandainya pulau cantik ini tidak terisolasi, seandainya proyek ini bukanlah rahasia negara, pasti aku akan menguploadnya."
+            prot "Seandainya pulau cantik ini tidak terisolasi."
+            prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan menguploadnya."
 
             "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari mereka sedang lari melewati Anda sambil menyanyikan yel-yel. Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyumaqn."
 
@@ -451,7 +522,11 @@ label good_ending:
 
             "Dehen dan Dr, Wisnu berhasil menyelesaikan perhitungannya. Anda dan Maura ditempatkan di dry lab untuk menyempurnakan perhitungan mereka."
 
-            "Setelah hampir 2 tahun bekerja, akhirnya PLTN pertama yang dimiliki Bangsa Indonesia beroperasi, selama percobaan 3 minggu belum ada keluhan apapun tentang PLTN ini. Semua kebutuhan listrik rakyat Indonesia dari sabang hingga merauke terpenuhi. Harga listrik di Indonesia menjadi sangat murah. Indonesia dijadikan contoh negara di Asia tenggara yang menggunakan PLTN sebagai sumber utama dalam memenuhi listrik negara."
+            "Setelah hampir 2 tahun bekerja, akhirnya PLTN pertama yang dimiliki Bangsa Indonesia beroperasi."
+            "selama percobaan 3 minggu belum ada keluhan apapun tentang PLTN ini."
+            "Semua kebutuhan listrik rakyat Indonesia dari sabang hingga merauke terpenuhi."
+            "Harga listrik di Indonesia menjadi sangat murah."
+            "Indonesia dijadikan contoh negara di Asia tenggara yang menggunakan PLTN sebagai sumber utama dalam memenuhi listrik negara."
 
             "Rencananya akan ada proyek PLTN tambahan agar semua tenaga listrik hanya bersumber dari nuklir saja, tidak perlu mengandalkan batubara yang kurang ramah lingkungan."
     return
