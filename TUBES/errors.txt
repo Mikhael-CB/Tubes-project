@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 333: screen expects a non-empty block.
-    else:
-         ^
+File "game/script.rpy", line 420: end of line expected.
+    jump good_ending:
+                    ^
+
+File "game/script.rpy", line 427: end of line expected.
+    jump neutral_bad_ending:
+                           ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Nov 26 19:58:41 2024
+Tue Dec 10 08:16:49 2024
