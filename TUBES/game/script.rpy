@@ -417,14 +417,14 @@ label start:
             "Setelah 2 minggu bekerja Anda berhasil menemukan kombinasi yang tepat dari plutonium (Pu) dan Thorium (Th). Sekarang Anda berfokus pada MOX (Mixed Oxide Fuel). Kali ini Anda bekerja langsung bersama Dr. Wisnu. Perlu waktu sekitar 1 bulan untuk mendapat komposisi yang pas. Dehen, Maura, dan asisten lain berkutat mati matian untuk mencari perhitungan yang tepat. Di dalam hati nurani, Anda merasa apa yang Anda lakukan sangat egois. Sikap Anda seperti bertentangan dengan sila ke-2 dari Pancasila, yakni “Kemanusiaan yang adil dan beradab”. Anda mengetahui secara pasti perhitungan yang sedang mereka cari, dan membiarkan mereka dalam kebingungan dan kelelahan. Namun disisi lain Anda teringat UUD 1945 pasal 28C ayat 2, yakni setiap orang berhak untuk memajukan dirinya dalam memperjuangkan haknya secara kolektif untuk membangun masyarakat, bangsa, dan negara. Anda berpikir jika Anda telah menjadi peraih nobel, ilmu yang Anda miliki juga akan bermanfaat bagi kemajuan teknologi Indonesia."
             "Kali ini Anda bekerja sama dengan Maura di bagian wet lab, sedangkan Dr. Wisnu bekerjasama dengan Dehen di dry lab. Anda mencari komposisi serta metode yang tepat untuk memperlambat neutron. Memungkinkan reaksi berantai yang stabil dalam reaktor nuklir menggunakan grafit (air berat)."
             "Tak terasa sudah 5 bulan Anda bekerja satu lab bersama Maura. Anda semakin dekat dengannya, kalian saling bertukar cerita tentang latar belakang masing-masing."
-            jump good_ending:
+            jump good_ending
 
         "Menemui Dr. Wisnu untuk membicarakan penelitian Anda":
             prot "Dr. Wisnu, bolehkah hari ini aku bekerja secara dry lab?"
             wis "Apa kau sedang mengalami masalah?"
             prot "Tidak, aku ingin rehat sejenak mencium bau bahan-bahan kimia itu"
             wis "Baiklah, hari ini kamu, Maura, dan aku akan bekerja secara dry lab, dehen dan asisten lain akan bekerja secara wet lab"
-            jump neutral_bad_ending:
+            jump neutral_bad_ending
 
 
 
