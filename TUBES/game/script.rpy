@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define prot = Character("protagonis")
+define prot = Character("Aku")
 define deh = Character("Dehen") 
 define wis = Character("Dr. Wisnu")
 define mau = Character("Maura")
@@ -26,6 +26,7 @@ label start:
     
     "Anda tinggal di Samarinda dan bekerja untuk Dr. W.R. Wisnu Raksa, ilmuwan paling cerdas di negara ini.
     Impianmu adalah menjadi ilmuwan terkemuka dan mampu memenangkan nobel di tahun ini."
+
 
     prot "Aduh, proyek dari Pak Wisnu besar sekali, aku merasa sangat lelah.
     Sudah 5 hari aku tidur di laboratoriumnya yang sangat dingin itu"
