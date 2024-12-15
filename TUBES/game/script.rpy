@@ -1,19 +1,61 @@
-# The script of the game goes in this file.
+﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+
 
 define prot = Character("Aku")
 define deh = Character("Dehen") 
 define wis = Character("Dr. Wisnu")
 define mau = Character("Maura")
 default remember = 0
+transform left:
+    xalign 0.15
+    yalign 0.54
+transform right:
+    xalign 0.85
+    yalign 0.54
+
+transform center:
+    xalign 0.5
+    yalign 0.54
+    zoom 2.
+
+transform x_flip:
+    xzoom -1.
+
+transform no_flip:
+    xzoom 1
+    yzoom 1.
+
+transform zoom2x:
+    zoom 2.
+
+transform bounce(num):
+    pause .15
+    yoffset 0
+    easein .175 yoffset -10
+    easeout .175 yoffset 0
+    easein .175 yoffset -4
+    easeout .175 yoffset 0
+    yoffset 0
+    repeat num
+
+transform darken:
+    linear 0.5 matrixcolor TintMatrix(u"696969") * SaturationMatrix(1.0)
+transform lighten:
+    linear 0.5 matrixcolor TintMatrix (u"ffffff") * SaturationMatrix(1.0)
+transform darken_cus(time):
+    linear (time) matrixcolor TintMatrix(u"696969") * SaturationMatrix(1.0)
+transform lighten_cus(time):
+    linear (time) matrixcolor TintMatrix (u"ffffff") * SaturationMatrix(1.0)
+
 $ jawaban = ""
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
+    # Show a background. This use a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
     #scene bg room
@@ -21,21 +63,26 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-    #show
+
+    #showcase
+
     
     
+    with dissolve
     "Anda tinggal di Samarinda dan bekerja untuk Dr. W.R. Wisnu Raksa, ilmuwan paling cerdas di negara ini.
     Impianmu adalah menjadi ilmuwan terkemuka dan mampu memenangkan nobel di tahun ini."
 
-
+    
+    with dissolve
     prot "Aduh, proyek dari Pak Wisnu besar sekali, aku merasa sangat lelah.
     Sudah 5 hari aku tidur di laboratoriumnya yang sangat dingin itu"
-
+    
+    with dissolve
     "Anda saat ini sedang menuju perjalanan ke rumah setelah 5 hari tidak pulang." 
     
     #scene bg house_room #pending asset
     
-
+    show bg kamar
     "Sesampainya di rumah, anda segera mandi, memakai baju, lalu tidur karena kelelahan."
     "Anda dikejutkan dengan telepon yang masuk, ternyata dari rekan sejawat Anda, Dehen"
     
@@ -43,14 +90,20 @@ label start:
     prot "Halo Dehen, mengapa kau menelponku."
 
     deh "Aku ada di depan rumahmu dengan membawa makanan, cepat buka"    
+    "Anda bergegas menuju pintu dan membukanya."
     
+    show dehen neutral at center
+    with dissolve
     #show dehen #pending asset
     deh "Aku tahu kau pasti tidak sempat membeli makan karena lembur 5 hari, jadi aku membelikannya untukmu."
-    deh "Yok makan bersama"
+    show dehen senang at bounce(1)
+    with Dissolve (0.1)
 
-    prot "Waw, terima kasih teman"
+    deh "Mari makan bersama!"
 
-    #
+    prot "Wah, terima kasih teman"
+
+    show dehen senang at darken
     "Anda terkejut karena Dehen membeli banyak sekali makanan seperti sate payau, gence ruan, ayam cincane, nasi bekepor, pisang gapit, dan lainnya."
 
     prot "Hey, mengapa kau membeli banyak sekali makanan? Siapa yang akan menghabiskannya?"
@@ -83,36 +136,6 @@ label start:
             prot "Kenapa Indonesia tidak memiliki listrik yang cukup dari Sabang hingga Merauke ya? Padahal kan semua orang membayar listrik, jika padam begini aktivitas masyarakat akan terganggu. Apalagi zaman modern ini, siapa coba yang ga pake listrik?"
             "Sempat terbesit di pikiran Anda seandainya ada daya listrik yang besar namun murah di seluruh penjuru di Indonesia."
             "Semakin lama, mata Anda semakin berat dan Anda pun tertidur"
-        "Mengajak Dehen menikmati karnaval":
-            prot "Kudengar nanti malam akan ada karnaval di Taman Samarendah, apakah kau berminat pergi kesana?"
-            deh "Sudah lama aku tidak melihat karnaval. Sepertinya menyenangkan"
-            prot "Kalau begitu bagaimana jika jam 7 kita berangkat ke karnaval"
-            deh "Boleh saja, jam 7 kita bertemu di Taman Samarendah"
-            prot "Oke"
-            deh "Baiklah aku pulang dulu sekarang"
-            prot "Terima kasih untuk makanannya, Dehen"
-            deh "Tak masalah teman"
-            "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya."
-            "Setelah Dehan pulang Anda masuk kamar dan mulai menyalakan TV untuk bersantai sebentar."
-            #setelah beberapa saat 
-            "Setelah pukul 18.30 Anda bersiap untuk berangkat menuju Taman Samarendah. Sesampainya di sana, Anda melihat Dehen sudah berada di depan pintu masuk"
-            deh "Hey, cepat parkir di sana, lalu kita masuk. Aku tak sabar mencoba semua permainan di karnaval ini"
-            prot "Ya, tunggu sebentar"
-            "Anda dan Dehen pun membeli karcis masuk dan memilih wahana yang ingin dicoba"
-            port "Sepertinya naik bianglala sebagai awalan permainan di karnaval ini menyenangkan"
-            deh "Boleh saja"
-            "Anda dan Dehen menaiki bianglala"
-            "namun baru 3x berputar bianglala tersebut berhenti dan lampunya padam akibat terjadinya MCB."
-            "Tak lama kemudian bianglala beroperasi kembali setelah masalah listrik itu selesai"
-            deh "Seperti biasa, kalo acara rakyat begini bukan hal aneh kalo terjadi MCB"
-            prot "Kau benar, mahal nya listrik membuat mereka tidak memiliki dana yang cukup untuk menambah Watt-nya. Tapi untunglah petugas di sini sigap memperbaikinya"
-            deh "Seandainya listrik di Indonesia bisa lebih murah dan memiliki daya yang besar dari Sabang hingga Merauke"
-            prot "Sudah lah, mari mencoba wahana lainnya"
-
-            "Anda dan Dehan mencoba semua wahana hingga karnaval tersebut tutup. "
-            #setelah beberapa saat (perlu ada chat sebelum pulang)
-            "Di perjalanan pulang, Anda sempat memikirkan ulang kata-kata dehan sebelumnya tentang daya listrik yang besar namun murah di seluruh penjuru di Indonesia." 
-            "Sesampainya di rumah Anda berganti baju kemudian tidur."
         "Membaca jurnal ilmiah":
             prot "Sepertinya menyenangkan. Aku ingin membaca jurnal saja, mengejar impianku menjadi pemenang nobel tahun ini. Penelitian Pak Wisnu membuatku terjeda melakukan penelitianku sendiri"
             deh "Semoga kau segera menjadi pemenang nobel. Jangan terlalu memaksakan dirimu juga kawan"

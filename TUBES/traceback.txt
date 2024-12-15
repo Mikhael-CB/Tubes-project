@@ -1,24 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 296, in script
-    Prot "Anda hanya mengangguk"
-Exception: Sayer 'Prot' is not defined.
+  File "game/script.rpy", line 106, in script
+    show dehen senang at darken(0)
+  File "game/script.rpy", line 106, in <module>
+    show dehen senang at darken(0)
+Exception: Not a displayable: 0
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 296, in script
-    Prot "Anda hanya mengangguk"
-  File "C:\Users\LENOVO\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
-    Say.execute(self)
-  File "C:\Users\LENOVO\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\LENOVO\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Prot' is not defined.
+  File "game/script.rpy", line 106, in script
+    show dehen senang at darken(0)
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 106, in <module>
+    show dehen senang at darken(0)
+  File "C:\renpy-8.3.3-sdk\renpy\atl.py", line 679, in __call__
+    rv = renpy.display.motion.ATLTransform(
+  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 1221, in __init__
+    Transform.__init__(self, child=child, **properties)
+  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 715, in __init__
+    child = renpy.easy.displayable_or_none(child)
+  File "C:\renpy-8.3.3-sdk\renpy\easy.py", line 99, in displayable_or_none
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: 0
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Tue Dec 10 06:36:07 2024
+Sun Dec 15 21:06:40 2024

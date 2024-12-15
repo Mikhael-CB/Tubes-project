@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 176: choice menuitem expects a non-empty block.
-    "sangat jenius karena pernah memikirkannya":
-                                                ^
+File "game/script.rpy", line 42: expected expression
+    define color = 
+                   ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Dec 10 14:34:36 2024
+Sun Dec 15 20:54:59 2024
