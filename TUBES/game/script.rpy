@@ -123,7 +123,6 @@ label start:
     menu Free_time:
         "Apa yang ingin kamu lakukan sore ini?"
         "Bersantai untuk menikmati me time":
-            play music 
             prot "Yah, sepertinya aku juga akan melakukan hal yang sama. Aku ingin menonton serial favoritku"
             deh "Baiklah, selamat me time, aku pamit pulang"
             prot "Terima kasih untuk makannya, Dehan"
