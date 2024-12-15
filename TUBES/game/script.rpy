@@ -16,7 +16,7 @@ transform right:
     xalign 0.85
     yalign 0.54
 
-transform center:
+transform centerC:
     xalign 0.5
     yalign 0.54
     zoom 2.
@@ -68,22 +68,24 @@ label start:
 
     
     
-    with dissolve
+    scene filler
+    play music "SCENE 1_ SAMARINDA/Chill and Happy.mp3" loop if_changed
     "Anda tinggal di Samarinda dan bekerja untuk Dr. W.R. Wisnu Raksa, ilmuwan paling cerdas di negara ini.
     Impianmu adalah menjadi ilmuwan terkemuka dan mampu memenangkan nobel di tahun ini."
 
     
-    with dissolve
+    
     prot "Aduh, proyek dari Pak Wisnu besar sekali, aku merasa sangat lelah.
     Sudah 5 hari aku tidur di laboratoriumnya yang sangat dingin itu"
     
-    with dissolve
-    "Anda saat ini sedang menuju perjalanan ke rumah setelah 5 hari tidak pulang." 
     
+    "Anda saat ini sedang menuju perjalanan ke rumah setelah 5 hari tidak pulang." 
+    stop music fadeout 1.0
     #scene bg house_room #pending asset
     
     show bg kamar
     with dissolve
+    play music "SCENE 1_ SAMARINDA/Cozy Home Music.mp3" fadein 1.0 loop if_changed volume 0.6
     "Sesampainya di rumah, anda segera mandi, memakai baju, lalu tidur karena kelelahan."
     "Anda dikejutkan dengan telepon yang masuk, ternyata dari rekan sejawat Anda, Dehen"
     
@@ -93,8 +95,9 @@ label start:
     deh "Aku ada di depan rumahmu dengan membawa makanan, cepat buka"    
     "Anda bergegas menuju pintu dan membukanya."
     
-    show dehen neutral at center
+    show dehen neutral at centerC
     with dissolve
+    show bg kamar
     #show dehen #pending asset
     deh "Aku tahu kau pasti tidak sempat membeli makan karena lembur 5 hari, jadi aku membelikannya untukmu."
     show dehen senang at bounce(1)
@@ -104,19 +107,21 @@ label start:
 
     prot "Wah, terima kasih teman"
 
-    show dehen senang at darken
+    show dehen at darken
     "Anda terkejut karena Dehen membeli banyak sekali makanan seperti sate payau, gence ruan, ayam cincane, nasi bekepor, pisang gapit, dan lainnya."
-
+    show dehen at lighten
     prot "Hey, mengapa kau membeli banyak sekali makanan? Siapa yang akan menghabiskannya?"
 
     deh "Sudahlah, jika tak habis kau masukkan saja ke kulkas."
     deh "Komisi yang diberi Pak Wisnu atas penelitian ini besar sekali, sesekali kita juga harus self rewards."
 
     prot "Memang sepantasnya kita mendapat komisi sebesar itu, penelitian Pak Wisnu ini memiliki risiko yang tinggi, salah sedikit saja kita bisa mengalami mutasi akibat radiasi sinar-sinar itu."
+    show dehen at darken
     
     "Setelah Anda dan Dehan selesai makan, Anda mencuci peralatan makan, sedangkan Dehan membersihkan dan merapikan kembali meja makan Anda."
-
-    prot "Dehan, apa rencanamu sore ini?"
+    
+    show dehen at lighten
+    prot "Dehen, apa rencanamu sore ini?"
 
     deh "Entahlah, mungkin aku akan menonton tv dan bersantai di rumah"
    
@@ -127,16 +132,24 @@ label start:
             deh "Baiklah, selamat me time, aku pamit pulang"
             prot "Terima kasih untuk makannya, Dehan"
             deh "Tak masalah teman"
+            hide kamar with dissolve
+            hide dehen with dissolve
             "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya."
+            
+            show bg Kamar
             "Setelah Dehen pulang Anda masuk kamar dan mulai menyalakan TV. Setelah menunggu beberapa jam, akhirnya serial favorit Anda mulai tayang. "
             "Anda sangat senang karena sudah 5 hari melewatkannya"
+            
             prot "Akhirnya aku bisa menontonnya kembali"
+            show bg kamar at darken
             "Baru 15 menit menonton, terjadi pemadaman listrik di kecamatan Anda, hal itu membuat anda kesal"
             prot "Kenapa sih harus terjadi pemadaman sekarang? Padahal serial ini tidak di upload di Youtube, aku melewatkannya lagi"
             "Anda pun hanya diam menatap lampu emergensi yang menyala. Di tengah kesunyian akibat pemadaman listrik Anda pun berpikir seandainya jumlah listrik di Indonesia sangat besar, pasti tidak akan terjadi pemadaman"
             prot "Kenapa Indonesia tidak memiliki listrik yang cukup dari Sabang hingga Merauke ya? Padahal kan semua orang membayar listrik, jika padam begini aktivitas masyarakat akan terganggu. Apalagi zaman modern ini, siapa coba yang ga pake listrik?"
             "Sempat terbesit di pikiran Anda seandainya ada daya listrik yang besar namun murah di seluruh penjuru di Indonesia."
             "Semakin lama, mata Anda semakin berat dan Anda pun tertidur"
+            stop music fadeout 0.5
+            jump scene2
         "Membaca jurnal ilmiah":
             prot "Sepertinya menyenangkan. Aku ingin membaca jurnal saja, mengejar impianku menjadi pemenang nobel tahun ini. Penelitian Pak Wisnu membuatku terjeda melakukan penelitianku sendiri"
             deh "Semoga kau segera menjadi pemenang nobel. Jangan terlalu memaksakan dirimu juga kawan"
@@ -144,6 +157,7 @@ label start:
             deh "Baiklah aku pulang dulu sekarang"
             prot "Terima kasih untuk makannya, Dehen"
             deh "Tak masalah teman"
+            hide dehen with dissolve
             "Anda mulai menyalakan komputer yang berada di kamar Anda."
             "Sambil menunggu komputer loading, Anda akan…"
             menu menunggu_komputer_loading:
@@ -175,7 +189,25 @@ label start:
             "Tak terasa waktu sudah menunjukan pukul 2 pagi. Anda pun mematikan komputer dan berjalan menuju tempat tidur untuk beristirahat." 
             "Saat hendak tidur Anda teringat"
             "[jawaban]"
-    "Lagi-lagi Anda terbangun akibat dering di ponsel Anda. "
+            stop music fadeout 0.5
+            hide bg kamar with dissolve
+            jump scene2
+
+
+
+
+
+label scene2:
+    show text "esok pagi" at truecenter
+    pause 2
+    play sound "SCENE 2_ Menuju Pulau Gelasa/Cell Phone Ringing - Sound Effect.mp3"
+    pause 0.2
+    hide text with dissolve
+    "{i}RINGGGG.... RINGGGG..... RINGGGG...{/i}"
+    stop sound fadeout 0.2
+    queue music "SCENE 2_ Menuju Pulau Gelasa/Chill.mp3" loop
+    
+    "Lagi-lagi Anda terbangun akibat dering di ponsel Anda."
     "Ternyata pesan dari Dr.Wisnu yang mengabarkan akan mengadakan pertemuan penting bersama semua asistennya."
     "Pertemuan akan dilakukan pukul 7.00 di laboratorium Dr. Wisnu"
     prot "huh, ada hal apa yang yang ingin dibicarakan?"
