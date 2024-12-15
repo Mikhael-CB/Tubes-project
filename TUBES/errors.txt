@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 42: expected expression
-    define color = 
-                   ^
+File "game/script.rpy", line 126: play requires a file
+    play music 
+               ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sun Dec 15 20:54:59 2024
+Sun Dec 15 21:36:32 2024

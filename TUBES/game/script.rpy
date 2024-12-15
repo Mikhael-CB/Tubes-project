@@ -83,6 +83,7 @@ label start:
     #scene bg house_room #pending asset
     
     show bg kamar
+    with dissolve
     "Sesampainya di rumah, anda segera mandi, memakai baju, lalu tidur karena kelelahan."
     "Anda dikejutkan dengan telepon yang masuk, ternyata dari rekan sejawat Anda, Dehen"
     
@@ -120,8 +121,9 @@ label start:
     deh "Entahlah, mungkin aku akan menonton tv dan bersantai di rumah"
    
     menu Free_time:
-        "Apa yang ingin kamu lakukan?"
+        "Apa yang ingin kamu lakukan sore ini?"
         "Bersantai untuk menikmati me time":
+            play music 
             prot "Yah, sepertinya aku juga akan melakukan hal yang sama. Aku ingin menonton serial favoritku"
             deh "Baiklah, selamat me time, aku pamit pulang"
             prot "Terima kasih untuk makannya, Dehan"
