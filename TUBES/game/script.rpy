@@ -447,8 +447,8 @@ label scene4:
     jump scene5
 
 label scene5:
-    "....."
-    "Dr. Wisnu mengumpulkan semua asistennya termasuk Maura di suatu ruangan yang mirip Aula"
+    
+    "Tak lama kemudian Dr. Wisnu meminta semua asistennya, termasuk Maura, untuk berkumpul."
 
     wis "Jarak 10 km ke utara dari mess ini, kalian akan menemukan lokasi proyek PLTN yang akan kita kerjakan."
     wis "Beberapa mesin baru datang besok. Jika kalian penasaran dan ingin menuju ke sana hari ini, temui saja anggota militer yang sedang berjaga di sekitar sini. kalian akan diantar menggunakan jeep." 
@@ -478,6 +478,7 @@ label scene5:
     prot "Apa maksudmu?"
 
     "Maura hanya tersenyum dan kembali ke jeep tanpa menjawab pertanyaan terakhir Anda."
+    
     "Anggota militer yang menjadi supir jeep memanggil kalian semua untuk kembali ke jeep dan melakukan perjalanan pulang kembali ke mess."
 
     prot "Dehen, entah mengapa aku merasa ada hal yang mengganjal dari perkataan Maura tadi"
@@ -495,10 +496,12 @@ label scene5:
     prot "Anda hanya mengangguk"
     wis "Ada yang sedang kamu pikirkan?"
 
+    #scene 6
     menu kamu_pikirkan:
         "Tidak ada, aku hanya merasa tidak enak badan":
             wis "Baiklah, beristirahatlah, besok mesin-mesin itu akan disetting untuk penelitian kita dalam mendirikan PLTN"
             prot "Baik pak, aku izin masuk dulu"
+
 
             "Anda pun masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen, kali ini pintunya tidak tertutup. terdengar suara (You destroyed a turret)."
 
@@ -513,8 +516,8 @@ label scene5:
             "Ketika Anda ingin membuat story di instagram, muncul foto-foto lokasi PLTN dan daerah yang sudah diploting untuk mesin-mesin tertentu."
             "Anda pun mengurungkan niat untuk mengupload foto yang Anda ambil hari ini."
             
-            prot "Seandainya pulau cantik ini tidak terisolasi."
-            prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan menguploadnya."
+            prot "Seandainya pulau cantik ini tidak terisolasi....."
+            prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
 
             "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari mereka sedang lari melewati Anda sambil menyanyikan yel-yel. Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyumaqn."
 
@@ -615,7 +618,7 @@ label scene5:
 
         
         "Saat sedang berada di lokasi, Maura sempat menyinggung kegunaan radiator untuk membuat bom nuklir. Apa maksudnya itu?":
-            "..."
+            wis ""
     "Esok paginya, setelah sampai di lokasi proyek PLTN Anda"
     menu ending:
         "Mempertahankan apa yang menjadi hak Anda":
