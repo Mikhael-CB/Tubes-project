@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {size} in '{size=*2}Pulau Gelasa{size}'.:
-  File "game/script.rpy", line 286, in script
-    hide text with dissolve
-Exception: empty value supplied for tag 'size'
+While running game code:
+  File "game/script.rpy", line 379, in script
+    show bg kamar with Dissolve
+Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000003ac8c40>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000399dfa0>}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 286, in script
-    hide text with dissolve
+  File "game/script.rpy", line 379, in script
+    show bg kamar with Dissolve
   File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1361, in execute
     renpy.exports.with_statement(trans, paired=paired)
   File "C:\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
@@ -18,48 +18,13 @@ Full traceback:
     return self.interact(trans_pause=True,
   File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2879, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 1381, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\display\transition.py", line 383, in render
-    bottom = render(self.old_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 1056, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\display\image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\renpy-8.3.3-sdk\renpy\display\image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\renpy-8.3.3-sdk\renpy\text\text.py", line 2604, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\renpy-8.3.3-sdk\renpy\text\text.py", line 733, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\renpy-8.3.3-sdk\renpy\text\text.py", line 1404, in segment
-    raise Exception("empty value supplied for tag %r" % tag)
-Exception: empty value supplied for tag 'size'
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2666, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2580, in instantiate_transition
+    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
+Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000003ac8c40>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000399dfa0>}>
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Mon Dec 16 05:02:26 2024
+Mon Dec 16 13:49:28 2024

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 345: expected simple expression
-    stop music fadeout
-                      ^
+File "game/script.rpy", line 386: expected end of line
+    play music "SCENE 4_ Bertemu Maura/Beach Mood Santai" fade in 0.5 volume 0.5 loop
+                                                          ^
+
+File "game/script.rpy", line 414: expected end of line
+    play music "SCENE 4_ Bertemu Maura/Cozy Home Music" fade in 0.5 volume 0.5 loop
+                                                        ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Mon Dec 16 06:20:02 2024
+Mon Dec 16 13:47:01 2024

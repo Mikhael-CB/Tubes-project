@@ -357,34 +357,64 @@ label scene3:
         "Setelah puas menikmati pemandangan alam, Anda kembali ke mess untuk tidur"        
     elif remember == 3:
         extend " memutuskan berjalan-jalan di sekitar mess."
-        show bg ruang tamu
+        show bg ruang tamu with dissolve
         "Terdapat 3 mess dengan masing masing mess berisi 10 kamar."
         "Banyak kamar kosong di mess itu, kamar anda berada di lantai 2 dan saling berhadapan dengan kamar Dehen."
         prot "Senyap sekali kamar Dehen, pasti dia sudah tidur"
-        show bg kamar
+        show bg kamar with dissolve
         
         "Setelah Anda puas berkeliling di sekitar mess, Anda memutuskan kembali ke kamar Anda untuk tidur"
         stop music fadeout 0.5
-    
+        scene filler with dissolve
     jump scene4
 
 
 
 label scene4:
+    centered "{size=*2}Besok pagi{/size}"
+    show text "{size=*2}Besok pagi{/size}" at truecenter
+    hide text with dissolve
+    pause 0.5
+    play music "SCENE 4_ Bertemu Maura/Good Morning.mp3" fadein 1.0 volume 0.5 loop
+    show bg kamar with dissolve
+    
     "Anda terbangun sebelum matahari terbit, kali ini bukan karena suara ponsel yang mengganggu tidur Anda. Namun, Anda memang terbangun karena tubuh Anda sudah merasa tidur yang cukup sehingga badan Anda terasa bugar."
     prot "Selagi masih pagi pasti menyenangkan jogging di tepi pantai sambil menyaksikan sunrise"
+    hide bg kamar with dissolve
+    stop music fadeout 0.5
+    play music "SCENE 4_ Bertemu Maura/Beach Mood Santai" fadein 0.5 volume 0.5 loop
+    show bg pantai siang with dissolve
+    
     "Sebelum joging Anda menyempatkan untuk mengecek ponsel, ternyata sinyal 6G telah selesai terpasang. Anda menyalakan strava sambil joging di tepi pantai"
+    
+    show maura neutral at centerC
+    show maura at darken
+    with dissolve
     "Sudah 1 jam anda joging, terlihat sebuah Helikopter Bell-412 menurunkan penumpang, seorang wanita dengan rambut panjang yang terurai"
     prot "Apakah itu Maura?"
     "Anda memutuskan untuk"
+    
     menu bertemu_maura:
+        "Anda memutuskan untuk"
         "menyambut kedatangannya sekaligus berkenalan":
+
+            show maura at right, zoom05x, x_flip, lighten
+            show dr_wisnu neutral at left
+
             "Ketika Anda menuju tempat berdirinya maura, Dr. wisnu sudah duluan tiba di sana. Mereka saling bercengkrama, ketika melihat kehadiran Anda, Dr. Wisnu memperkenalkan Anda pada Maura."
+            
             prot "Hai Maura, salam kenal"
             mau "Hallo, salam kenal juga"
-
-            "Maura pamit menuju ke messnya untuk membongkar barang bawaannya di koper dan membersihkan diri. Karena kalian satu mess, Anda memutuskan berjalan bersama Maura menuju mess. Berbeda dengan Anda dan Dehen, kamar Maura berada di lantai 1, kalian pun berpisah di dekat tangga menuju lantai 2." 
-
+            
+            hide dr_wisnu with dissolve
+            hide maura with dissolve
+            "Maura pamit menuju ke messnya untuk membongkar barang bawaannya di koper dan membersihkan diri. Karena kalian satu mess, Anda memutuskan berjalan bersama Maura menuju mess." 
+            hide bg pantai siang with dissolve
+            stop music fadeout 0.5
+            play music "SCENE 4_ Bertemu Maura/Cozy Home Music" fadein 0.5 volume 0.5 loop
+            show bg ruang tamu with dissolve
+            
+            "Berbeda dengan Anda dan Dehen, kamar Maura berada di lantai 1, kalian pun berpisah di dekat tangga menuju lantai 2." 
             "Sesampainya di depan kamar, Anda sempat melirik sebentar ke kamar Dehen"
 
             prot "Kenapa hening sekali? Sepertinya Deren belum bangun"
@@ -392,12 +422,19 @@ label scene4:
             "Anda memutuskan untuk mandi dan sarapan. ketika sarapan Anda bertemu dengan Deren dan Maura yang sudah berada di meja makan. Ada asisten Dr. Wisnu lainnya juga di sana"
 
         "kembali ke mess tanpa mempedulikan kedatangan Maura":
-            "Anda segera kembali ke mess untuk membersihkan badan setelah jogging. Ketika sampai di depan kamar, Anda sempat melirik sebentar ke kamar Dehen"
-
+            "Anda segera kembali ke mess untuk membersihkan badan setelah jogging."
+            hide bg pantai siang with dissolve
+            stop music fadeout 0.5
+            play music "SCENE 4_ Bertemu Maura/Cozy Home Music" fadein 0.5 volume 0.5 loop
+            show bg ruang tamu with dissolve
+            
+            "Ketika sampai di depan kamar, Anda sempat melirik sebentar ke kamar Dehen"
+            
             prot "Kenapa hening sekali? Sepertinya Deren belum bangun"
 
-            "Anda memutuskan untuk mandi dan sarapan. ketika sarapan Anda bertemu dengan Deren dan Maura yang sudah berada di meja makan. Ada asisten Dr. Wisnu lainnya juga di sana. Anda duduk di sebelah Dehen"
-
+            "Anda memutuskan untuk mandi dan sarapan."
+            "Setelah mandi, Anda pergi ke ruang tamu dan bertemu dengan Dehen dan Maura yang hendak makan. Juga ada banyak asisten Dr. Wisnu lainnya di sana." 
+            "Anda duduk di sebelah Dehen."            
             deh "Bagaimana tidurmu? Nyenyak?"
 
             "Anda hanya mengangguk sambil menyendok nasi di meja makan"
@@ -407,6 +444,9 @@ label scene4:
             mau "Hallo salam kenal ya"
             prot "Hai, salam kenal juga"
     
+    jump scene5
+
+label scene5:
     "....."
     "Dr. Wisnu mengumpulkan semua asistennya termasuk Maura di suatu ruangan yang mirip Aula"
 
