@@ -494,8 +494,8 @@ label scene5:
     play music "SCENE 5_ Maura Kok Gitu_/Begin Your Journey.mp3" fadein 0.5 volume 0.5 loop
     show bg pantai siang with dissolve
     "Luas Area PLTN ini sekitar 2,5 juta meter persegi (2,5 km persegi), terdapat 5 reaktor yang akan berfungsi sebagai sumber energi panas yang dihasilkan dari reaksi fisi nuklir."
-    "Reaksi panas ini akan menghasilkan uap dan akan menggerakan turbin sehingga mampu menghasilkan listrik. Reaktor juga dilengkapi dengan sistem pendingin utama untuk menyalurkan panas dari inti reaktor ke penukar panas untuk mencegah overheating." 
-
+    "Reaksi panas ini akan menghasilkan uap dan akan menggerakan turbin sehingga mampu menghasilkan listrik." 
+    "Reaktor juga dilengkapi dengan sistem pendingin utama untuk menyalurkan panas dari inti reaktor ke penukar panas untuk mencegah overheating." 
 
     prot "Semoga dengan adanya proyek ini seluruh kebutuhan listrik di Indonesia terpenuhi. Semoga tidak ada lagi pemadaman listrik untuk penghematan dan biaya listrik setelah ini akan menjadi murah"
 
@@ -601,22 +601,30 @@ label scene6a_alam_mimpi:
 
     prot "Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
 
-    "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur. Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
-    "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
+            "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur." 
+            "Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
+            "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup," 
+            "Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
 
-    "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan. terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
+            "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan." 
+            "terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
 
-    "Tidak ada percakapan yang berarti malam itu, hanya candaan ringan yang menemani kalian semua ketika makan malam berlangsung. walaupun Anda masih ragu dengan pikiran anda tentang Maura, Anda berusaha menepisnya, Anda akan bekerja bersama Maura beberapa bulan kedepan, tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
+            "Tidak ada percakapan yang berarti malam itu, hanya candaan ringan yang menemani kalian semua ketika makan malam berlangsung." 
+            "walaupun Anda masih ragu dengan pikiran anda tentang Maura, Anda berusaha menepisnya, Anda akan bekerja bersama Maura beberapa bulan kedepan, tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
 
-    "Selesai makan malam Anda kembali ke kamar Anda, segera Anda menyalakan komputer. Anda sempat membawa flashdisk yang berisi file penelitian Anda agar bisa menjadi pemenang nobel. Meskipun Anda bisa menyimpan semua file itu di drive dan dihubungkan dengan akun Anda agar lebih praktis, tapi Anda takut ada orang yang  meretas komputer disini, walaupun dengan semua kamaan yang ketat ini, kecil kemungkinan hal itu terjadi."
+            "Selesai makan malam Anda kembali ke kamar Anda, segera Anda menyalakan komputer. Anda sempat membawa flashdisk yang berisi file penelitian Anda agar bisa menjadi pemenang nobel." 
+            "Meskipun Anda bisa menyimpan semua file itu di drive dan dihubungkan dengan akun Anda agar lebih praktis, tapi Anda takut ada orang yang  meretas komputer disini, walaupun dengan semua kamaan yang ketat ini, kecil kemungkinan hal itu terjadi."
 
     prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bebarengan dengan mengerjakan proyek PLTN ini. Tpi aku akan tetap mengumpulkan lebih banyak data agar ketika proyek PLTN ini selesai aku bisa melanjutkan wet lab ku"
 
 
-    "Duar… terlihat kilatan merah yang disusul dengan suara yang amat keras dari posisi Anda berdiri. Tubuh Anda bergetar, Anda melihat ke sekeliling, terlihat Maura dan Dr. Wisnu tersenyum puas. Anda baru sadar, ternyata Anda berada di dalam mercusuar. Sekilas mercusuar ini terlihat biasa saja, ternyata di dalamnya terdapat ruangan dengan berbagai alat canggih. Suara, kilatan dan kilatan tadi berasal dari simulator yang Maura ciptakan. Dr. Wisnu menepuk bahu Anda"
+            "Duar… terlihat kilatan merah yang disusul dengan suara yang amat keras dari posisi Anda berdiri. Tubuh Anda bergetar, Anda melihat ke sekeliling, terlihat Maura dan Dr. Wisnu tersenyum puas." 
+            "Anda baru sadar, ternyata Anda berada di dalam mercusuar. Sekilas mercusuar ini terlihat biasa saja, ternyata di dalamnya terdapat ruangan dengan berbagai alat canggih." 
+            "Suara, kilatan dan kilatan tadi berasal dari simulator yang Maura ciptakan. Dr. Wisnu menepuk bahu Anda"
 
-    wis "Jika bukan karena penelitian tentang nuklir kita tak mungkin bisa melakukan ini"
-    mau "Simulator ini aku design semirip mungkin dengan kemungkinan kondisi yang kan terjadi nanti. Walaupun kita hanya menyerang satu titik di kota itu, namun efek radiasinya akan menyebar di seluruh negara, bahkan ke negara sebelah. Mustahil jika negara lain masih berani dengan Indonesia. Negara ini akan menjadi negara adidaya."
+            wis "Jika bukan karena penelitian tentang nuklir kita tak mungkin bisa melakukan ini"
+            mau "Simulator ini aku design semirip mungkin dengan kemungkinan kondisi yang kan terjadi nanti." 
+            mau "Walaupun kita hanya menyerang satu titik di kota itu, namun efek radiasinya akan menyebar di seluruh negara, bahkan ke negara sebelah. Mustahil jika negara lain masih berani dengan Indonesia. Negara ini akan menjadi negara adidaya."
 
     "Maura dan Dr. Wisnu tertawa membayangkan semua rencana mereka berjalan dengan mulus. sedangkan Anda hanya diam, mencerna semua keadaan yang sedang terjadi."
 
@@ -629,7 +637,8 @@ label scene6a_alam_mimpi:
 
     "Anda pun keluar dari ruangan itu, ada terlalu banyak anak tangga yang harus Anda turuni. Setelah 25 menit Anda menuruni anak tangga, terdapat pintu besi besar."
 
-    "Dari semua pintu yang Anda lihat sebelumnya di mercusuar ini, pintu ini memiliki ID Card Reader dan seorang anggota militer di depannya. Anggota militer ini segera menggesek kartu yang ia bawa dan memberikannya kepada Anda sebelum ia mendorong Anda masuk ke ruangan dibaliknya."
+            "Dari semua pintu yang Anda lihat sebelumnya di mercusuar ini, pintu ini memiliki ID Card Reader dan seorang anggota militer di depannya." 
+            "Anggota militer ini segera menggesek kartu yang ia bawa dan memberikannya kepada Anda sebelum ia mendorong Anda masuk ke ruangan dibaliknya."
 
     "Pintu seketika tertutup rapat dan Anda melihat Dehen di dalam ruangan itu."
     
@@ -692,12 +701,13 @@ label scene6a_alam_mimpi:
     "Dehen berbaring di tempat tidur anda dan menarik selimut."
     prot "Akan aku pertimbangkan apa yang kau ucapkan malam ini Dehen"
 
-    "Anda berbaring di sebelah Dehen. Sambil memunggungi Anda,"
-    deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberithu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di jeep karena aku sangat menghormatimu sebagai teman. Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
-    prot "Ya, aku berjanji"
-    # ini ujung dari scene 6 yang mimpi lanjut ke label pilihan
-    jump yang_anda_lakukan_sekarang
-        
+            "Anda berbaring di sebelah Dehen. Sambil memunggungi Anda,"
+            deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberithu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di jeep karena aku sangat menghormatimu sebagai teman." 
+            deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
+            prot "Ya, aku berjanji"
+            # ini ujung dari scene 6 yang mimpi lanjut ke label pilihan
+            jump yang_anda_lakukan_sekarang
+
 
 
 label scene6_maksud_maura:
@@ -710,11 +720,13 @@ label scene6_maksud_maura:
 
     wis "Baiklah, selalu jaga kesehatan, di pulau ini tidak ada rumah sakit jika ada apa apa."
     
-    "Dr. Wisnu tersenyum lalu tertawa, lalu berjalan membelakangi Anda secara perlahan. Percakapan tersebut meninggalkan rasa tidak enak didalam pikiran Anda. Sepertinya, kedua belah pihak; Dr. Wisnu, maupun Maura sedang menyembunyikan sesuatu yang besar dan penting."
+    "Dr. Wisnu tersenyum lalu tertawa, lalu berjalan membelakangi Anda secara perlahan. Percakapan tersebut meninggalkan rasa tidak enak didalam pikiran Anda." 
+    "Sepertinya, kedua belah pihak; Dr. Wisnu, maupun Maura sedang menyembunyikan sesuatu yang besar dan penting."
 
     "Dr Wisnu seketika berputar arah sebelum menjauh terlalu jauh, dan mencoba untuk mengatakan sesuatu."
 
-    wis "Oh, ngomong-ngomong. Besok kamu akan ditempatkan di wet lab, sedangkan Dehen, aku dan Maura akan bekerja di dry lab. Dehen sempat menitipkan pesan kepadaku dia dapat bekerja di wet lab maupun dry lab sehingga kamu bebas memilih bisa kerja dimana. Gimana menurutmu?"
+    wis "Oh, ngomong-ngomong. Besok kamu akan ditempatkan di wet lab, sedangkan Dehen, aku dan Maura akan bekerja di dry lab." 
+    wis "Dehen sempat menitipkan pesan kepadaku dia dapat bekerja di wet lab maupun dry lab sehingga kamu bebas memilih bisa kerja dimana. Gimana menurutmu?"
 
     menu Anda_memilih_bekerja_di:
         "Wet Lab":
@@ -726,18 +738,22 @@ label scene6_maksud_maura:
 
             prot "Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain game"
 
-            "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda. Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
+            "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda." 
+            "Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
 
-            "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa. Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
+            "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
+            "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
 
             prot "Seandainya pulau cantik ini tidak terisolasi… Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
 
             "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
             "Meskipun bisa menyimpan semua file itu di drive, Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
 
-            prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini. Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
+            prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
+            prot "Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
 
-            "Pagi harinya, ketika Anda memasuki lab pulau Gelasa, terlihat Dr. Wisnu, Dehen, dan Maura sudah duduk di kursinya. Anda yakin mereka bekerja sangat keras semalam. Hari ini Anda berfokus untuk meningkatkan efisiensi bahan bakar nuklir."
+            "Pagi harinya, ketika Anda memasuki lab pulau Gelasa, terlihat Dr. Wisnu, Dehen, dan Maura sudah duduk di kursinya." 
+            "Anda yakin mereka bekerja sangat keras semalam. Hari ini Anda berfokus untuk meningkatkan efisiensi bahan bakar nuklir."
 
             "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari. Saat malam tiba.."
 
@@ -764,11 +780,13 @@ label scene6_maksud_maura:
 
             deh "Hm, mengerti. Namun, aku tidak terima jika nantinya arah riset akan berujung ke pembuatan bom nuklir."
             prot "Aku sependapat denganmu."
-            prot "Baiklah. Mari lupakan hal tersebut sejenak, ngomong-ngomong aku juga harus memberitahumu sesuatu juga. Di dry lab, kami dari kemarin tidak menemukan solusi. Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
+            prot "Baiklah. Mari lupakan hal tersebut sejenak, ngomong-ngomong aku juga harus memberitahumu sesuatu juga. Di dry lab, kami dari kemarin tidak menemukan solusi." 
+            prot "Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
             prot "…"
             deh "Tapi aku teringat. Kau juga sedang mengembangkan penelitian mengenai nuklir kan? Penelitianmu sudah berjalan dari beberapa tahun yang lalu… Kau pasti sudah melakukan perhitungan bukan?"
             prot "…"
-            deh "Aku tahu kau memang ingin menjadi peraih Nobel, tapi apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini? Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
+            deh "Aku tahu kau memang ingin menjadi peraih Nobel, tapi apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini?" 
+            deh "Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
             prot "…"
             deh "Maaf… Aku terlalu berlebihan. Kau berhak mematenkan semua penelitianmu itu."
 
@@ -778,7 +796,8 @@ label scene6_maksud_maura:
 
             "Dehen mengangguk tersenyum dan keluar dari kamar. Saat di pintu kamar Anda, Dehen mengatakan…"
 
-            deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman. Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
+            deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman." 
+            deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
             prot "Ya, aku berjanji."
             jump yang_anda_lakukan_sekarang
         "Dry Lab":
@@ -981,7 +1000,8 @@ label scene7_dr_wisnu:
 
 
             "Percobaan PLTN selama satu bulan telah terlewati, tidak ditemukan hal ganjil di mesin yang digunakan ataupun komplain dari masyarakat. Dr. Wisnu mulai mempersiapkan laboratorium tambahan di mercusuar untuk proyek tambahannya."
-            "Laboratorium ini memang tidak sebagus laboratorium yang ada di lokasi proyek PLTN, namun Anda merasa peralatan yang digunakan lebih canggih. Selama 3 tahun Anda terlibat proyek Dr. Wisnu dalam perakitan bom nuklir, selama itu pula Anda terus menerus memikirkan Dehen."
+            "Laboratorium ini memang tidak sebagus laboratorium yang ada di lokasi proyek PLTN, namun Anda merasa peralatan yang digunakan lebih canggih." 
+            "Selama 3 tahun Anda terlibat proyek Dr. Wisnu dalam perakitan bom nuklir, selama itu pula Anda terus menerus memikirkan Dehen."
             "Setiap malam Anda membuka foto-foto bersama Dehen sebelum berangkat ke pulau ini, tanpa sadar Anda meneteskan air mata. Anda benar-benar merasa bersalah karena Dehen ditahan di suatu tempat yang bahkan Anda tidak tahu."
 
             mau "Ayo ke lab utama, aku sudah menyempurnakan simulator sebelum bom ini diluncurkan"
@@ -992,21 +1012,26 @@ label scene7_dr_wisnu:
 
             mau "Simulator ini mampu memprediksi kemungkinan keadaan yang terjadi di tempat itu ketika bom nuklir di luncurkan dengan cukup akurat"
 
-            "Dr. Wisnu mengirim gambar hasil simulator ke presiden RI dan jendral TNI RI. Beberapa menit kemudian ada balasan dari mereka. Mereka sudah mempersiapkan semua dengan baik, bahan jenderal TNI sudah menunjuk 1 tim yang akan melakukan eksekusi pelepasan bom nuklir ini"
+            "Dr. Wisnu mengirim gambar hasil simulator ke presiden RI dan jendral TNI RI. Beberapa menit kemudian ada balasan dari mereka." 
+            "Mereka sudah mempersiapkan semua dengan baik, bahan jenderal TNI sudah menunjuk 1 tim yang akan melakukan eksekusi pelepasan bom nuklir ini"
 
 
-            "hari yang mendebarkan itu tiba, hari dimana bom nuklir pertama Indonesia akan dilepaskan sekaligus Dehen akan keluar dari kurungan Dr. Wisnu. Anda, Dr. Wisnu, dan semua asistennya menyaksikan proses itu dari kamera yang disediakan oleh pemerintah pusat."
+            "hari yang mendebarkan itu tiba, hari dimana bom nuklir pertama Indonesia akan dilepaskan sekaligus Dehen akan keluar dari kurungan Dr. Wisnu." 
+            "Anda, Dr. Wisnu, dan semua asistennya menyaksikan proses itu dari kamera yang disediakan oleh pemerintah pusat."
 
             "Duarrrrr!"
-            "Bom nuklir itu meledak tepat sesuai perhitungan. Semua makhluk hidup yang ada di kota itu menjadi jasad seketika. Bahkan efek radiasinya menyebar hingga negara tetangganya. Negara luasnya tidak sampai setengah dari luas Indonesia itu seketika porak-poranda."
+            "Bom nuklir itu meledak tepat sesuai perhitungan. Semua makhluk hidup yang ada di kota itu menjadi jasad seketika. Bahkan efek radiasinya menyebar hingga negara tetangganya." 
+            "Negara luasnya tidak sampai setengah dari luas Indonesia itu seketika porak-poranda."
             "Semua stasiun TV mengabarkan berita ini. Indonesia diancam akan dikeluarkan dari PBB atas tindakannya. Namun siapa yang berani menggertak negara Indonesia sekarang?"
             "Tidak ada satu negara pun yang berani menentang bahkan melawan Indonesia, hanya sumpah serapah yang bisa orang-orang lakukan melihat keputusan Indonesia dari TV masing-masing."
 
             "Di tempat yang lain, akhirnya Anda bertemu dengan Dehen setelah beberapa tahun berpisah. Dehen menunjukkan wajah kecewanya ketik bertemu Anda."
 
-            "Apa kau puas? Ribuan orang mati, entah berapa juta orang yang terkena radiasi nuklir ini, bagaimana dengan bayi yang ada di kandungan seorang ibu? Bahkan sebelum lahir ia pasti sudah divonis terkena mutasi. KAU ITU MONSTER, KAU DAN KALIAN SEMUA ADALAH PENJAHAT SEBENARNYA"
+            "Apa kau puas? Ribuan orang mati, entah berapa juta orang yang terkena radiasi nuklir ini, bagaimana dengan bayi yang ada di kandungan seorang ibu?" 
+            "Bahkan sebelum lahir ia pasti sudah divonis terkena mutasi. KAU ITU MONSTER, KAU DAN KALIAN SEMUA ADALAH PENJAHAT SEBENARNYA"
 
-            "Tubuh Anda bergetar hebat, anda teringat mimpi yang terus berulang sebanyak 9x beberapa tahun itu. Kaki Anda yang bergetar sudah tak dapat menahan massa tubuh Anda sendiri. Anda pun jatuh ke tanah dan mulaimenyesali semua hal yang dirii Anda sendiri lakukan. berbeda dengan Maura, ia justru menampar pipi kiri Dehen dengan sangat keras."
+            "Tubuh Anda bergetar hebat, anda teringat mimpi yang terus berulang sebanyak 9x beberapa tahun itu. Kaki Anda yang bergetar sudah tak dapat menahan massa tubuh Anda sendiri." 
+            "Anda pun jatuh ke tanah dan mulaimenyesali semua hal yang dirii Anda sendiri lakukan. berbeda dengan Maura, ia justru menampar pipi kiri Dehen dengan sangat keras."
 
             mau "Kau, kau tidak tahu apapun tentang ini, kau tak pantas mengatakan itu semua ke sahabatmu sendiri. setiap malam ia selalu memandang fotomu sebelum tidur, tak jarang ia terbangun dngan mata bengkak karena merindukanmu"
             deh "sahabat? Aku tak mau bersahabat dengan pembunuh masal"
@@ -1015,83 +1040,7 @@ label scene7_dr_wisnu:
 
         #ini ending yang netral
         "Bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain":
-            "Anda menghela nafas panjang dan berusaha menenangkan diri. Anda pun pergi mencari Dehen di ruangan wet lab."
-
-            deh "Hai sobat, apakah kau menyesal masuk ke dry lab hari ini?" 
-
-            "Anda hanya diam mendengar ejekan Dehen"
-
-            mau "Tak ku sangka kau sangat jenius, kedepannya kita harus banyak berdiskusi."
-
-            "Dehen berbisik kepada Anda"
-            deh "Kau?"
-            prot "Iya aku melakukannya"
-
-            "Dehen tersenyum"
-
-            "Di tengah percakapan itu, Dr. Wisnu meminta semua orang untuk masuk ke ruang dry lab."
-
-            "Setibanya di ruang dry lab, Dr. Wisnu menjelaskan hal yang kalian alami, termasuk membahas ide pembuatan bom nuklir."
-
-            deh "Apa kau gila Dr. Wisnu? Rasa sakitmu dipermalukan saat Manhattan Project Meetings beberapa tahun yang lalu harus kau lupakan."
-            wis "Tidak Dehen, bukan itu maksudku. Saat itu aku memang sakit hati saat Mr. karan mempermalukanku di depan semua orang, bahkan ia menggunakan ideku yang sempat ia tolak mentah-mentah sebagai penyelesaian proyeknya saat itu. Aku berusaha keras untuk memaafkannya, namun tidak untuk melupakannya"
-
-            wis "Aku sadar egoku begitu tinggi saat itu. Tenang saja Dehen, proek nuklir ini aku buat bukan berdasarkan rasa saki hati, namun untuk pertaanan nasional"
-            prot "Bisa kau jelaskan lebih rinci lagi Dr?"
-            wis "Negara kita itu sangat stategis, memang dari seg perdagangan dan hubungan internasional aka sangat baik. Namun pernahkah kalian berpikir jika terjadi perang di negara tetangga? memang kita negara non block, tapi apakah menjamin tidak akan ikut terkena imbas dari perang yang tidak kita ikuti?"
-
-            "kalian hanya terdiam menyimak penjelasan dr. wisnu"
-
-            wis "kita akan membuat bom nuklir agar negara tetangga segan dengan kita. bom ini kita rakit dengan sempurna, namun tidak akan pernah kita ledakkan kecuali Indonesia diserang. Bagaimana? kalian semua setuju?"
-
-            "Semua orang di dry lab menyatakan persetujuan mereka."
-
-            wis "Baik terima kasih atas kepercayaan kalian padaku. Aku sudah meminta izin pada bapak presiden RI dan beliau memerintahkan proyek ini akan diawasi langsung oleh Jenderal TNI karena berhubungan dengan stabilitas nasional. jangan sampai informasi ini bocor kepada siapapun."
-
-            wis "Silahkan tanda tangani MOU ini, jika kalian terbukti membocorkan proyek ini, kalian akan dianggap pengkhianat negara dan akan dipenggal."
-
-            "Setelah 6 bulan proyek PLTN selesai, Dr. Wisnu mulai mempersiapkan laboratorium tambahan di bawah tanah untuk proyek tambahannya."
-
-
-            "Laboratorium ini memang tidak sebagus laboratorium yang ada di lokasi proyek PLTN, tetapi Anda merasa peralatan yang digunakan lebih canggih."
-
-            "Tidak terasa 4 tahun Anda dan tim bekerja sangat keras untuk merakit bom nuklir. Maura menemui Anda dan Dehen yang sedang mengamati telur penyu yang menetas"
-            mau "Sim.."
-            prot "Ssssttt, jangan berisik, kehidupan baru sedang dimulai"
-
-            "Anda menutup mulut Maura dengan tangan. Ada sekitar 60 butir telur yang hampir semuanya mesetas secara bersamaan, hanya berselang beberapa menit saja perbedaan umur mereka. Setelah banyak telur penyu menetas, Anda dan Dehen berlomba meletakkan anak penyu ke laut"
-
-            prot "Hehe maaf, tadi kamu bilang sesuatu?"
-
-            mau "Hadeh!"
-
-            mau "Simulator yang aku kembangkan untuk memprediksi bom nuklir telah selesai. Simulator ini mampu memprediksi kemungkinan keadaan yang terjadi di tempat itu ketika bom nuklir diluncurkan dengan cukup akurat. Dr. Wisnu memanggil kalian untuk melihat hasilnya bersama."
-
-            deh "Pergilah dulu, kami akan menyusul."
-
-            prot "Terima kasih infonya, Maura"
-
-            "Sesampainya di lab, asisten Dr. Wisnu yang lain menghidupkan simulator."
-
-            "Duarrr" #screen shake
-
-            "Suara bom yang begitu keras serta kilatan besar dari radiasi bom yang ditampilkan di simulator itu tampak sangat nyata. Semua orang di ruangan merinding tidak bisa membayangkan jika bom ini suatu saat diluncurkan, entah berapa ribu korban jiwa meninggal, belum lagi yang terkena radiasinya."
-
-            "Dr. Wisnu mengirim gambar hasil simulator tersebut ke presiden RI dan jendral TNI RI."
-
-            "Beberapa menit kemudian ada balasan dari mereka. Pasukan khusus yang telah dikirimkan untuk menjaga proses perakitan bom kini bertugas menjadi penjaga bom nuklir."
-
-            "Dr. Wisnu menerangkan kepada pasukan itu apa saja yang perlu diperhatikan, dijaga dan dihindari demi keamanan bom ini."
-
-            "Berita Indonesia memiliki PLTN dan bom nuklir mulai disiarkan. Sesuai dengan prediksi, respon negara adidaya tidak begitu baik, tetapi hal ini menunjukkan bahwa Indonesia sedang di puncak kejayaan. Tidak ada negara yang berani bermasalah dengan negara Indonesia."
-
-            "Karena misi Anda, Dr. Wisnu, dan asisten lain sudah selesai, Anda dan yang lain dipulangkan. Perjalanan pulang dari Pulau Gelasa menuju Pulau Bangka Belitung membuat Anda merasa puas dengan hasil kerja keras bertahun-tahun Anda, tetapi masih ada rasa cemas yang tersimpan di pikiran Anda bahwa apakah ini jalan yang benar."
-
-            "Namun, rasa cemas tersebut sempat hilang karena sesampainya di Bangka Belitung, Anda kaget melihat kemajuan teknologi Indonesia saat ini. Tenaga listrik yang berlimpah mendorong pertumbuhan teknologi yang sangat cepat."
-
-            #Tulisan di layar:
-            "Indonesia berhasil membuktikan kepada dunia akan kekuatannya, tetapi pada setiap kekuatan ada bayaran tanggung jawab yang besar"
-            return
+            jump scene8_demi_pertahanan
 
 
 
@@ -1102,34 +1051,43 @@ label scene7_maura_drwisnu:
 
     prot "Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain game"
 
-    "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda. Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
+    "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda." 
+    "Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
 
-    "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa. Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
+    "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
+    "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
 
     prot "Seandainya pulau cantik ini tidak terisolasi… Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
 
-    "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari. mereka sedang lari melewati Anda sambil menyanyikan yel-yel."
+    "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari." 
+    "Anda yang ramah tersenyum kepada mereka ketika beberapa dari. mereka sedang lari melewati Anda sambil menyanyikan yel-yel."
     "Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyuman."
 
     prot "Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
 
-    "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur. Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
-    "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
+    "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur." 
+    "Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
+    "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak." 
+    "Begitu matahari tenggelam Anda kembali ke mess."
 
-    "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan. terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
+    "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan." 
+    "terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
 
-    "Tidak ada percakapan yang berarti malam itu, hanya cAndaan ringan yang menemani kalian semua ketika makan malam berlangsung. Walaupun Anda masih ragu dengan Maura, Anda berusaha menepisnya karena akan bekerja bersamanya beberapa bulan kedepan. Tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
+    "Tidak ada percakapan yang berarti malam itu, hanya cAndaan ringan yang menemani kalian semua ketika makan malam berlangsung." 
+    "Walaupun Anda masih ragu dengan Maura, Anda berusaha menepisnya karena akan bekerja bersamanya beberapa bulan kedepan. Tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
 
     "Selesai makan malam, Anda kembali ke kamar dan segera menyalakan komputer. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda. Meskipun bisa menyimpan semua file itu di drive,"
     "Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
 
-    prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini. Atau… mungkin dengan bergabung di dry lab dengan Maura dan Dr. Wisnu aku dapat menyelesaikan penelitianku bersamaan dengan PLTN ini!"
+    prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
+    prot "Atau… mungkin dengan bergabung di dry lab dengan Maura dan Dr. Wisnu aku dapat menyelesaikan penelitianku bersamaan dengan PLTN ini!"
 
     "Keesokan paginya Anda pun memasuki ruang wet lab. Dr. Wisnu duduk di depan komputer sambil mencari data, sedangkan Maura mempersiapkan semua perhitungannya."
 
     mau "Pagi semua, mari kita tinjau perhitungan yang akan kita lakukan hari ini"
 
-    "Anda, Maura dan Dr. Wisnu bekerja keras hingga sore hari, hingga pada suatu saat pada tahap perhitungan ditemukan galat yang sangat besar dari hasil perhitungan. Tentu saja, Anda mengetahui penyebab galat yang ada pada perhitungan tersebut."
+    "Anda, Maura dan Dr. Wisnu bekerja keras hingga sore hari, hingga pada suatu saat pada tahap perhitungan ditemukan galat yang sangat besar dari hasil perhitungan." 
+    "Tentu saja, Anda mengetahui penyebab galat yang ada pada perhitungan tersebut."
     "Namun, Anda selalu memikirkan untuk mematenkan perhitungan tersebut. Sehingga Anda enggan untuk membantu menyelesaikan perhitungan tersebut."
 
     mau "Ini gimana sih? Galatnya Besar sekali!"
@@ -1142,7 +1100,8 @@ label scene7_maura_drwisnu:
 
     wis "Baiklah Maura, tolong jangan lupa untuk beristirahat."
 
-    "Dr. Wisnu keluar dari ruangan, Anda berniat untuk mengikuti Dr.Wisnu keluar ruangan menuju makan siang; Namun, Anda kasihan melihat kondisi Maura yang stres. Pada akhirnya Anda berniat untuk membantu Maura menyelesaikan perhitungannya. Demi kebaikan Indonesia."
+    "Dr. Wisnu keluar dari ruangan, Anda berniat untuk mengikuti Dr.Wisnu keluar ruangan menuju makan siang; Namun, Anda kasihan melihat kondisi Maura yang stres." 
+    "Pada akhirnya Anda berniat untuk membantu Maura menyelesaikan perhitungannya. Demi kebaikan Indonesia."
 
     mau "Kau masih disini? Jika kamu tidak makan siang juga tolong bantu aku menyelesaikan perhitungan dengan otakmu itu"
 
@@ -1162,7 +1121,8 @@ label scene7_maura_drwisnu:
 
     mau "Masih ada hal yang kurang… Aku tidak tahu apalagi yang salah."
 
-    "Maura dengan lemas memberikan data hasil perhitungannya. Anda membaca dan mempelajari data dari Maura. Semua permasalahannya membutuhkan perhitungan yang Anda kembangkan untuk penelitian Nobel Anda. Anda mempertimbangkan hal ini untuk beberapa saat dan memutuskan untuk memberitahukannya."
+    "Maura dengan lemas memberikan data hasil perhitungannya. Anda membaca dan mempelajari data dari Maura." 
+    "Semua permasalahannya membutuhkan perhitungan yang Anda kembangkan untuk penelitian Nobel Anda. Anda mempertimbangkan hal ini untuk beberapa saat dan memutuskan untuk memberitahukannya."
 
     prot "Kau belum memasukkan persamaan energi tahap akhir. Masukkan E = m.c2, dengan m merupakan selisih perbedaan selisih massa sebelum direaksikan dan setelah direaksikan."
 
@@ -1170,7 +1130,8 @@ label scene7_maura_drwisnu:
 
     mau "Kau sangat jenius! Kau benar-benar jenius!"
 
-    "Anda merasa senang karena pujian itu, tetapi sekarang perhitungan itu tidak dapat Anda patenkan sendiri untuk penelitian Nobel Anda. Namun, seketika Anda teringat oleh perkataan Maura saat pertama melihat lokasi PLTN."
+    "Anda merasa senang karena pujian itu, tetapi sekarang perhitungan itu tidak dapat Anda patenkan sendiri untuk penelitian Nobel Anda." 
+    "Namun, seketika Anda teringat oleh perkataan Maura saat pertama melihat lokasi PLTN."
 
     prot "Ah, iya. Ngomong-ngomong aku ingin bertanya tentang perkataanmu saat melihat reaktor."
 
@@ -1195,7 +1156,8 @@ label scene7_maura_drwisnu:
 
     prot "Maura TUNGGU-!!!"
 
-    "Maura tidak mendengar teriakan Anda. Anda berpikir kembali perkataan Maura, sepertinya Maura telah memecahkan perhitungan untuk… menciptakan sebuah bom nuklir. Ide gila yang akan keluar dari ruangan tersebut terlalu berbahaya jika terealisasi."
+    "Maura tidak mendengar teriakan Anda. Anda berpikir kembali perkataan Maura, sepertinya Maura telah memecahkan perhitungan untuk… menciptakan sebuah bom nuklir." 
+    "Ide gila yang akan keluar dari ruangan tersebut terlalu berbahaya jika terealisasi."
     "Namun, kenapa Maura harus memberitahu Dr. Wisnu? Dibalik semua pikiran ini, Anda masih merasa bahwa rasionalisasi untuk mengangkat status Indonesia menjadi negara adidaya merupakan alasan yang aneh."
 
     #ini masuk scene 8 yang percabangan
@@ -1203,8 +1165,96 @@ label scene7_maura_drwisnu:
         "Memutuskan untuk memberitahu Dehen tentang ini, berharap Ia setuju dengan Anda.":
             "Anda bergegas ke wet lab dan Anda melihat Dehen baru saja kembali setelah makan siang."
             jump scene8_mengambil_alih
-        "Mulai menerima  pemikiran bahwa bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain."
-            #jump scene8
+        "Mulai menerima  pemikiran bahwa bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain.":
+            jump scene8_demi_pertahanan
+
+label scene8_demi_pertahanan:
+    "Anda menghela nafas panjang dan berusaha menenangkan diri. Anda pun pergi mencari Dehen di ruangan wet lab."
+
+    deh "Hai sobat, apakah kau menyesal masuk ke dry lab hari ini?" 
+
+    "Anda hanya diam mendengar ejekan Dehen"
+
+    mau "Tak ku sangka kau sangat jenius, kedepannya kita harus banyak berdiskusi."
+
+    "Dehen berbisik kepada Anda"
+    deh "Kau?"
+    prot "Iya aku melakukannya"
+
+    "Dehen tersenyum"
+
+    "Di tengah percakapan itu, Dr. Wisnu meminta semua orang untuk masuk ke ruang dry lab."
+
+    "Setibanya di ruang dry lab, Dr. Wisnu menjelaskan hal yang kalian alami, termasuk membahas ide pembuatan bom nuklir."
+
+    deh "Apa kau gila Dr. Wisnu? Rasa sakitmu dipermalukan saat Manhattan Project Meetings beberapa tahun yang lalu harus kau lupakan."
+    wis "Tidak Dehen, bukan itu maksudku. Saat itu aku memang sakit hati saat Mr. karan mempermalukanku di depan semua orang, bahkan ia menggunakan ideku yang sempat ia tolak mentah-mentah sebagai penyelesaian proyeknya saat itu." 
+    wis "Aku berusaha keras untuk memaafkannya, namun tidak untuk melupakannya"
+
+    wis "Aku sadar egoku begitu tinggi saat itu. Tenang saja Dehen, proek nuklir ini aku buat bukan berdasarkan rasa saki hati, namun untuk pertaanan nasional"
+    prot "Bisa kau jelaskan lebih rinci lagi Dr?"
+    wis "Negara kita itu sangat stategis, memang dari segi perdagangan dan hubungan internasional aka sangat baik. Namun pernahkah kalian berpikir jika terjadi perang di negara tetangga?" 
+    wis "memang kita negara non block, tapi apakah menjamin tidak akan ikut terkena imbas dari perang yang tidak kita ikuti?"
+
+    "kalian hanya terdiam menyimak penjelasan dr. wisnu"
+
+    wis "kita akan membuat bom nuklir agar negara tetangga segan dengan kita. bom ini kita rakit dengan sempurna, namun tidak akan pernah kita ledakkan kecuali Indonesia diserang. Bagaimana? kalian semua setuju?"
+
+    "Semua orang di dry lab menyatakan persetujuan mereka."
+
+    wis "Baik terima kasih atas kepercayaan kalian padaku." 
+    wis "Aku sudah meminta izin pada bapak presiden RI dan beliau memerintahkan proyek ini akan diawasi langsung oleh Jenderal TNI karena berhubungan dengan stabilitas nasional. jangan sampai informasi ini bocor kepada siapapun."
+
+    wis "Silahkan tanda tangani MOU ini, jika kalian terbukti membocorkan proyek ini, kalian akan dianggap pengkhianat negara dan akan dipenggal."
+
+    "Setelah 6 bulan proyek PLTN selesai, Dr. Wisnu mulai mempersiapkan laboratorium tambahan di bawah tanah untuk proyek tambahannya."
+
+
+    "Laboratorium ini memang tidak sebagus laboratorium yang ada di lokasi proyek PLTN, tetapi Anda merasa peralatan yang digunakan lebih canggih."
+
+    "Tidak terasa 4 tahun Anda dan tim bekerja sangat keras untuk merakit bom nuklir. Maura menemui Anda dan Dehen yang sedang mengamati telur penyu yang menetas"
+    mau "Sim.."
+    prot "Ssssttt, jangan berisik, kehidupan baru sedang dimulai"
+
+    "Anda menutup mulut Maura dengan tangan. Ada sekitar 60 butir telur yang hampir semuanya mesetas secara bersamaan, hanya berselang beberapa menit saja perbedaan umur mereka." 
+    "Setelah banyak telur penyu menetas, Anda dan Dehen berlomba meletakkan anak penyu ke laut"
+
+    prot "Hehe maaf, tadi kamu bilang sesuatu?"
+
+    mau "Hadeh!"
+
+    mau "Simulator yang aku kembangkan untuk memprediksi bom nuklir telah selesai." 
+    mau "Simulator ini mampu memprediksi kemungkinan keadaan yang terjadi di tempat itu ketika bom nuklir diluncurkan dengan cukup akurat. Dr. Wisnu memanggil kalian untuk melihat hasilnya bersama."
+
+    deh "Pergilah dulu, kami akan menyusul."
+
+    prot "Terima kasih infonya, Maura"
+
+    "Sesampainya di lab, asisten Dr. Wisnu yang lain menghidupkan simulator."
+
+    "Duarrr" #screen shake
+
+    "Suara bom yang begitu keras serta kilatan besar dari radiasi bom yang ditampilkan di simulator itu tampak sangat nyata." 
+    "Semua orang di ruangan merinding tidak bisa membayangkan jika bom ini suatu saat diluncurkan, entah berapa ribu korban jiwa meninggal, belum lagi yang terkena radiasinya."
+
+    "Dr. Wisnu mengirim gambar hasil simulator tersebut ke presiden RI dan jendral TNI RI."
+
+    "Beberapa menit kemudian ada balasan dari mereka. Pasukan khusus yang telah dikirimkan untuk menjaga proses perakitan bom kini bertugas menjadi penjaga bom nuklir."
+
+    "Dr. Wisnu menerangkan kepada pasukan itu apa saja yang perlu diperhatikan, dijaga dan dihindari demi keamanan bom ini."
+
+    "Berita Indonesia memiliki PLTN dan bom nuklir mulai disiarkan. Sesuai dengan prediksi, respon negara adidaya tidak begitu baik, tetapi hal ini menunjukkan bahwa Indonesia sedang di puncak kejayaan." 
+    "Tidak ada negara yang berani bermasalah dengan negara Indonesia."
+
+    "Karena misi Anda, Dr. Wisnu, dan asisten lain sudah selesai, Anda dan yang lain dipulangkan." 
+    "Perjalanan pulang dari Pulau Gelasa menuju Pulau Bangka Belitung membuat Anda merasa puas dengan hasil kerja keras bertahun-tahun Anda, tetapi masih ada rasa cemas yang tersimpan di pikiran Anda bahwa apakah ini jalan yang benar."
+
+    "Namun, rasa cemas tersebut sempat hilang karena sesampainya di Bangka Belitung, Anda kaget melihat kemajuan teknologi Indonesia saat ini. Tenaga listrik yang berlimpah mendorong pertumbuhan teknologi yang sangat cepat."
+
+    #Tulisan di layar:
+    "Indonesia berhasil membuktikan kepada dunia akan kekuatannya, tetapi pada setiap kekuatan ada bayaran tanggung jawab yang besar"
+    return
+
 
 label scene8_mengambil_alih:
 
@@ -1226,7 +1276,8 @@ label scene8_mengambil_alih:
 
     deh "Baiklah, kita akan kesana bersama. Untuk sekarang kita harus segera bicarakan dengan asisten-asisten lainnya."
 
-    "Anda dan Dehen secara diam-diam mengajak setiap asisten untuk berkumpul di area pantai yang jauh dari lab. Setiap dari mereka terlihat skeptis dan tidak ingin ikut. Tapi, melihat kecemasan dan ketakutan di wajah kalian mereka tahu bahwa informasi yang kalian ingin beritahu, penting."
+    "Anda dan Dehen secara diam-diam mengajak setiap asisten untuk berkumpul di area pantai yang jauh dari lab. Setiap dari mereka terlihat skeptis dan tidak ingin ikut." 
+    "Tapi, melihat kecemasan dan ketakutan di wajah kalian mereka tahu bahwa informasi yang kalian ingin beritahu, penting."
 
     "Tak lama, sore tiba dan kalian berhasil mengumpulkan semua asisten. Dehen seketika mengeluarkan suara."
 
