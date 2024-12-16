@@ -1,40 +1,65 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 106, in script
-    show dehen senang at darken(0)
-  File "game/script.rpy", line 106, in <module>
-    show dehen senang at darken(0)
-Exception: Not a displayable: 0
+While processing text tag {size} in '{size=*2}Pulau Gelasa{size}'.:
+  File "game/script.rpy", line 286, in script
+    hide text with dissolve
+Exception: empty value supplied for tag 'size'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 106, in script
-    show dehen senang at darken(0)
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 106, in <module>
-    show dehen senang at darken(0)
-  File "C:\renpy-8.3.3-sdk\renpy\atl.py", line 679, in __call__
-    rv = renpy.display.motion.ATLTransform(
-  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 1221, in __init__
-    Transform.__init__(self, child=child, **properties)
-  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 715, in __init__
-    child = renpy.easy.displayable_or_none(child)
-  File "C:\renpy-8.3.3-sdk\renpy\easy.py", line 99, in displayable_or_none
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: 0
+  File "game/script.rpy", line 286, in script
+    hide text with dissolve
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1361, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2879, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 1381, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\display\transition.py", line 383, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 1056, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\renpy-8.3.3-sdk\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\renpy-8.3.3-sdk\renpy\text\text.py", line 2604, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\renpy-8.3.3-sdk\renpy\text\text.py", line 733, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\renpy-8.3.3-sdk\renpy\text\text.py", line 1404, in segment
+    raise Exception("empty value supplied for tag %r" % tag)
+Exception: empty value supplied for tag 'size'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Sun Dec 15 21:06:40 2024
+Mon Dec 16 05:02:26 2024

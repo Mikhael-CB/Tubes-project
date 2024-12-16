@@ -4,22 +4,26 @@
 # name of the character.
 
 
-define prot = Character("Aku")
-define deh = Character("Dehen") 
-define wis = Character("Dr. Wisnu")
-define mau = Character("Maura")
+define prot = Character("Aku", color = "#d9e7f1")
+define deh = Character("Dehen", color = "#2a506b") 
+define wis = Character("Dr. Wisnu", color = "#666666")
+define mau = Character("Maura", color = "#d45680")
 default remember = 0
+
 transform left:
     xalign 0.15
     yalign 0.54
+    zoom 2
+
 transform right:
     xalign 0.85
     yalign 0.54
+    zoom 2
 
 transform centerC:
     xalign 0.5
     yalign 0.54
-    zoom 2.
+    zoom 2
 
 transform x_flip:
     xzoom -1.
@@ -28,11 +32,11 @@ transform no_flip:
     xzoom 1
     yzoom 1.
 
-transform zoom2x:
-    zoom 2.
+transform zoom05x:
+    zoom 0.5
 
-transform bounce(num):
-    pause .15
+transform bounce(num, interval):
+    pause .05
     yoffset 0
     easein .175 yoffset -10
     easeout .175 yoffset 0
@@ -42,31 +46,26 @@ transform bounce(num):
     repeat num
 
 transform darken:
-    linear 0.5 matrixcolor TintMatrix(u"696969") * SaturationMatrix(1.0)
+    linear 0.5 matrixcolor TintMatrix("#696969") * SaturationMatrix(1.0)
 transform lighten:
-    linear 0.5 matrixcolor TintMatrix (u"ffffff") * SaturationMatrix(1.0)
+    linear 0.5 matrixcolor TintMatrix ("#ffffff") * SaturationMatrix(1.0)
 transform darken_cus(time):
-    linear (time) matrixcolor TintMatrix(u"696969") * SaturationMatrix(1.0)
+    linear (time) matrixcolor TintMatrix("#696969") * SaturationMatrix(1.0)
 transform lighten_cus(time):
-    linear (time) matrixcolor TintMatrix (u"ffffff") * SaturationMatrix(1.0)
-
+    linear (time) matrixcolor TintMatrix ("#ffffff") * SaturationMatrix(1.0)
+transform opaque(X):
+    linear (time) matrixcolor TintMatrix("#000000") * OpacityMatrix(X)
 $ jawaban = ""
+
+
+
+
+define vpunch_cus = Move((0, 10), (0, -10), .10, bounce=True, repeat=True, delay=.275)
+define hpunch_cus = Move((10, 0), (-10, 0), .10, bounce=True, repeat=True, delay=.275)
+
 # The game starts here.
 
 label start:
-
-    # Show a background. This use a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-    #scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    #showcase
-
-    
     
     scene filler
     play music "SCENE 1_ SAMARINDA/Chill and Happy.mp3" loop if_changed
@@ -85,7 +84,7 @@ label start:
     
     show bg kamar
     with dissolve
-    play music "SCENE 1_ SAMARINDA/Cozy Home Music.mp3" fadein 1.0 loop if_changed volume 0.6
+    play music "SCENE 1_ SAMARINDA/Cozy Home Music.mp3" fadein 1.0 loop if_changed volume 0.4
     "Sesampainya di rumah, anda segera mandi, memakai baju, lalu tidur karena kelelahan."
     "Anda dikejutkan dengan telepon yang masuk, ternyata dari rekan sejawat Anda, Dehen"
     
@@ -100,7 +99,7 @@ label start:
     show bg kamar
     #show dehen #pending asset
     deh "Aku tahu kau pasti tidak sempat membeli makan karena lembur 5 hari, jadi aku membelikannya untukmu."
-    show dehen senang at bounce(1)
+    show dehen senang at bounce(1, 0.175)
     with Dissolve (0.1)
 
     deh "Mari makan bersama!"
@@ -198,142 +197,180 @@ label start:
 
 
 label scene2:
-    show text "esok pagi" at truecenter
-    pause 2
-    play sound "SCENE 2_ Menuju Pulau Gelasa/Cell Phone Ringing - Sound Effect.mp3"
-    pause 0.2
+    centered "{size=*2}Besok pagi{/size}"
+    show text "{size=*2}Besok pagi{/size}" at truecenter
     hide text with dissolve
-    "{i}RINGGGG.... RINGGGG..... RINGGGG...{/i}"
-    stop sound fadeout 0.2
-    queue music "SCENE 2_ Menuju Pulau Gelasa/Chill.mp3" loop
+    pause 0.5
+    play sound "SCENE 2_ Menuju Pulau Gelasa/Cell Phone Ringing - Sound Effect.mp3" volume 0.9
+    pause 0.2
+
     
+    with hpunch_cus
+    "{i}RINGGGG.... RINGGGG..... RINGGGG...{/i}" 
+    
+
+    stop sound fadeout 0.2
+    show bg kamar with Dissolve(1.0)
+    queue music "SCENE 2_ Menuju Pulau Gelasa/Chill.mp3" loop fadein 0.5
+
     "Lagi-lagi Anda terbangun akibat dering di ponsel Anda."
-    "Ternyata pesan dari Dr.Wisnu yang mengabarkan akan mengadakan pertemuan penting bersama semua asistennya."
+    "Ternyata pesan dari Dr. Wisnu yang mengabarkan akan mengadakan pertemuan penting bersama semua asistennya."
     "Pertemuan akan dilakukan pukul 7.00 di laboratorium Dr. Wisnu"
     prot "huh, ada hal apa yang yang ingin dibicarakan?"
-    "Anda pun bergegas mandi dan menghangatkan makanan yang diberikan Dehen kemarin dengan microwave."
+    "Anda pun bergegas mandi dan menghangatkan makanan yang diberikan Dehen kemarin."
+    stop music fadeout 0.5
+    hide bg kamar with dissolve
     "Setelah sarapan Anda berangkat ke laboratorium Dr. Wisnu."
-    "Sesampainya di sana, yang Anda lakukan…"
-    menu berangkat_ke_lab:
-        "Sesampainya di sana, yang Anda lakukan…"
-        "menyapa dehen saja":
-            "Hallo dehen"
-        "menyapa semua asisten Dr. Wisnu":
-            "Selamat pagi pak..."
-        "Tidak menyapa siapapun, hanya menunggu Dr. Wisnu memasuki laboratorium":
-            "..."
-    "Beberapa menit kemudian Dr. Wisnu masuk dan memberi informasi mengenai suatu proyek rahasia milik negara."
+    
+    pause 0.5
+    centered "{size=*2}Laboratorium{/size}"
+    show text "{size=*2}Laboratorium{/size}" at truecenter
+    hide text with dissolve
+    pause 1
+    
+    play music "SCENE 2_ Menuju Pulau Gelasa/Lab Music.mp3" loop fadein 0.5 volume 0.7
+    
+    show bg laboratorium with Dissolve(1.0)
+    "Sesampainya di sana, Anda menyapa semua asisten Dr. Wisnu, termasuk Dehen."
+    show dr_wisnu neutral at centerC with dissolve
+    "Beberapa menit kemudian Dr. Wisnu masuk kedalam ruangan dan memberi informasi mengenai suatu proyek rahasia milik negara."
     "Proyek ini disponsori langsung oleh BUMN dengan modal minimal 100 triliun rupiah. Dr. Wisnu berpesan untuk menjaga kerahasiaan proyek ini."
-    "Setelah mendengar informasi lengkap tentang proyek ini dan apa saja peran kalian pada proyek ini, Dr. Wisnu meminta semua asistennya untuk menandatangani MOU."
+    
+    "Dr. Wisnu berpesan untuk menjaga kerahasiaan proyek ini. Setelah mendengar informasi lengkap tentang proyek dan peran Anda pada proyek ini, Dr. Wisnu meminta semua asistennya untuk menandatangani MOU. "
+    
     "Anda tidak menyangka PLTN yang semalam Anda pikirkan sekilas sebelum tidur kini benar-benar menjadi kenyataan di Indonesia."
     "Anda pun merasa.."
 
     menu merasa:
         "Anda pun merasa.."
         "sangat jenius karena pernah memikirkannya":
-            "gambar protagonis bangga"
+            "khayalan yang dipirkirkan menjadi kenyataan"
         "biasa saja karena proyek itu sudah terlaksana di negara lain":
-            "gambar protagonis biasa saja"
+            "sudah waktunya memang indonesia maju untuk setara dengan negara lain"
         "akan menjadi kaya karena itu merupakan proyek besar":
-            "gambar protagonis"
+            "pemikiran tentang uang yang dapat didapat dari proyek ini memenuhi pikiran Anda"
         "sangat bersyukur dan berusaha melakukan hal yang terbaik":
-            "gambar protagonis"
-    
+            "dengan ini kita dapat membantu semua orang di Indonesia"
+    "Tidak berlansung dua detik pun, Dr. Wisnu Berkata"
+
     wis "Segera siapkan diri kalian dan mulai packing! Minggu depan kita akan berangkat ke pulau Gelasa."
 
-    wis "Untuk keberangkatan kita akan bertemu di Bandara Aji Pangeran Tumenggung Pranoto jam 1 siang, sebab pesawat akan lepas landas pukul 14.00 WITA. Perkiraan sampai di jakarta untuk transit pukul 14.15 WIB dan sampai di Bandara Hanandjoeddin pukul 16.25 WIB."
+    hide dr_wisnu neutra with dissolve
 
-    wis "Sesampainya di Bangka Belitung akan ada Helikopter Bell-412 yang menjemput kita semua untuk menuju pulau Gelasa dengan kawalan 4 orang dari pihak militer. Estimasi perjalanan sekitar 15 menit jika cuaca baik."
+    "Seketika Dr. Wisnu membubarkan pertemuannya." 
+    
+    show dehen neutral at centerC
+    show dehen at darken
+    "Dehen perlahan mendekati Anda."
+    show dehen at lighten
+    with dissolve
 
-
-    "Setelah rapat berakhir, Anda mampir ke supermarket untuk membeli kebutuhan logistik selama di perjalanan dari Samarinda ke Pulau Gelasa. Sampai di rumah Anda mulai mengemas barang-barang yang akan Anda bawa."
-
-    "Tak terasa waktu satu minggu telah berlalu. Anda sudah sampai di APT airport pukul 12.45 WITA dan melakukan boarding pass. Anda duduk di pesawat bersebelahan dengan Dehen"
-
-    deh "Kita akan sampai di Gelasa sore hari, ku dengar dari Dr. Wisnu kita baru akan memulai proyek ini setelah 2 hari di sana."
-    prot "Aku juga sudah mendengarnya, besok pagi proses pemasangan internet 6G akan selesai dan katanya akan ada tambahan seorang lagi untuk melancarkan proyek ini"
-    deh "Ya, benar. Orang itu adalah anggota Panitia Penyelidikan Radioaktivitas dan Tenaga Atom yang diketuai langsung oleh Dr. Wisnu, namanya Maura."
+    deh "Kita akan sampai di Gelasa besok sore. Aku dengar dari Dr. Wisnu kita baru memulai proyek ini setelah dua hari di sana."
+    prot "Iya, yang tadi dipaparkan bukan? Pemasangan internet 6G juga selesai di saat itu. Oh, tadi katanya akan ada tambahan seorang lagi untuk melancarkan proyek ini?"
+    deh "Ya, benar. Orang itu merupakan anggota Penelitian Radioaktivitas dan Kekuatan Atom yang diketuai langsung oleh Dr. Wisnu, namanya Maura."
     prot "Darimana kau tahu tentang hal sejauh ini?"
 
+    show dehen senang with dissolve
     "Dehen tidak menjawab, ia hanya tersenyum tipis kepada Anda kemudian memalingkan mukanya."
+    hide dehen with dissolve
     "Anda tahu, pasti lagi-lagi Dehen menguping percakapan Dr. Wisnu, karena cuma dia yang bisa berbahasa Ambon."
     "Dr. Wisnu sering menggunakan bahasa Ambon jika memberi informasi penting di teleponnya, tujuannya untuk menghindari penyadapan informasi."
     "Sebab saat ini hanya sedikit orang yang bisa berbahasa daerah, itupun didominasi oleh bahasa jawa dan sunda saja."
     "Mayoritas orang lebih tertarik mempelajari bahasa Inggris, mandarin, jerman, dan prancis."
+    "haahh, waktunya bersiap untuk minggu depan"
+    hide bg laboratorium with Dissolve(1)
+    stop music fadeout 2
+    pause 1
+    scene filler
+    jump scene3
 
-    "Setelah berbincang dengan Dehen, Anda pun…"
-    menu setelah_berbincang:
-        "Setelah berbincang dengan Dehen, Anda pun…"
-        "menikmati pemandangan dari dalam pesawat":
-            "..."
-        "tidur untuk menghemat tenaga":
-            "..."
-    "Setelah transit di Jakarta dan menjalani penerbangan beberapa jam, akhirnya kalian tiba di Bandara Hanandjoeddin."
-    "Tak perlu menunggu lama, ada seseorang yang menggunakan pakaian dengan corak loreng menghampiri Dr. Wisnu dan memberi hormat."
-    "Dr. Wisnu pun memberi hormat balik kepadanya dan keduanya berbincang untuk beberapa waktu."
-    "Setelah percakapan diantara keduanya selesai, Dr. Wisnu memerintahkan semua asisten laboratoriumnya untuk segera naik helikopter, semua barang-barang yang ada di bagasi pesawat akan diurus oleh pihak militer yang bertugas."
+label scene3:
 
+    centered "{size=*2}Pulau Gelasa{/size}\n1 minggu kemudian"
+    show text "{size=*2}Pulau Gelasa{/size}\n1 minggu kemudian" at truecenter
+    hide text with dissolve
+    pause 2
+    play music "SCENE 3_ Pulau Gelasa/Beach Music Day.mp3" fadein 1.0 volume 0.3 loop
+    hide text with dissolve
+    pause 0.3
+    
+    show bg pantai siang
+    "Setelah perjalanan yang panjang, akhirnya Anda dan tim Dr.Wisnu sampai di Pulau Gelasa."
+
+    show dehen neutral at centerC
     prot "Dehen, apa yang akan kau lakukan setelah sampai di pulau itu?"
     deh "Membangun PLTN"
-    prot "Bukan itu, maksudku"
-    #show prot kesal
+    prot "Bukan itu maksudku..."
     
+    show dehen senang at bounce(2, 0.1)
     "Dehen tertawa melihat ekspresiku yang kesal"
-    deh "Malam ini aku akan membongkar barang-barangku dari dalam koper dan menatanya di mess, kemudian aku akan segera tidur. Kalau kau bagaimana?"
+    show dehen neutral
+    deh "Malam ini aku akan membongkar barang-barangku dari dalam koper dan menatanya di mess, kemudian aku akan segera tidur. Duluan ya!"
+    prot "Oke, jangan begadang main lagi ya Dehen"
+    show dehen senang at bounce(2, 0.05)
+    "Dehen tertawa"
+    hide dehen with dissolve
+    "Dengan itu, Dehen pergi ke kamarnya di mess"
+    "Ada beberapa hal yang dapat anda lakukan untuk hari ini"
     "Anda akan.."
     menu anda_akan:
         "Anda akan.."
-        "mengikuti apa yang Deren lakukan":
-            "aku akan mengikuti apa yang kamu lakukan"
-            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
-            "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
-            "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
-            "Dari kejauhan terlihat kapal KRI Diponegoro (365)."
-            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
-            "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
-            "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
-            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
-            "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
-            prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
-            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan. Selesai makan Anda kembali ke kamar untuk tidur."
-        
+        "mengikuti apa yang Dehen lakukan":
+            "Anda memilih untuk mengikuti apa yang Dehen lakukan"
+            $ remember = 1
         "menikmati pemandangan malam di tepi laut":
-            "aku akan menikmati pemandangan malam di tepi laut"
-            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
-            "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
-            "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
-            "Dari kejauhan terlihat kapal KRI Diponegoro (365)."
-            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
-            "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
-            "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
-            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
-            "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
-            prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
-            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan."
-            "Selesai makan Anda memutuskan berjalan-jalan di pantai menikmati keindahan alam di malam hari."
-            "Suara ombak dan desir psir membuat otak Anda benar-benar relax."
-            "Anda melihat batu besar dan memutuskan untuk duduk di sana. Terlihat beberapa bayangan orang di dalam mercusuar"
-            prot "Ketat sekal penjagaan di pulau ini, pasti mereka adalah orang yang mendapat tugas berjaga di shift malam"
-            "Setelah puas menikmati pemandangan alam, Anda kembali ke mess untuk tidur"        
-
+            "Anda memilih untuk menikmati pemandangan malam di tepi laut"
+            $ remember = 2
         "berjalan-jalan di sekitar mess":
-            "aku akan berjalan-jalan di sekitar mess"
-            "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
-            "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
-            "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
-            "Dari kejauhan terlihat kapal KRI Diponegoro (365)."
-            "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
-            "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
-            "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
-            "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
-            "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
-            prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
-            "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan."
-            "Selesai makan Anda memutuskan berjalan-jalan di sekitar mess."
-            "Terdapat 3 mess dengan masing masing mess berisi 10 kamar."
-            "Banyak kamar kosong di mess itu, kamar anda berada di lantai 2 dan saling berhadapan dengan kamar Dehen."
-            prot "Senyap sekali kamar Dehen, pasti dia sudah tidur"
-            "Setelah Anda puas berkeliling di sekitar mess, Anda memutuskan kembali ke kamar Anda untuk tidur"
+            "Anda memilih berjalan-jalan di sekitar mess"
+            $ remember = 3
+    "Ternyata Pulau Gelasa memiliki penampakan alam yang sangat indah, bahkan meski dilihat di malam hari."
+    "Berbeda dari Samarinda, Jakarta, ataupun Bangka Belitung, penduduk di pulau ini bisa dihitung pakai jari."
+    "Penginapan yang dibangun juga dikhususkan untuk para pekerja saja."
+            
+    "Anda takjub dengan semua pemandangan ini ketika menginjakkan kaki di pasir pantai yang berwarna putih seperti kapas."
+    "Para pihak militer membantu menurunkan semua barang kalian dari helikopter dan dibawakan menuju kamar mess masing-masing."
+    "Anda pun mengikuti salah seorang anggota militer yang membantu membawakan tas anda. Tak lupa anda mengucap terima kasih kepadanya."
+    stop music fadeout 0.5
+    hide bg pantai siang with dissolve
+    pause 0.5
+    play music "SCENE 3_ Pulau Gelasa/Cozy Home Music.mp3" fadein 0.5 volume 0.7 loop
+    show bg kamar with dissolve
+    "Anda membongkar semua barang-barang yang ada di koper dan menatanya di lemari dengan rapi."
+    "Saat masuk di kamar mandi untuk membersihkan badan, Anda terkejut ternyata terdapat water heater di dalamnya"
+    prot "Tak ku sangka ternyata fasilitas di mess ini sangat lengkap, water heater, tv, komputer, AC, dan lainnya. Aku pasti sangat betah tinggal di pulau ini meskipun terpencil"
+    "Setelah mandi dan memakai pakaian, Anda menyantap makanan yang sudah disiapkan di meja makan dan"
+
+    if remember == 1:
+        extend " bergegas tidur."
+        stop music fadeout 0.5
+    elif remember == 2:
+        extend " memutuskan untuk berjalan-jalan di pantai menikmati keindahan alam di malam hari."
+        stop music fadeout 0.5
+        pause 0.5
+        play music "SCENE 3_ Pulau Gelasa/Beach Music Night.mp3" fadein 0.5 volume 0.7 loop
+        show bg pantai malam with dissolve
+        "Suara ombak dan desir pasir membuat otak Anda benar-benar relax."
+        "Anda melihat batu besar dan memutuskan untuk duduk di sana. Terlihat beberapa bayangan orang di dalam mercusuar"
+        prot "Ketat sekali penjagaan di pulau ini, pasti mereka adalah orang yang mendapat tugas berjaga di shift malam"
+        stop music fadeout 0.5
+        "Setelah puas menikmati pemandangan alam, Anda kembali ke mess untuk tidur"        
+    elif remember == 3:
+        extend " memutuskan berjalan-jalan di sekitar mess."
+        show bg ruang tamu
+        "Terdapat 3 mess dengan masing masing mess berisi 10 kamar."
+        "Banyak kamar kosong di mess itu, kamar anda berada di lantai 2 dan saling berhadapan dengan kamar Dehen."
+        prot "Senyap sekali kamar Dehen, pasti dia sudah tidur"
+        show bg kamar
+        
+        "Setelah Anda puas berkeliling di sekitar mess, Anda memutuskan kembali ke kamar Anda untuk tidur"
+        stop music fadeout 0.5
+    
+    jump scene4
+
+
+
+label scene4:
     "Anda terbangun sebelum matahari terbit, kali ini bukan karena suara ponsel yang mengganggu tidur Anda. Namun, Anda memang terbangun karena tubuh Anda sudah merasa tidur yang cukup sehingga badan Anda terasa bugar."
     prot "Selagi masih pagi pasti menyenangkan jogging di tepi pantai sambil menyaksikan sunrise"
     "Sebelum joging Anda menyempatkan untuk mengecek ponsel, ternyata sinyal 6G telah selesai terpasang. Anda menyalakan strava sambil joging di tepi pantai"

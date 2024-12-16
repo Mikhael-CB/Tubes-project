@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 201: expected statement.
-    "esok pagi" at center
-                ^
+File "game/script.rpy", line 345: expected simple expression
+    stop music fadeout
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Mon Dec 16 01:34:51 2024
+Mon Dec 16 06:20:02 2024
