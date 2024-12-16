@@ -135,7 +135,7 @@ label start:
             hide dehen with dissolve
             "Anda pun mengantar Dehen hingga ke teras dan membukakan pagar untuknya."
             
-            show bg Kamar
+            show bg kamar
             "Setelah Dehen pulang Anda masuk kamar dan mulai menyalakan TV. Setelah menunggu beberapa jam, akhirnya serial favorit Anda mulai tayang. "
             "Anda sangat senang karena sudah 5 hari melewatkannya"
             
@@ -354,6 +354,7 @@ label scene3:
         "Anda melihat batu besar dan memutuskan untuk duduk di sana. Terlihat beberapa bayangan orang di dalam mercusuar"
         prot "Ketat sekali penjagaan di pulau ini, pasti mereka adalah orang yang mendapat tugas berjaga di shift malam"
         stop music fadeout 0.5
+        hide bg pantai malam with dissolve
         "Setelah puas menikmati pemandangan alam, Anda kembali ke mess untuk tidur"        
     elif remember == 3:
         extend " memutuskan berjalan-jalan di sekitar mess."
@@ -382,7 +383,7 @@ label scene4:
     prot "Selagi masih pagi pasti menyenangkan jogging di tepi pantai sambil menyaksikan sunrise"
     hide bg kamar with dissolve
     stop music fadeout 0.5
-    play music "SCENE 4_ Bertemu Maura/Beach Mood Santai" fadein 0.5 volume 0.5 loop
+    play music "SCENE 4_ Bertemu Maura/Beach Mood Santai.mp3" fadein 0.5 volume 0.5 loop
     show bg pantai siang with dissolve
     
     "Sebelum joging Anda menyempatkan untuk mengecek ponsel, ternyata sinyal 6G telah selesai terpasang. Anda menyalakan strava sambil joging di tepi pantai"
@@ -411,38 +412,58 @@ label scene4:
             "Maura pamit menuju ke messnya untuk membongkar barang bawaannya di koper dan membersihkan diri. Karena kalian satu mess, Anda memutuskan berjalan bersama Maura menuju mess." 
             hide bg pantai siang with dissolve
             stop music fadeout 0.5
-            play music "SCENE 4_ Bertemu Maura/Cozy Home Music" fadein 0.5 volume 0.5 loop
-            show bg ruang tamu with dissolve
             
+            play music "SCENE 4_ Bertemu Maura/Cozy Home Music.mp3" fadein 0.5 volume 0.5 loop
+            show bg ruang tamu with dissolve
             "Berbeda dengan Anda dan Dehen, kamar Maura berada di lantai 1, kalian pun berpisah di dekat tangga menuju lantai 2." 
             "Sesampainya di depan kamar, Anda sempat melirik sebentar ke kamar Dehen"
 
             prot "Kenapa hening sekali? Sepertinya Deren belum bangun"
-
+            hide bg ruang tamu with dissolve
             "Anda memutuskan untuk mandi dan sarapan. ketika sarapan Anda bertemu dengan Deren dan Maura yang sudah berada di meja makan. Ada asisten Dr. Wisnu lainnya juga di sana"
+            
+            show bg ruang tamu with dissolve
+            "Saat sarapan Anda bertemu dengan Dehen dan Maura yang sudah berada di meja makan. Ada asisten Dr. Wisnu lainnya juga di sana"
+            hide bg ruang tamu with dissolve
 
         "kembali ke mess tanpa mempedulikan kedatangan Maura":
             "Anda segera kembali ke mess untuk membersihkan badan setelah jogging."
             hide bg pantai siang with dissolve
             stop music fadeout 0.5
-            play music "SCENE 4_ Bertemu Maura/Cozy Home Music" fadein 0.5 volume 0.5 loop
+            play music "SCENE 4_ Bertemu Maura/Cozy Home Music,mp3" fadein 0.5 volume 0.5 loop
             show bg ruang tamu with dissolve
             
+
             "Ketika sampai di depan kamar, Anda sempat melirik sebentar ke kamar Dehen"
-            
             prot "Kenapa hening sekali? Sepertinya Deren belum bangun"
 
+            hide bg ruang tamu with dissolve
             "Anda memutuskan untuk mandi dan sarapan."
+            
+            show bg ruang tamu with dissolve
             "Setelah mandi, Anda pergi ke ruang tamu dan bertemu dengan Dehen dan Maura yang hendak makan. Juga ada banyak asisten Dr. Wisnu lainnya di sana." 
-            "Anda duduk di sebelah Dehen."            
+            
+            show dehen neutral at centerC
+            show dehen at darken
+            with dissolve
+            "Anda duduk di sebelah Dehen." 
+
+            show dehen at lighten      
             deh "Bagaimana tidurmu? Nyenyak?"
 
             "Anda hanya mengangguk sambil menyendok nasi di meja makan"
 
             deh "kenalin nih, namanya Maura"
+            show dehen at left, zoom05x
+            with dissolve
+            show maura neutral at right, x_flip
+            with dissolve
 
             mau "Hallo salam kenal ya"
             prot "Hai, salam kenal juga"
+            hide maura with dissolve
+            hide dehen with dissolve
+
     
     jump scene5
 
@@ -450,21 +471,36 @@ label scene5:
     
     "Tak lama kemudian Dr. Wisnu meminta semua asistennya, termasuk Maura, untuk berkumpul."
 
+    show dr_wisnu neutral at centerC
+    with dissolve
     wis "Jarak 10 km ke utara dari mess ini, kalian akan menemukan lokasi proyek PLTN yang akan kita kerjakan."
-    wis "Beberapa mesin baru datang besok. Jika kalian penasaran dan ingin menuju ke sana hari ini, temui saja anggota militer yang sedang berjaga di sekitar sini. kalian akan diantar menggunakan jeep." 
+    wis "Beberapa mesin baru datang besok." 
+    wis "Jika kalian penasaran dan ingin menuju ke sana hari ini, temui saja anggota militer yang sedang berjaga di sekitar sini. kalian akan diantar menggunakan jeep." 
 
     "Setelah penjelasan dari Dr. Wisnu dan pembagian jobdesk masing-masing orang dalam tim ini selesai, Dr. Wisnu membubarkan semua orang di Aula." 
+    hide dr_wisnu with dissolve
 
+    show dehen neutral at left
+    show maura neutral at right, x_flip
+    with dissolve
     prot "Dehen, apa kau aka ikut melihat pabrik PLTN itu sekarang?"
     deh "tentu saja. bagaimana denganmu Maura?"
     mau "Aku akan ikut bersama kalian semua"
+    hide dehen
+    hide maura 
+    hide bg
+    with dissolve
 
-
+    play music "SCENE 5_ Maura Kok Gitu_/Begin Your Journey.mp3" fadein 0.5 volume 0.5 loop
+    show bg pantai siang with dissolve
     "Luas Area PLTN ini sekitar 2,5 juta meter persegi (2,5 km persegi), terdapat 5 reaktor yang akan berfungsi sebagai sumber energi panas yang dihasilkan dari reaksi fisi nuklir."
     "Reaksi panas ini akan menghasilkan uap dan akan menggerakan turbin sehingga mampu menghasilkan listrik. Reaktor juga dilengkapi dengan sistem pendingin utama untuk menyalurkan panas dari inti reaktor ke penukar panas untuk mencegah overheating." 
 
+
     prot "Semoga dengan adanya proyek ini seluruh kebutuhan listrik di Indonesia terpenuhi. Semoga tidak ada lagi pemadaman listrik untuk penghematan dan biaya listrik setelah ini akan menjadi murah"
 
+    show maura neutral at centerC
+    with dissolve
     mau "Sudah jelas itu. Kebutuhan listrik di Indonesia sekitar 775 GWh / hari. Adanya PLTS, PLTB, PLTA, dan PLTP yang dibangun mampu memenuhi 23 persen jumlah kebutuhan total listrik harian."
     mau "1 Generator yang kita miliki mampu menghasilkan 3500 MWh / jam, sehingga 1 generator mampu menghasilkan listrik sebesar 84 GWh / hari."
     mau "Kita memiliki 5 generator, jika ditotal listrik yang berhasil kita produksi sekitar 420 GWh / hari, jumlah ini akan jauh lebih banyak dibanding listrik yang kita butuhkan."
@@ -473,16 +509,30 @@ label scene5:
     mau "Kau mau tau apa yang lebih hebat dari perhitunganku?"
 
     "Anda dan Dehen saling menatap, asisten laboratorium yang lain juga terlihat kebingungan dengan apa yang dikatakan Maura"
-
+    show maura senang with Dissolve(1.5)
     mau "Dengan reaktor sebanyak ini, bukankah sayang jika Indonesia tidak memproduksi bom nuklir?"
     prot "Apa maksudmu?"
 
     "Maura hanya tersenyum dan kembali ke jeep tanpa menjawab pertanyaan terakhir Anda."
-    
-    "Anggota militer yang menjadi supir jeep memanggil kalian semua untuk kembali ke jeep dan melakukan perjalanan pulang kembali ke mess."
+    hide maura with dissolve
 
+    "Anggota militer yang menjadi supir jeep memanggil kalian semua untuk kembali ke jeep dan melakukan perjalanan pulang kembali ke mess."
+    
+    show dehen bingung at centerC
+    with dissolve
     prot "Dehen, entah mengapa aku merasa ada hal yang mengganjal dari perkataan Maura tadi"
     deh "Sudahlah jangan ambil pusing, anggap saja dia hanya bercanda. Ayo kita kembali ke jeep"
+    
+    stop music fadeout 0.5
+    hide dehen
+    hide bg
+    with dissolve
+    centered "{size=*2}Pantai{/size}\nmalam"
+    show text "{size=*2}Pantai{/size}\nmalam" at truecenter
+    hide text with dissolve
+    pause 0.5
+    play music "SCENE 5_ Maura Kok Gitu_/Beach Music Night.mp3" fadein 1.0 volume 0.5 loop
+    show bg pantai malam with dissolve
 
     "Anda pun kembali ke mess dengan menggunakan jeep yang sama seperti saat berangkat."
 
@@ -491,155 +541,175 @@ label scene5:
     "Anda turun dari jeep setelah Maura, dilanjut Dehen dan asisten laboratorium lainnya."
     "Maura segera masuk ke mess tanpa memperdulikan yang lainnya."
     "Anda melamun memperhatikan jejak ban dari mobil jeep dan suara Dr. Wisnu menyadarkan lamunan Anda"
-
+    
+    show dr_wisnu neutral at centerC
+    with dissolve
     wis "Bagimana? Sudah melihat lokasi PLTN kita? Sangat menawan bukan?"
-    prot "Anda hanya mengangguk"
+    "Anda hanya mengangguk"
     wis "Ada yang sedang kamu pikirkan?"
+
 
 label scene6:
     #scene 6
     menu kamu_pikirkan:
-        "Tidak ada, aku hanya merasa tidak enak badan": #scene 6 alam mimpi
-            wis "Baiklah, beristirahatlah, besok mesin-mesin itu akan disetting untuk penelitian kita dalam mendirikan PLTN"
-            prot "Baik pak, aku izin masuk dulu"
+        "Tidak ada, aku hanya merasa tidak enak badan":
+            stop music fadeout 0.3
+            jump scene6a_alam_mimpi
 
-
-            "Anda pun masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen, kali ini pintunya tidak tertutup. terdengar suara (You destroyed a turret)."
-
-            prot "(Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain games)"
-
-            "Anda pun masuk kamar mess dan mandi."
-            "Setelah mandi Anda dan memakai pakaian Anda rebahan di ranjang."
-            "Anda membuka instagram, nampak berbagai instastory teman-teman Anda yang beragam." 
-            "Ada yang bermain bersama hewan peliharaan, jalan-jalan bersama pasangan, liburan dengan keluarga, olahraga, dan lainnya."
-
-            "Anda membuka galeri, nampak foto ketika matahari sunrise yang Anda ambil saat jogging tadi pagi, ada juga berbagai foto keindahan pulau Gelasa."
-            "Ketika Anda ingin membuat story di instagram, muncul foto-foto lokasi PLTN dan daerah yang sudah diploting untuk mesin-mesin tertentu."
-            "Anda pun mengurungkan niat untuk mengupload foto yang Anda ambil hari ini."
-            
-            prot "Seandainya pulau cantik ini tidak terisolasi……"
-            prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya……"
-
-
-            "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari. mereka sedang lari melewati Anda sambil menyanyikan yel-yel."
-            "Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyuman."
-
-            prot "Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
-
-            "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur. Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
-            "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
-
-            "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan. terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
-
-            "Tidak ada percakapan yang berarti malam itu, hanya candaan ringan yang menemani kalian semua ketika makan malam berlangsung. walaupun Anda masih ragu dengan pikiran anda tentang Maura, Anda berusaha menepisnya, Anda akan bekerja bersama Maura beberapa bulan kedepan, tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
-
-            "Selesai makan malam Anda kembali ke kamar Anda, segera Anda menyalakan komputer. Anda sempat membawa flashdisk yang berisi file penelitian Anda agar bisa menjadi pemenang nobel. Meskipun Anda bisa menyimpan semua file itu di drive dan dihubungkan dengan akun Anda agar lebih praktis, tapi Anda takut ada orang yang  meretas komputer disini, walaupun dengan semua kamaan yang ketat ini, kecil kemungkinan hal itu terjadi."
-
-            prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bebarengan dengan mengerjakan proyek PLTN ini. Tpi aku akan tetap mengumpulkan lebih banyak data agar ketika proyek PLTN ini selesai aku bisa melanjutkan wet lab ku"
-
-
-            "Duar… terlihat kilatan merah yang disusul dengan suara yang amat keras dari posisi Anda berdiri. Tubuh Anda bergetar, Anda melihat ke sekeliling, terlihat Maura dan Dr. Wisnu tersenyum puas. Anda baru sadar, ternyata Anda berada di dalam mercusuar. Sekilas mercusuar ini terlihat biasa saja, ternyata di dalamnya terdapat ruangan dengan berbagai alat canggih. Suara, kilatan dan kilatan tadi berasal dari simulator yang Maura ciptakan. Dr. Wisnu menepuk bahu Anda"
-
-            wis "Jika bukan karena penelitian tentang nuklir kita tak mungkin bisa melakukan ini"
-            mau "Simulator ini aku design semirip mungkin dengan kemungkinan kondisi yang kan terjadi nanti. Walaupun kita hanya menyerang satu titik di kota itu, namun efek radiasinya akan menyebar di seluruh negara, bahkan ke negara sebelah. Mustahil jika negara lain masih berani dengan Indonesia. Negara ini akan menjadi negara adidaya."
-
-            "Maura dan Dr. Wisnu tertawa membayangkan semua rencana mereka berjalan dengan mulus. sedangkan Anda hanya diam, mencerna semua keadaan yang sedang terjadi."
-
-            prot "Dimana Dehen?"
-            mau "Beraninya kau menyebut nama pengkhianat itu?"
-
-            "Anda semakin bingung"
-            prot "pengkhianat? Apa maksudnya? Apa yang dia maksud pengkhianat itu Dehen? Mana mungkin Dehen berkhianat? "
-            wis "Sudahlah Maura, butuh waktu untuk dia menerima keputusan Dehen"
-
-            "Anda pun keluar dari ruangan itu, ada terlalu banyak anak tangga yang harus Anda turuni. Setelah 25 menit Anda menuruni anak tangga, terdapat pintu besi besar."
-
-            "Dari semua pintu yang Anda lihat sebelumnya di mercusuar ini, pintu ini memiliki ID Card Reader dan seorang anggota militer di depannya. Anggota militer ini segera menggesek kartu yang ia bawa dan memberikannya kepada Anda sebelum ia mendorong Anda masuk ke ruangan dibaliknya."
-
-            "Pintu seketika tertutup rapat dan Anda melihat Dehen di dalam ruangan itu."
-            
-            prot "Dehen? apa yang terjadi"
-            deh "Ini semua salahmu"
-            prot "Apa? Apa semua ini Dehen, aku tak mengerti apapun?"
-            deh "Jika saja kau tak mudah terbujuk dengan tawaran Maura dan Dr. Wisnu, bom itu tidak akan meluncur besok"
-            prot "Bom apa Dehen?"
-            deh "Aku tahu kau sangat terobsesi dengan nuklir, tapi apa kau tidak memikirkan nyawa orang-orang yang tak berdosa? Anak-anak bahkan lansia?" 
-            "KAU ADALAH PENJAHAT YANG SEBENARNYA"
-
-
-            "Anda terbagun dengan keringat bercucuran, terlihat Dehen duduk disamping tubuh Anda." 
-            deh "Sudah 9x kau selalu terbangun dengan kondisi seperti ini. Bahkan reaktor belum menyala tetapi sepertinya otakmu sudah terpapar radiasi nuklir"
-
-            "Selama 9 hari terakhir Anda selalu bermimpi hal yang sama, tapi entah mengapa Anda enggan menceritakannya pada siapapun. Proyek PLTN ini sudah berjalan selama 8 bulan. Kalian masih berkutat untuk menyelaraskan semua fungsi di sistem yang kalian rancang."
-
-            deh "Makan dulu sana, aku lanjut kerja dulu"
-
-            "Setelah makan, Anda melihat Dr. Wisnu duduk di kursinya dan bersiap menginterupsi kegiatan hari ini. Sepertinya beliau tidak tidur lagi hari ini, terlihat jelas dari kantung matanya yang semakin membengkak dan menghitam."
-
-            "Hari ini Anda bekerja di bagian wet lab, sedangkan Maura, Dr. Wisnu, dan Dehen bekerja di dry lab. Setelah bekerja beberapa jam, Anda beristirahat untuk makan siang, Maura, Dr. Wisnu, dan Dehen belum memunculkan batang hidungnya"
-
-            prot  "Sepertinya mereka sangat sibuk hari ini"
-
-            "Anda akhirnya memutuskan untuk kembali ke mess."
-
-            "Pagi harinya saat Anda memasuki lab, terlihat Maura, Dr. Wisnu, dan Dehen sudah duduk di kursinya. Anda yakin mereka bekerja sangat keras semalam, sehingga Anda terdorong untuk meningkatkan efisiensi bahan bakar nuklir hari ini."
-            "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari. Saat malam tiba.."
-
-            deh "Bagaimana pekerjaanmu hari ini?"
-            prot "Aku belum menemukan perbandingan yang pas antara plutonium dengan thorium dari pagi tadi"
-            deh "Pantas, aku tidak melihatmu bersama asisten lain ketika makan siang tadi"
-            prot "Harus aku akui, meskipun proyek ini sulit tetapi aku sangat menikmatinya"
-            deh "Sebab kau sangat terobsesi dengan nuklir"
-            prot "Bagaimana dengan dry lab kalian?"
-            deh "Kau lihat saja Maura, ia tak kuat menahan kantuk walaupun kondisi jalan yang dilewati jeep ini membuat tubuhnya terguncang dan hampir jatuh"
-
-            "kalian berdua tertawa melihat Maura"
-
-            deh "Aku tidur di kamarmu yaa, sekalian jagain kalo kamu mimpi buruk lagi"
-
-            "Anda mengerti dengan ucapan Dehen, pasti ada hal penting yang ingin ia katakan tetapi hanya berdua dengan Anda. Anda mengangguk sambil tersenyum."
-
-            "Selesai makan malam, Dehen dan Anda menuju kamar Anda. Anda mengunci pintu kamar, sedangkan Dehen menutup jendela, memastikan obrolan mereka tidak terdengar hingga keluar kamar."
-
-            prot "Apa yang mau kau katakan sobat?"
-            deh "Dry lab kami dari kemarin tidak menemukan solusi. Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
-            prot "...."
-            deh "tapi aku ingat, kau juga sedang mengembangkan penelitian mengenai nuklir kan? Penelitianmu sudah berjalan dari beberapa tahun yang lalu"
-            prot "...."
-            deh "Apa kau tidak pernah melakukan perhitungan? kau pasti sudah melakukan perhitungan bukan?"
-            prot "...."
-            deh "Yaa aku tahu kau memang ingin menjadi peraih nobel, tapi bukankah penelitianmu banyak? Apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini"
-            prot "...."
-            deh "Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
-            prot "....."
-            deh "Maaf aku terlalu berlebihan, kau berhak mematenkan semua penelitianmu itu"
-
-            "Dehen berbaring di tempat tidur anda dan menarik selimut."
-            prot "Akan aku pertimbangkan apa yang kau ucapkan malam ini Dehen"
-
-            "Anda berbaring di sebelah Dehen. Sambil memunggungi Anda,"
-            deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberithu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di jeep karena aku sangat menghormatimu sebagai teman. Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
-            prot "Ya, aku berjanji"
-            # ini ujung dari scene 6 yang mimpi lanjut ke label pilihan
-            jump yang_anda_lakukan_sekarang
-
-
-        #ini scene 6 maksut maura
         "Saat sedang berada di lokasi, Maura sempat menyinggung kegunaan radiator untuk membuat bom nuklir. Apa maksudnya itu?": #scene 6 maksud maura
-            wis "Ah itu hanya lelucon biasa Maura. Tidak usah dihiraukan, biarkan saja."
-            prot "Namun terlihat dari desain radiator, sepertinya Maura mengatakan sejujurnya. Bagaimana itu pak?"
             
-            wis "Sudahlah, Mungkin kamu salah dengar perkataan Maura. Sudahkah kamu beristirahat? Mungkin kamu bisa beristirahat terlebih dahulu."
-            prot "Tidak perlu pak."
+            jump scene6_maksud_maura
+            
 
-            wis "Baiklah, selalu jaga kesehatan, di pulau ini tidak ada rumah sakit jika ada apa apa."
-            jump scene6_maksut_maura
-            #ini scene 6 yang maksut maura lanjut ke label baru.
-            
+label scene6a_alam_mimpi:
+
+    play music "SCENE 6_ Alam Mimpi/Normal agak sedih.mp3" fadein 0.5 volume 0.6 loop
+    wis "Baiklah, beristirahatlah, besok mesin-mesin itu akan disetting untuk penelitian kita dalam mendirikan PLTN"
+    prot "Baik pak, aku izin masuk dulu"
+
+    hide dr_wisnu with dissolve
+    hide bg with dissolve
+    show bg ruang tamu with dissolve
+
+    "Anda pun masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen, kali ini pintunya tidak tertutup. terdengar suara (You destroyed a turret)."
+
+    "(Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain games)"
+
+    hide bg with dissolve
+    show bg kamar with dissolve
+
+    "Anda pun masuk kamar mess dan mandi."
+    "Setelah mandi Anda dan memakai pakaian Anda rebahan di ranjang."
+    "Anda membuka instagram, nampak berbagai instastory teman-teman Anda yang beragam." 
+    "Ada yang bermain bersama hewan peliharaan, jalan-jalan bersama pasangan, liburan dengan keluarga, olahraga, dan lainnya."
+
+    "Anda membuka galeri, nampak foto ketika matahari sunrise yang Anda ambil saat jogging tadi pagi, ada juga berbagai foto keindahan pulau Gelasa."
+    "Ketika Anda ingin membuat story di instagram, muncul foto-foto lokasi PLTN dan daerah yang sudah diploting untuk mesin-mesin tertentu."
+    "Anda pun mengurungkan niat untuk mengupload foto yang Anda ambil hari ini."
+    
+    prot "Seandainya pulau cantik ini tidak terisolasi……"
+    prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya……"
+
+    show bg kamar at darken:
+        blur 10
+    with dissolve
+    hide bg kamar 
+    with dissolve
+
+    "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari. mereka sedang lari melewati Anda sambil menyanyikan yel-yel."
+    "Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyuman."
+
+    prot "Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
+
+    "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur. Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
+    "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
+
+    "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan. terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
+
+    "Tidak ada percakapan yang berarti malam itu, hanya candaan ringan yang menemani kalian semua ketika makan malam berlangsung. walaupun Anda masih ragu dengan pikiran anda tentang Maura, Anda berusaha menepisnya, Anda akan bekerja bersama Maura beberapa bulan kedepan, tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
+
+    "Selesai makan malam Anda kembali ke kamar Anda, segera Anda menyalakan komputer. Anda sempat membawa flashdisk yang berisi file penelitian Anda agar bisa menjadi pemenang nobel. Meskipun Anda bisa menyimpan semua file itu di drive dan dihubungkan dengan akun Anda agar lebih praktis, tapi Anda takut ada orang yang  meretas komputer disini, walaupun dengan semua kamaan yang ketat ini, kecil kemungkinan hal itu terjadi."
+
+    prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bebarengan dengan mengerjakan proyek PLTN ini. Tpi aku akan tetap mengumpulkan lebih banyak data agar ketika proyek PLTN ini selesai aku bisa melanjutkan wet lab ku"
+
+
+    "Duar… terlihat kilatan merah yang disusul dengan suara yang amat keras dari posisi Anda berdiri. Tubuh Anda bergetar, Anda melihat ke sekeliling, terlihat Maura dan Dr. Wisnu tersenyum puas. Anda baru sadar, ternyata Anda berada di dalam mercusuar. Sekilas mercusuar ini terlihat biasa saja, ternyata di dalamnya terdapat ruangan dengan berbagai alat canggih. Suara, kilatan dan kilatan tadi berasal dari simulator yang Maura ciptakan. Dr. Wisnu menepuk bahu Anda"
+
+    wis "Jika bukan karena penelitian tentang nuklir kita tak mungkin bisa melakukan ini"
+    mau "Simulator ini aku design semirip mungkin dengan kemungkinan kondisi yang kan terjadi nanti. Walaupun kita hanya menyerang satu titik di kota itu, namun efek radiasinya akan menyebar di seluruh negara, bahkan ke negara sebelah. Mustahil jika negara lain masih berani dengan Indonesia. Negara ini akan menjadi negara adidaya."
+
+    "Maura dan Dr. Wisnu tertawa membayangkan semua rencana mereka berjalan dengan mulus. sedangkan Anda hanya diam, mencerna semua keadaan yang sedang terjadi."
+
+    prot "Dimana Dehen?"
+    mau "Beraninya kau menyebut nama pengkhianat itu?"
+
+    "Anda semakin bingung"
+    prot "pengkhianat? Apa maksudnya? Apa yang dia maksud pengkhianat itu Dehen? Mana mungkin Dehen berkhianat? "
+    wis "Sudahlah Maura, butuh waktu untuk dia menerima keputusan Dehen"
+
+    "Anda pun keluar dari ruangan itu, ada terlalu banyak anak tangga yang harus Anda turuni. Setelah 25 menit Anda menuruni anak tangga, terdapat pintu besi besar."
+
+    "Dari semua pintu yang Anda lihat sebelumnya di mercusuar ini, pintu ini memiliki ID Card Reader dan seorang anggota militer di depannya. Anggota militer ini segera menggesek kartu yang ia bawa dan memberikannya kepada Anda sebelum ia mendorong Anda masuk ke ruangan dibaliknya."
+
+    "Pintu seketika tertutup rapat dan Anda melihat Dehen di dalam ruangan itu."
+    
+    prot "Dehen? apa yang terjadi"
+    deh "Ini semua salahmu"
+    prot "Apa? Apa semua ini Dehen, aku tak mengerti apapun?"
+    deh "Jika saja kau tak mudah terbujuk dengan tawaran Maura dan Dr. Wisnu, bom itu tidak akan meluncur besok"
+    prot "Bom apa Dehen?"
+    deh "Aku tahu kau sangat terobsesi dengan nuklir, tapi apa kau tidak memikirkan nyawa orang-orang yang tak berdosa? Anak-anak bahkan lansia?" 
+    "KAU ADALAH PENJAHAT YANG SEBENARNYA"
+
+
+    "Anda terbagun dengan keringat bercucuran, terlihat Dehen duduk disamping tubuh Anda." 
+    deh "Sudah 9x kau selalu terbangun dengan kondisi seperti ini. Bahkan reaktor belum menyala tetapi sepertinya otakmu sudah terpapar radiasi nuklir"
+
+    "Selama 9 hari terakhir Anda selalu bermimpi hal yang sama, tapi entah mengapa Anda enggan menceritakannya pada siapapun. Proyek PLTN ini sudah berjalan selama 8 bulan. Kalian masih berkutat untuk menyelaraskan semua fungsi di sistem yang kalian rancang."
+
+    deh "Makan dulu sana, aku lanjut kerja dulu"
+
+    "Setelah makan, Anda melihat Dr. Wisnu duduk di kursinya dan bersiap menginterupsi kegiatan hari ini. Sepertinya beliau tidak tidur lagi hari ini, terlihat jelas dari kantung matanya yang semakin membengkak dan menghitam."
+
+    "Hari ini Anda bekerja di bagian wet lab, sedangkan Maura, Dr. Wisnu, dan Dehen bekerja di dry lab. Setelah bekerja beberapa jam, Anda beristirahat untuk makan siang, Maura, Dr. Wisnu, dan Dehen belum memunculkan batang hidungnya"
+
+    prot  "Sepertinya mereka sangat sibuk hari ini"
+
+    "Anda akhirnya memutuskan untuk kembali ke mess."
+
+    "Pagi harinya saat Anda memasuki lab, terlihat Maura, Dr. Wisnu, dan Dehen sudah duduk di kursinya. Anda yakin mereka bekerja sangat keras semalam, sehingga Anda terdorong untuk meningkatkan efisiensi bahan bakar nuklir hari ini."
+    "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari. Saat malam tiba.."
+
+    deh "Bagaimana pekerjaanmu hari ini?"
+    prot "Aku belum menemukan perbandingan yang pas antara plutonium dengan thorium dari pagi tadi"
+    deh "Pantas, aku tidak melihatmu bersama asisten lain ketika makan siang tadi"
+    prot "Harus aku akui, meskipun proyek ini sulit tetapi aku sangat menikmatinya"
+    deh "Sebab kau sangat terobsesi dengan nuklir"
+    prot "Bagaimana dengan dry lab kalian?"
+    deh "Kau lihat saja Maura, ia tak kuat menahan kantuk walaupun kondisi jalan yang dilewati jeep ini membuat tubuhnya terguncang dan hampir jatuh"
+
+    "kalian berdua tertawa melihat Maura"
+
+    deh "Aku tidur di kamarmu yaa, sekalian jagain kalo kamu mimpi buruk lagi"
+
+    "Anda mengerti dengan ucapan Dehen, pasti ada hal penting yang ingin ia katakan tetapi hanya berdua dengan Anda. Anda mengangguk sambil tersenyum."
+
+    "Selesai makan malam, Dehen dan Anda menuju kamar Anda. Anda mengunci pintu kamar, sedangkan Dehen menutup jendela, memastikan obrolan mereka tidak terdengar hingga keluar kamar."
+
+    prot "Apa yang mau kau katakan sobat?"
+    deh "Dry lab kami dari kemarin tidak menemukan solusi. Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
+    prot "...."
+    deh "tapi aku ingat, kau juga sedang mengembangkan penelitian mengenai nuklir kan? Penelitianmu sudah berjalan dari beberapa tahun yang lalu"
+    prot "...."
+    deh "Apa kau tidak pernah melakukan perhitungan? kau pasti sudah melakukan perhitungan bukan?"
+    prot "...."
+    deh "Yaa aku tahu kau memang ingin menjadi peraih nobel, tapi bukankah penelitianmu banyak? Apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini"
+    prot "...."
+    deh "Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
+    prot "....."
+    deh "Maaf aku terlalu berlebihan, kau berhak mematenkan semua penelitianmu itu"
+
+    "Dehen berbaring di tempat tidur anda dan menarik selimut."
+    prot "Akan aku pertimbangkan apa yang kau ucapkan malam ini Dehen"
+
+    "Anda berbaring di sebelah Dehen. Sambil memunggungi Anda,"
+    deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberithu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di jeep karena aku sangat menghormatimu sebagai teman. Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
+    prot "Ya, aku berjanji"
+    # ini ujung dari scene 6 yang mimpi lanjut ke label pilihan
+    jump yang_anda_lakukan_sekarang
         
 
 
-label scene6_maksut_maura:
+label scene6_maksud_maura:
+    
+    wis "Ah itu hanya lelucon biasa Maura. Tidak usah dihiraukan, biarkan saja."
+    prot "Namun terlihat dari desain radiator, sepertinya Maura mengatakan sejujurnya. Bagaimana itu pak?"
+    
+    wis "Sudahlah, Mungkin kamu salah dengar perkataan Maura. Sudahkah kamu beristirahat? Mungkin kamu bisa beristirahat terlebih dahulu."
+    prot "Tidak perlu pak."
+
+    wis "Baiklah, selalu jaga kesehatan, di pulau ini tidak ada rumah sakit jika ada apa apa."
+    
     "Dr. Wisnu tersenyum lalu tertawa, lalu berjalan membelakangi Anda secara perlahan. Percakapan tersebut meninggalkan rasa tidak enak didalam pikiran Anda. Sepertinya, kedua belah pihak; Dr. Wisnu, maupun Maura sedang menyembunyikan sesuatu yang besar dan penting."
 
     "Dr Wisnu seketika berputar arah sebelum menjauh terlalu jauh, dan mencoba untuk mengatakan sesuatu."
@@ -1134,7 +1204,7 @@ label scene7_maura_drwisnu:
             "Anda bergegas ke wet lab dan Anda melihat Dehen baru saja kembali setelah makan siang."
             jump scene8_mengambil_alih
         "Mulai menerima  pemikiran bahwa bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain."
-
+            #jump scene8
 
 label scene8_mengambil_alih:
 

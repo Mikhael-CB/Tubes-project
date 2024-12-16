@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 386: expected end of line
-    play music "SCENE 4_ Bertemu Maura/Beach Mood Santai" fade in 0.5 volume 0.5 loop
-                                                          ^
-
-File "game/script.rpy", line 414: expected end of line
-    play music "SCENE 4_ Bertemu Maura/Cozy Home Music" fade in 0.5 volume 0.5 loop
-                                                        ^
+File "game/script.rpy", line 579: end of line expected.
+    show bg kamar at blur 10
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Mon Dec 16 13:47:01 2024
+Tue Dec 17 00:02:43 2024

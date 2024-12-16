@@ -1,30 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 379, in script
-    show bg kamar with Dissolve
-Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000003ac8c40>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000399dfa0>}>
+  File "game/script.rpy", line 593, in script
+    show bg kamar at darken_cus:
+Exception: Cannot compile ATL Transform at game/script.rpy:53, as it's missing parameters 'time'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 379, in script
-    show bg kamar with Dissolve
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1361, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2666, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2580, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000003ac8c40>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000399dfa0>}>
+  File "game/script.rpy", line 593, in script
+    show bg kamar at darken_cus:
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 503, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\display\scenelists.py", line 477, in add
+    thing.visit_all(lambda d : None)
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\atl.py", line 816, in visit
+    block = self.compile()
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\atl.py", line 705, in compile
+    raise Exception("Cannot compile ATL Transform at {}:{}, as it's missing parameters {}.".format(
+Exception: Cannot compile ATL Transform at game/script.rpy:53, as it's missing parameters 'time'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Mon Dec 16 13:49:28 2024
+Tue Dec 17 00:07:24 2024
