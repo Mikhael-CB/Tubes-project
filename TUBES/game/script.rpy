@@ -524,7 +524,7 @@ label scene6:
             "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari. mereka sedang lari melewati Anda sambil menyanyikan yel-yel."
             "Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyuman."
 
-            prot " dalam hati :Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
+            prot "Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
 
             "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur. Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
             "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
@@ -713,6 +713,7 @@ label scene6_maksut_maura:
             jump yang_anda_lakukan_sekarang
         "Dry Lab":
             wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di Dry lab."
+            jump scene7_maura_drwisnu
             
 
 
@@ -939,6 +940,8 @@ label scene7_dr_wisnu:
 
             mau "Kau, kau tidak tahu apapun tentang ini, kau tak pantas mengatakan itu semua ke sahabatmu sendiri. setiap malam ia selalu memandang fotomu sebelum tidur, tak jarang ia terbangun dngan mata bengkak karena merindukanmu"
             deh "sahabat? Aku tak mau bersahabat dengan pembunuh masal"
+            return
+            
 
         #ini ending yang netral
         "Bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain":
@@ -1018,6 +1021,233 @@ label scene7_dr_wisnu:
 
             #Tulisan di layar:
             "Indonesia berhasil membuktikan kepada dunia akan kekuatannya, tetapi pada setiap kekuatan ada bayaran tanggung jawab yang besar"
+            return
+
+
+
+label scene7_maura_drwisnu:
+    "Setelah mengkonfirmasi ke Dr.Wisnu Anda kembali ke kamar Anda untuk beristirahat."
+
+    "Anda masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen. Kali ini pintunya tidak tertutup dan terdengar suara, “You destroyed a turret”."
+
+    prot "Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain game"
+
+    "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda. Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
+
+    "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa. Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
+
+    prot "Seandainya pulau cantik ini tidak terisolasi… Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
+
+    "Andapun keluar dari mess untuk melihat kondisi sekitar. nampak para anggota militer sedang berolahraga di sore hari. Anda yang ramah tersenyum kepada mereka ketika beberapa dari. mereka sedang lari melewati Anda sambil menyanyikan yel-yel."
+    "Mereka memang tidak membalas senyum Anda, tetapi Anda tahu sorot mata mereka memancarkan senyuman."
+
+    prot "Tak heran memang jika mereka terkesan kaku, memang apa yang terjadi jika mereka berhenti menyanyikan yel-yel sebentar. Dan membalas senyumku?"
+
+    "Anda berjalan menuju pantai, arah mata anda tertuju pada penyu sisik (Eretmochelys imbricata) yang sedang menggali pasir. Setelah terbentuk lubang penyu itu bertelur. Mungkin ada sekitar 150 butir telur yang penyu itu hasilkan. Anda terus mengamati dari jauh."
+    "Selesai bertelur, penyu itu kembali berenang ke laut lagi. Anda menyadari cahaya matahari mulai redup, Anda menyaksikan sunset yang amat indah di pulau gelasa, ditemani hembusan angin dan deburan ombak. Begitu matahari tenggelam Anda kembali ke mess."
+
+    "Orang-orang bagian dapur sudah menyiapkan makanan untuk kalian makan malam. Anda pun duduk di kursi meja makan untuk bersiap makan. terdengar langkah beberapa orang turun dari tangga lantai 2, tentu saja itu pasti Dehen dan asisten lainnya. Selang beberapa saat, pintu kamar Maura terbuka, kalian semua berkumpul di meja makan untuk makan malam."
+
+    "Tidak ada percakapan yang berarti malam itu, hanya cAndaan ringan yang menemani kalian semua ketika makan malam berlangsung. Walaupun Anda masih ragu dengan Maura, Anda berusaha menepisnya karena akan bekerja bersamanya beberapa bulan kedepan. Tidak nyaman tentunya jika ada perselisihan sekecil apapun itu."
+
+    "Selesai makan malam, Anda kembali ke kamar dan segera menyalakan komputer. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda. Meskipun bisa menyimpan semua file itu di drive,"
+    "Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
+
+    prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini. Atau… mungkin dengan bergabung di dry lab dengan Maura dan Dr. Wisnu aku dapat menyelesaikan penelitianku bersamaan dengan PLTN ini!"
+
+    "Keesokan paginya Anda pun memasuki ruang wet lab. Dr. Wisnu duduk di depan komputer sambil mencari data, sedangkan Maura mempersiapkan semua perhitungannya."
+
+    mau "Pagi semua, mari kita tinjau perhitungan yang akan kita lakukan hari ini"
+
+    "Anda, Maura dan Dr. Wisnu bekerja keras hingga sore hari, hingga pada suatu saat pada tahap perhitungan ditemukan galat yang sangat besar dari hasil perhitungan. Tentu saja, Anda mengetahui penyebab galat yang ada pada perhitungan tersebut."
+    "Namun, Anda selalu memikirkan untuk mematenkan perhitungan tersebut. Sehingga Anda enggan untuk membantu menyelesaikan perhitungan tersebut."
+
+    mau "Ini gimana sih? Galatnya Besar sekali!"
+
+    "Dr. Wisnu lalu melihat Maura stres dengan perhitungannya. Waktu jam makan siang pun berdering."
+
+    wis "Sudahlah Maura, kita lanjutkan di nanti hari saja. Waktu sudah menunjukkan waktu makan siang."
+
+    mau "Kalian duluan saja, aku akan menghitung kembali perhitungannya dari awal"
+
+    wis "Baiklah Maura, tolong jangan lupa untuk beristirahat."
+
+    "Dr. Wisnu keluar dari ruangan, Anda berniat untuk mengikuti Dr.Wisnu keluar ruangan menuju makan siang; Namun, Anda kasihan melihat kondisi Maura yang stres. Pada akhirnya Anda berniat untuk membantu Maura menyelesaikan perhitungannya. Demi kebaikan Indonesia."
+
+    mau "Kau masih disini? Jika kamu tidak makan siang juga tolong bantu aku menyelesaikan perhitungan dengan otakmu itu"
+
+    prot "Baiklah, sepertinya aku baru terpikirkan tentang sesuatu dan hal apa yang bisa dilakukan untuk memperbaiki perhitungannya."
+
+    mau "Syukurlah, mari kita lihat hal yang kamu pikirkan itu."
+
+    "Anda dan Maura meninjau ulang perhitungan yang dilakukan"
+
+    prot "Kau melupakan reaksi berantai, 235U + 92Kr + 141Ba + 3n + Energi, dengan energi dalam bentuk panas dan radiasi."
+
+    "Maura mengoreksi kembali perhitungannya"
+
+    mau "kau benar, aku akan menghitungnya kembali"
+
+    "Beberapa saat kemudian."
+
+    mau "Masih ada hal yang kurang… Aku tidak tahu apalagi yang salah."
+
+    "Maura dengan lemas memberikan data hasil perhitungannya. Anda membaca dan mempelajari data dari Maura. Semua permasalahannya membutuhkan perhitungan yang Anda kembangkan untuk penelitian Nobel Anda. Anda mempertimbangkan hal ini untuk beberapa saat dan memutuskan untuk memberitahukannya."
+
+    prot "Kau belum memasukkan persamaan energi tahap akhir. Masukkan E = m.c2, dengan m merupakan selisih perbedaan selisih massa sebelum direaksikan dan setelah direaksikan."
+
+    "Maura mengangguk dan kembali menghitung. Setelah 15 menit, Maura berteriak kegirangan sembari memegang tangan Anda."
+
+    mau "Kau sangat jenius! Kau benar-benar jenius!"
+
+    "Anda merasa senang karena pujian itu, tetapi sekarang perhitungan itu tidak dapat Anda patenkan sendiri untuk penelitian Nobel Anda. Namun, seketika Anda teringat oleh perkataan Maura saat pertama melihat lokasi PLTN."
+
+    prot "Ah, iya. Ngomong-ngomong aku ingin bertanya tentang perkataanmu saat melihat reaktor."
+
+    mau "Hm, tentang bom nuklir? Gini saja, coba bayangkan apa yang dapat Indonesia capai jika berhasil membuat bom berkekuatan dahsyat itu."
+
+    "Anda semakin bingung dengan prinsip Maura dan dengan tegas mengingatkannya."
+
+    prot "Bagaimana dengan kehancuran yang disebabkan oleh bom tersebut? Kematian ratusan ribu orang yang tidak bersalah, ibu dan anak anak. Apakah kamu sama sekali tidak memikirkan hal tersebut?"
+
+    mau "Lalu? Pikirkan masa lalu kita. Kamu pikir saat Indonesia dijajah oleh bangsa asing mereka mempedulikan kematian orang tidak bersalah? TIDAK SAMA SEKALI!"
+    mau "Kita hanya melakukan hal yang sama kepada mereka sama seperti mereka melakukan itu kepada kita saat masa lalu. Tidak ada bedanya."
+
+    "Anda dan Maura terdiam sejenak."
+
+    mau "Tunggu, pada bagian ini terlihat bahwa reaksi nuklir harus dijaga pada kondisi kritis, bagaimana jika reaksi tidak terjaga dan dilepas begitu saja… AH."
+
+    "Maura seperti mendapatkan ide. Anda semakin merasa tidak nyaman dan takut akan apa yang Maura akan lakukan."
+
+    mau "Aku harus memberi tahu ini ke Dr. Wisnu."
+
+    "Maura langsung berlari keluar ruangan dry lab, meninggalkan Anda."
+
+    prot "Maura TUNGGU-!!!"
+
+    "Maura tidak mendengar teriakan Anda. Anda berpikir kembali perkataan Maura, sepertinya Maura telah memecahkan perhitungan untuk… menciptakan sebuah bom nuklir. Ide gila yang akan keluar dari ruangan tersebut terlalu berbahaya jika terealisasi."
+    "Namun, kenapa Maura harus memberitahu Dr. Wisnu? Dibalik semua pikiran ini, Anda masih merasa bahwa rasionalisasi untuk mengangkat status Indonesia menjadi negara adidaya merupakan alasan yang aneh."
+
+    #ini masuk scene 8 yang percabangan
+    menu disaat_genting:
+        "Memutuskan untuk memberitahu Dehen tentang ini, berharap Ia setuju dengan Anda.":
+            "Anda bergegas ke wet lab dan Anda melihat Dehen baru saja kembali setelah makan siang."
+            jump scene8_mengambil_alih
+        "Mulai menerima  pemikiran bahwa bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain."
+
+
+label scene8_mengambil_alih:
+
+    deh "Eh, mengapa kamu tidak makan sia-"
+
+    prot "Tidak ada waktu lagi, kita harus ke dry lab sekarang."
+
+    deh "Tunggu, tunggu, tunggu. Tolong jelaskan ada apa terlebih dahulu."
+
+    "(Anda menjelaskan apa yang terjadi di dry lab)"
+
+    deh "APA!?!? Mereka berencana untuk membuat BOM NUKLIR???"
+
+    prot "(mengangguk)"
+
+    "Setelah kejadian tersebut terdapat panggilan dari Dr.Wisnu kepada seluruh asisten untuk berkumpul di ruang dry lab pada malam hari."
+
+    prot "Sudah ada panggilan dari Dr. Wisnu, sepertinya Maura sudah memberi tahu tentang perhitungannya."
+
+    deh "Baiklah, kita akan kesana bersama. Untuk sekarang kita harus segera bicarakan dengan asisten-asisten lainnya."
+
+    "Anda dan Dehen secara diam-diam mengajak setiap asisten untuk berkumpul di area pantai yang jauh dari lab. Setiap dari mereka terlihat skeptis dan tidak ingin ikut. Tapi, melihat kecemasan dan ketakutan di wajah kalian mereka tahu bahwa informasi yang kalian ingin beritahu, penting."
+
+    "Tak lama, sore tiba dan kalian berhasil mengumpulkan semua asisten. Dehen seketika mengeluarkan suara."
+
+    deh "Dr. Wisnu  dan Maura akan membuat bom nuklir bersamaan dengan PLTN yang kita sedang kerjakan."
+
+    "Semua tersentak dan sesaat langsung ramai penuh gelisah dan ketakutan."
+
+    prot "Kita harus menolak apa yang akan diberitahukan Dr. Wisnu malam nanti. Kalau tidak, kita akan ikut berkontribusi dalam pembuatan senjata dunia."
+
+    "Para asisten bersama-sama menyerukan persetujuan mereka. Anda, Dehen, dan para asisten bergegas menuju lab Dr. Wisnu."
+
+    jump scene9_titik_darah_penghabisan
+
+
+
+label scene9_titik_darah_penghabisan:
+
+    wis "Maura, terima kasih banyak, ya, atas perhitungannya."
+
+    mau "Tentu saja, pak!"
+
+    wis "Hahaha! Dengan perhitungan ini saja, dan semua sumber daya yang kita miliki sekarang, sudah lebih dari cukup untuk membuat bom nuklir! Kita bahkan bisa mulai membuatnya sekarang dengan cepat!!"
+
+    "Anda, Dehen, dan para asisten akhirnya tiba di lab. Mereka menyaksikan Dr. Wisnu dan Maura yang baru saja selesai membangun bom nuklir bersama-sama."
+
+    deh "Akhirnya sampai juga. Lihat! Mereka sudah selesai membangun bomnya!!"
+
+    wis "Lihatlah apa yang telah kita capai. Semua ini adalah hasil dari dedikasi dan pengorbanan kita. Namun, ada satu langkah lagi untuk memastikan Indonesia berdiri sebagai kekuatan yang tak tergoyahkan."
+
+    mau "Dengan bom nuklir ini, tidak ada negara yang berani menginjakkan kakinya di atas kehormatan bangsa kita!"
+
+    "Anda tampak gelisah, terdiam beberapa saat, lalu menatap Dehen."
+
+    prot "Apakah ini benar-benar jalan yang harus kita tempuh? Apa harga dari kekuatan ini tidak terlalu besar?"
+
+    deh "Sudah kubilang, kekuatan seperti ini hanya akan membawa kehancuran... bukan kebangkitan."
+
+    operator_pengeras_suara "Perhatian! Pengaktifan sistem utama dalam 10 detik."
+
+    "Anda berdiri, terbelah antara idealisme dan tekanan tim. Pandangannya beralih dari Dr. Wisnu, ke Maura, lalu ke Dehen."
+
+    prot "Tidak... Aku tidak akan membiarkan ini terjadi!(dengan suara tegas)"
+
+    operator_pengeras_suara "Pengaktifan sistem utama dalam 10 detik. Semua personel dimohon untuk bersiap."
+
+    "Anda berlari ke panel kontrol, melirik ke layar yang menunjukkan hitungan mundur."
+
+    prot "Ini bukan jalan yang benar. Aku tidak akan membiarkan kehancuran ini terjadi!"
+
+    "Dr. Wisnu dan Maura bergegas menghampiri Anda."
+
+    wis "Apa yang kau lakukan?! Kau tidak punya hak untuk menghentikan ini! Ini adalah masa depan bangsa!"
+
+    prot "Tidak, ini bukan masa depan. Ini adalah akhir. Indonesia tidak butuh kehancuran untuk menjadi besar!"
+
+    "Maura mencoba menarik tangan Anda dari panel kontrol."
+
+    mau "Kau tidak mengerti! Ini bukan hanya tentang kita—ini tentang bangsa, tentang kedaulatan yang tidak bisa ditawar lagi!"
+
+    deh "Lepaskan dia, Maura!"
+
+    "Dehen menarik Maura, memberi ruang bagi Anda untuk mematikan sistem. Anda dengan cepat menekan serangkaian tombol."
+
+    prot "Tidak ada waktu lagi. Kita harus mengakhiri ini sekarang!"
+
+    "Layar utama berkedip, muncul tulisan: (PEMBATALAN AKTIVASI BERHASIL.)"
+
+    wis "Kau akan menyesali ini! Apa yang kau pikirkan?!(berteriak marah)"
+
+    prot "Bahwa kita adalah manusia. Bahwa kita harus berjuang tanpa mengorbankan nyawa tak bersalah. Indonesia bisa besar dengan kedamaian, bukan ketakutan."
+
+    "Dr. Wisnu tampak terpukul, lalu berjalan pergi dengan wajah penuh kekecewaan. Maura hanya menunduk tanpa berkata apa-apa."
+
+    "Dehen yang mendekati Anda, menepuk pundaknya."
+
+    deh "Kau menyelamatkan kita semua… dan juga dirimu sendiri."
+
+    "Anda dan Dehen berdiri di bawah langit Pulau Gelasa."
+
+    prot "Kita mungkin belum menyelesaikan semuanya, tapi setidaknya kita masih memiliki kesempatan untuk memperbaikinya."
+
+    deh "Dan kesempatan itu cukup. Mari kita buat masa depan yang lebih baik."
+
+    #tulisan di layar:
+    "Dengan keberanian untuk melawan ketidakadilan, masa depan selalu dapat diubah. Untuk Indonesia yang lebih damai."
+    return
+
+
+
+
+
 
 
 
