@@ -1,40 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 106, in script
-    show dehen senang at darken(0)
-  File "game/script.rpy", line 106, in <module>
-    show dehen senang at darken(0)
-Exception: Not a displayable: 0
+  File "game/script.rpy", line 379, in script
+    show bg kamar with Dissolve
+Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000003ac8c40>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000399dfa0>}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 106, in script
-    show dehen senang at darken(0)
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 106, in <module>
-    show dehen senang at darken(0)
-  File "C:\renpy-8.3.3-sdk\renpy\atl.py", line 679, in __call__
-    rv = renpy.display.motion.ATLTransform(
-  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 1221, in __init__
-    Transform.__init__(self, child=child, **properties)
-  File "C:\renpy-8.3.3-sdk\renpy\display\transform.py", line 715, in __init__
-    child = renpy.easy.displayable_or_none(child)
-  File "C:\renpy-8.3.3-sdk\renpy\easy.py", line 99, in displayable_or_none
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: 0
+  File "game/script.rpy", line 379, in script
+    show bg kamar with Dissolve
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1361, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2666, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\renpy-8.3.3-sdk\renpy\display\core.py", line 2580, in instantiate_transition
+    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
+Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000003ac8c40>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000399dfa0>}>
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Sun Dec 15 21:06:40 2024
+Mon Dec 16 13:49:28 2024
