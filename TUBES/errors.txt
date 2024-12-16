@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 579: end of line expected.
-    show bg kamar at blur 10
-                          ^
+File "game/script.rpy", line 636: end of line expected.
+    with hpunch, hpunch, hpunch
+               ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Dec 17 00:02:43 2024
+Tue Dec 17 00:45:19 2024

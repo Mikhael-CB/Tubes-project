@@ -1,34 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 593, in script
-    show bg kamar at darken_cus:
-Exception: Cannot compile ATL Transform at game/script.rpy:53, as it's missing parameters 'time'.
+  File "game/script.rpy", line 683, in script
+    show dehen bingung at centreC, lighten
+  File "game/script.rpy", line 683, in <module>
+    show dehen bingung at centreC, lighten
+NameError: name 'centreC' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 593, in script
-    show bg kamar at darken_cus:
+  File "game/script.rpy", line 683, in script
+    show dehen bingung at centreC, lighten
   File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
-    renpy.config.show(name,
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 503, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\display\scenelists.py", line 477, in add
-    thing.visit_all(lambda d : None)
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
-    for d in self.visit():
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\atl.py", line 816, in visit
-    block = self.compile()
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\atl.py", line 705, in compile
-    raise Exception("Cannot compile ATL Transform at {}:{}, as it's missing parameters {}.".format(
-Exception: Cannot compile ATL Transform at game/script.rpy:53, as it's missing parameters 'time'.
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 683, in <module>
+    show dehen bingung at centreC, lighten
+NameError: name 'centreC' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Tue Dec 17 00:07:24 2024
+Tue Dec 17 01:25:53 2024
