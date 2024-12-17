@@ -835,14 +835,16 @@ label scene_transisisi_wet_lab:
     stop music fadeout 1
 
     show bg laboratiorium
-    play music "" volume 0.6 loop fadein 0.5
+    play music "SCENE TRANSISI/Lab Music.mp3" volume 0.6 loop fadein 0.5
     "Pagi harinya, ketika Anda memasuki lab pulau Gelasa, terlihat Dr. Wisnu, Dehen, dan Maura sudah duduk di kursinya." 
     "Anda yakin mereka bekerja sangat keras semalam. Hari ini Anda berfokus untuk meningkatkan efisiensi bahan bakar nuklir."
 
     "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari."
     scene filler with dissolve
     "Saat malam tiba.."
+    stop music fadeout 0.5
     show bg ruang tamu
+    play music "SCENE TRANSISI/Cosy Home Music.mp3" volume 0.6 loop fadein 0.5
     show dehen at centerC
     with dissolve
     deh "Bagaimana pekerjaanmu hari ini?"
