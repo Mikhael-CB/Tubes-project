@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1231: expected statement.
-    at x_flip
-             ^
+File "game/script.rpy", line 817: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
+    ^
+
+File "game/script.rpy", line 823: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
+    ^
+
+File "game/script.rpy", line 1372: expected 'simple_expression' not found.
+    hide maura nutral with
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Dec 17 13:00:12 2024
+Tue Dec 17 15:39:55 2024

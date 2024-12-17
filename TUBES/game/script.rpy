@@ -814,17 +814,17 @@ label scene_transisisi_wet_lab:
     "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda." 
     "Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
 
-            "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
-            "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
+    "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
+    "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
 
     prot "Seandainya pulau cantik ini tidak terisolasi… "
     prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
 
-            "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
-            "Meskipun bisa menyimpan semua file itu di drive, Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
+    "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
+    "Meskipun bisa menyimpan semua file itu di drive, Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
 
-            prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
-            prot "Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
+    prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
+    prot "Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
 
     scene filler with Dissolve(2)
     stop music fadeout 1
@@ -894,13 +894,10 @@ label scene_transisisi_wet_lab:
     "Dehen mengangguk tersenyum dan keluar dari kamar."
     "Saat di pintu kamar Anda, Dehen mengatakan…"
 
-            deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman." 
-            deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
-            prot "Ya, aku berjanji."
-            jump yang_anda_lakukan_sekarang
-        "Dry Lab":
-            wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di Dry lab."
-            jump scene7_maura_drwisnu
+    deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman." 
+    deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
+    prot "Ya, aku berjanji."
+    jump yang_anda_lakukan_sekarang
             
 
 
@@ -1372,7 +1369,7 @@ label scene8_demi_pertahanan:
 
     prot "Terima kasih infonya, Maura"
     hide dehen neutral with dissolve
-    hide maura nutral with
+    hide maura neutral with
 
     show bg laboratorium
 
