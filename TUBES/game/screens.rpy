@@ -207,11 +207,30 @@ style input:
 
 screen choice(items):
     style_prefix "choice"
-
-    vbox:
-        for i in items:
-            textbutton i.caption action i.action
-
+    if menu:
+        if len(items) < 4:
+            vbox:
+                for i in items:
+                    textbutton i.caption action i.action
+            
+        else:
+            vbox:
+                xalign 0.5
+                ypos 500
+                yanchor 0.5
+                spacing 10
+                hbox:
+                    spacing 10
+                    for n in range(len(items)):
+                        if n % 2:              # odd numbers
+                            textbutton items[n].caption:
+                                action items[n].action
+                hbox:
+                    spacing 10
+                    for n in range(len(items)):
+                        if not (n % 2):         # even numbers
+                            textbutton items[n].caption:
+                                action items[n].action
 
 style choice_vbox is vbox
 style choice_button is button
@@ -353,7 +372,7 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    add persistent.main_menu_bg
 
     ## This empty frame darkens the main menu.
     #frame:
@@ -370,11 +389,11 @@ screen main_menu():
         spacing gui.navigation_spacing
 
 
-        imagebutton auto "gui/New_game_startscreen_button_%s.png" xpos 818 ypos 464 focus_mask True action Start()
+        imagebutton auto "gui/New_game_startscreen_button_%s.png" xpos 818 ypos 464  action Start()
 
-        imagebutton auto "gui/Load_game_startscreen_button_%s.png" xpos 818 ypos 549 focus_mask True action ShowMenu("load")
+        imagebutton auto "gui/Load_game_startscreen_button_%s.png" xpos 818 ypos 549  action ShowMenu("load")
 
-        imagebutton auto "gui/Setting_game_startscreen_button_%s.png" xpos 818 ypos 620 focus_mask True action ShowMenu("preferences")
+        imagebutton auto "gui/Setting_game_startscreen_button_%s.png" xpos 818 ypos 620  action ShowMenu("preferences")
 
     if gui.show_name:
 

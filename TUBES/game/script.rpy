@@ -366,12 +366,13 @@ label scene3:
         
         "Setelah Anda puas berkeliling di sekitar mess, Anda memutuskan kembali ke kamar Anda untuk tidur"
         stop music fadeout 0.5
-        scene filler with dissolve
+        
     jump scene4
 
 
 
 label scene4:
+    scene filler with dissolve
     centered "{size=*2}Besok pagi{/size}"
     show text "{size=*2}Besok pagi{/size}" at truecenter
     hide text with dissolve
@@ -401,14 +402,16 @@ label scene4:
 
             show maura at right, zoom05x, x_flip, lighten
             show dr_wisnu neutral at left
+            with dissolve
 
             "Ketika Anda menuju tempat berdirinya maura, Dr. wisnu sudah duluan tiba di sana. Mereka saling bercengkrama, ketika melihat kehadiran Anda, Dr. Wisnu memperkenalkan Anda pada Maura."
             
             prot "Hai Maura, salam kenal"
             mau "Hallo, salam kenal juga"
             
-            hide dr_wisnu with dissolve
-            hide maura with dissolve
+            hide dr_wisnu
+            hide maura 
+            with dissolve
             "Maura pamit menuju ke messnya untuk membongkar barang bawaannya di koper dan membersihkan diri. Karena kalian satu mess, Anda memutuskan berjalan bersama Maura menuju mess." 
             hide bg pantai siang with dissolve
             stop music fadeout 0.5
@@ -428,7 +431,9 @@ label scene4:
 
         "kembali ke mess tanpa mempedulikan kedatangan Maura":
             "Anda segera kembali ke mess untuk membersihkan badan setelah jogging."
-            hide bg pantai siang with dissolve
+            hide bg pantai siang 
+            hide maura
+            with dissolve
             stop music fadeout 0.5
             play music "SCENE 4_ Bertemu Maura/Cozy Home Music,mp3" fadein 0.5 volume 0.5 loop
             show bg ruang tamu with dissolve
@@ -901,19 +906,15 @@ label yang_anda_lakukan_sekarang:
 
             "Tak terasa sudah 5 bulan Anda bekerja satu lab bersama Maura. Anda semakin dekat dengannya, kalian saling bertukar cerita tentang latar belakang masing-masing."
             #lanjut ke ending
-            jump good_ending
+            jump scene7_Good_Ending
 
         "Menemui Dr. Wisnu untuk membicarakan penelitian Anda":
-            prot "Dr. Wisnu, bolehkah hari ini aku bekerja secara dry lab?"
-            wis "Apa kau sedang mengalami masalah?"
-            prot "Tidak, aku ingin rehat sejenak mencium bau bahan-bahan kimia itu"
-            wis "Baiklah, hari ini kamu, Maura, dan aku akan bekerja secara dry lab, dehen dan asisten lain akan bekerja secara wet lab"
             jump scene7_dr_wisnu
 
 
 
 
-label good_ending: #Ini ending pltn scene 7
+label scene7_Good_Ending: #Ini ending pltn scene 7
 
     show maura senang at centerC
     with dissolve
@@ -964,61 +965,98 @@ label good_ending: #Ini ending pltn scene 7
     return
 
 label scene7_dr_wisnu: 
+    stop music fadeout 2
+    scene filler with Dissolve(2)
+    centered "{size=*2}Pabrik PLTN{/size}"
+    show text "{size=*2}Pabrik PLTN{/size}" at truecenter
+    hide text with dissolve
+    pause 0.5
+    play music "[END] SCENE 7_ PLTN Berhasil!/Achievement.mp3" fadein 0.3 loop volume 0.6
+    show bg pabrik pltn with dissolve 
+    
     "Anda bergegas mencari Dr. Wisnu untuk memberitahukannya soal penelitian yang Anda sedang lakukan."
 
-
-    "Dengan matanya yang tajam tertuju pada laptopnya, Dr. Wisnu seolah hilang dalam pekerjaannya. Kedatangan Anda membuatnya tersentak dan seketika berfokus pada Anda."
+    show dr_wisnu bingung at centerC
+    "Dengan matanya yang tajam tertuju pada laptopnya, Dr. Wisnu seolah hilang dalam pekerjaannya."
+    show dr_wisnu neutral at lighten
+    "Kedatangan Anda membuatnya tersentak dan seketika berfokus pada Anda."
     wis "Sangat bersemangat ya. Ada apa dengan kamu hari ini?"
     prot "Dr. Wisnu, apakah saya dapat bekerja di dry lab hari ini?"
     wis "Hm? Apa kau sedang mengalami masalah?"
     prot "Tidak pak. Saya hanya ingin rehat sejenak dari bau bahan-bahan kimia itu."
     wis "Oh baiklah. Hari ini kamu, Maura, dan aku akan bekerja di dry lab. Dehen dan asisten lain akan bekerja secara wet lab."
-
+    hide dr_wisnu
+    show bg laboratorium
     "Anda pun memasuki ruang wet lab. Dr. Wisnu kembali duduk di depan laptop sambil mencari data, dan Maura mendekati Anda. Ia mulai menjelaskan hasil perhitungannya dengan Dehen."
 
+    show maura neutral at centerC
+    with dissolve
     mau "Ini perhitunganku kemarin, bagian ini aku hitung menggunakan teori fisi nuklir, yang ini difusi neutron, sedangkan ini untuk keamanan reaktor nuklir."
     prot "(diam mendengarkan)"
+    show maura bingung
     mau "Aku merasa perhitungan bersama Dehen sudah tepat, namun entah mengapa galat yang dihasilkan masih sangat tinggi. ini lah yang menyebabkan proses selanjutnya tidak bisa dikerjakan"
 
+    show maura at darken
     "Anda mengecek perhitungan Maura dengan seksama"
-
+    "Anda melihat bahwa perhitungan ini dapat dengan mudah diselesaikan dengan data dari penelitian Anda sendiri"
+    show maura at lighten
     prot "Kau melupakan reaksi berantai, 235U + 92Kr + 141Ba + 3n + Energi, dengan energi dalam bentuk panas dan radiasi." 
-
+    show maura at darken
     "Maura mengoreksi kembali perhitungannya"
-
+    show maura at bounce(1, 0.1), lighten
     mau "kau benar, aku akan menghitungnya kembali"
 
+    scene filler with dissolve
     "Beberapa saat kemudian"
 
+    show bg laboratorium
+    show maura neutral at centerC
+    
+    with dissolve
     mau "Masih ada hal yang kurang, aku tidak tahu apalagi yang salah"
-
-    "Maura memberikan data hasil hitungnya, Anda mengamati semua perhitungan Maura. Dr. Wisnu menghampiri kalian dan melihat hasil perhitungan Maura"
-
-    prot "Kau belum memasukkan persamaan energi tahap akhir. Masukkan E = m.c2 dengan m merupakan selisih perbedaan selisih massa sebelum direaksikan dan setelah direaksikan."
-
-    "Maura kembali menghitung. setelah 15 menit Maura berteriak kegirangan. Ia memegang tangan anda"
+    
+    "Maura memberikan data hasil hitungnya, Anda mengamati semua perhitungan Maura."
+    show maura at darken
+    "Anda membaca dan mempelajari data dari Maura. Semua permasalahannya membutuhkan perhitungan yang Anda kembangkan untuk penelitian Nobel Anda"
+    show maura neutral at left
+    show dr_wisnu neutral at right
+    show dr_wisnu at x_flip
+    show dr_wisnu at darken
+    with dissolve
+    "Saat Anda mempertimbangkan jawaban Anda, Dr. Wisnu menghampiri kalian"
+    show maura at lighten
+    prot "Kau belum memasukkan persamaan energi tahap akhir. Masukkan E = Δm.c2 dengan Δm merupakan selisih perbedaan selisih massa sebelum direaksikan dan setelah direaksikan."
+    show maura at darken
+    "Maura kembali menghitung. "
+    show maura senang at bounce(2, 0.1), lighten
+    "setelah 15 menit Maura berteriak kegirangan. Ia memegang tangan anda"
 
     mau "Kau sangat jenius, kau benar-benar jenius"
-    prot "(tersenyum seneng krn dipuji)"
+    prot "(aku tersenyum)"
 
+    show dr_wisnu at lighten
     wis "Tunggu"
     wis "Coba lihat bagian ini. Reaksi nuklir harus dijaga pada kondisi kritis (k = 1), sehingga neutron selalu stabil dan reaksi berantai berlangsung perlahan."
-
+    show maura neutral
     "Anda dan Maura mengangguk"
 
     wis "Apa yang terjadi jika kita mempercepat reaksi nuklir ini dalam kondisi superkritis (k > 1) ?"
-
+    show dr_wisnu at darken
     "Perasaan Anda mulai tidak enak, sedangkan Maura hanya diam, tertegun mendengar ucapan Dr. Wisnu"
-
+    show dr_wisnu at lighten
     prot "Dr. Wisnu, Anda tidak mencoba menciptakan.."
+    show dr_wisnu senang
     wis "BOM NUKLIR, tepat sekali, kau memang sangat jenius"
 
     "Anda tidak percaya kata-kata yang dilontarkan Dr. Wisnu. Anda tidak pernah menyangka perhitungan Anda akan membuat ini semua terjadi."
     
     wis "Kondisi yang superkritis akan menghasilkan reaksi berantai tak terkendali yang sangat cepat, kita tidak perlu merancang sistem pengendalian sehingga reaksi bisa terjadi secara eksponensial"
+    show maura senang
     mau "Dengan begitu Indonesia akan menjadi negara adidaya"
     wis "tepat sekali Maura, Mari kita berkumpul dan membahas ini bersama asisten lainnya."
-
+    
+    scene filler with dissolve
+    show bg pabrik pltn with dissolve
     "Setelah kejadian itu, Anda dengan cepat lari keluar laboratorium dan menenangkan diri."
 
     prot "Semuanya terjadi sangat cepat, apa yang dikatakan Dr. Wisnu sangat mengejutkan"
@@ -1028,103 +1066,10 @@ label scene7_dr_wisnu:
 
     #masuk ke menu ini ending di scene 8 
     menu ending23:
-
+        "Anda akhirnya berpikir bahwa…"
         #ini ending yang bad
         "Bom nuklir akan membuat semua negara, terutama di wilayah asia tenggara akan tunduk":
-            "Saat Anda kembali masuk, sudah waktu untuk istirahat siang. Anda lihat Dehen mendatangi Anda."
-
-            deh "Hai sobat, apakah kau menyesal masuk ke dry lab hari ini?" 
-
-            "Anda hanya diam mendengar ejekan Dehen"
-
-            mau "Tak ku sangka kau sangat jenius, kedepannya kita harus banyak berdiskusi."
-
-            "Dehen berbisik kepada Anda"
-            deh "Kau?"
-            prot "Iya aku melakukannya"
-
-            "Dehen tersenyum"
-
-            "Setelah semua orang selesai makan, Dr. Wisnu meminta semua orang untuk masuk ke ruang dry lab. Setibanya di ruang dry lab, dr. Wisnu menjelaskan hal yang kalian alami, termasuk membahas ide pembuatan bom nuklir."
-
-            deh "Apa kau gila Dr. Wisnu? Rasa sakitmu dipermalukan saat Manhattan Project Meetings beberapa tahun yang lalu harus kau lupakan"
-            wis "Tidak, aku tidak akan pernah melupakan kejadian itu, kejadian saat Mr. Karan mempermalukanku di depan semua orang."
-            deh "Tapi dia sudah minta maaf kepadamu"
-            wis "Diam Dehen!! Kau ga tahu saat itu ideku dipakai untuk mengatasi masalah penelitian yang ia pimpin, namun ia memojokkanku dan membentakku. Apakah aku tidak pantas untuk sakit hati Dehen?"
-
-            "Dehen menggelengkan kepala melihat reaksi Dr.Wisnu. Kemudian Dehen mencoba untuk keluar ruangan"
-
-            deh "Aku tidak mau ikut proyek kotormu itu Dr. Wisnu!"
-
-            "Ternyata Dr. Wisnu telah menyiapkan semuanya, beberapa anggota militer memegang lengan Dehen dengan kasar"
-
-            wis "Tak masalah jika kau tak ingin ikut, namun kau tak akan bisa keluar dari pulau ini dan menghubungi siapapun sampai bom nuklir buatan kami siap diluncurkan."
-
-            "Dr. Wisnu memerintahkan anggota militernya untuk menahan Dehen di suatu tempat di mercusuar. Dehen memberontak dan sempat berbicara dengan Anda"
-
-            deh "Tolong, jangan lakukan itu, kau sudah berjanji keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
-            prot "(Diam)"
-            wis "Ini juga akan bermanfaat untuk Indonesia"
-            deh "kau ingin mengorbankan anak-anak yang tidak berdosa serta lansia yang tidak berdaya demi membalas rasa sakit hatimu?"
-            wis "Diam! Cepat bawa Dehen ke ruang itu."
-
-            "Jauh didalam lubuk hati Anda, Anda merasa bersalah pada Dehen, namun Anda juga sakit hati ketika mendengar kisah DR. Wisnu saat Manhattan Project Meetings."
-
-            wis "Ada lagi yang mau jadi pembelot? Kondisi dunia saat ini sedang sangat genting. Teknologi sangat canggih, pilihannya hanya dua, menindas atau ditindas. Sudah cukup Indonesia merasakan berbagai penindasan, sekarang saatnya Indonesia menyerang"
-
-            "Kata-kata dari Dr. Wisnu mengobarkan semangat semua orang termasuk Anda."
-
-
-            "6 Bulan kemudian PLTN pertama Indonesia mulai beroperasi, ingin sekali Anda menemui Dehen untuk memberitahukan kabar ini. Namun Anda tahu Dr. Wisnu Akan menolak permintaan Anda. Ketika sedang memikirkan Dehen, Maura datang"
-
-            mau "Aku sangat puas dengan kerja tim kita, PLTN pertama Indonesia akhirnya berdiri"
-            prot "(tersenyum)"
-            mau "Apa kau sedang memikirkan Dehen?"
-            prot "..."
-          
-            mau "Tenang saja. Setelah peluncuran bom nuklir berhasil, Dehen akan dilepaskan. Walaupun dikurung Dehen mendapatkan perlakuan baik dari Dr. Wisnu, semua kebutuhannya terpenuhi,"
-            mau "bahkan kamarnya sekarang sama dengan kamar kita, walaupun tak ada alat komunikasi ataupun jaringan di sekitarnya."
-
-            "Anda tidak memperdulikan perkataan Maura, Anda pergi meninggalkan Maura"
-
-
-            "Percobaan PLTN selama satu bulan telah terlewati, tidak ditemukan hal ganjil di mesin yang digunakan ataupun komplain dari masyarakat. Dr. Wisnu mulai mempersiapkan laboratorium tambahan di mercusuar untuk proyek tambahannya."
-            "Laboratorium ini memang tidak sebagus laboratorium yang ada di lokasi proyek PLTN, namun Anda merasa peralatan yang digunakan lebih canggih." 
-            "Selama 3 tahun Anda terlibat proyek Dr. Wisnu dalam perakitan bom nuklir, selama itu pula Anda terus menerus memikirkan Dehen."
-            "Setiap malam Anda membuka foto-foto bersama Dehen sebelum berangkat ke pulau ini, tanpa sadar Anda meneteskan air mata. Anda benar-benar merasa bersalah karena Dehen ditahan di suatu tempat yang bahkan Anda tidak tahu."
-
-            mau "Ayo ke lab utama, aku sudah menyempurnakan simulator sebelum bom ini diluncurkan"
-
-            "Rencananya bom ini akan diluncurkan di kota sekitar satu bulan lagi. Sesampainya di lab Anda melihat simulator sedang dinyalakan oleh asisten Dr. Wisnu lainnya."
-
-            "Duar… Terlihat kilatan merah yang disusul dengan suara yang amat keras dari posisi Anda berdiri. Tubuh Anda bergetar, Anda melihat ke sekeliling, terlihat Maura dan Dr. Wisnu tersenyum puas."
-
-            mau "Simulator ini mampu memprediksi kemungkinan keadaan yang terjadi di tempat itu ketika bom nuklir di luncurkan dengan cukup akurat"
-
-            "Dr. Wisnu mengirim gambar hasil simulator ke presiden RI dan jendral TNI RI. Beberapa menit kemudian ada balasan dari mereka." 
-            "Mereka sudah mempersiapkan semua dengan baik, bahan jenderal TNI sudah menunjuk 1 tim yang akan melakukan eksekusi pelepasan bom nuklir ini"
-
-
-            "hari yang mendebarkan itu tiba, hari dimana bom nuklir pertama Indonesia akan dilepaskan sekaligus Dehen akan keluar dari kurungan Dr. Wisnu." 
-            "Anda, Dr. Wisnu, dan semua asistennya menyaksikan proses itu dari kamera yang disediakan oleh pemerintah pusat."
-
-            "Duarrrrr!"
-            "Bom nuklir itu meledak tepat sesuai perhitungan. Semua makhluk hidup yang ada di kota itu menjadi jasad seketika. Bahkan efek radiasinya menyebar hingga negara tetangganya." 
-            "Negara luasnya tidak sampai setengah dari luas Indonesia itu seketika porak-poranda."
-            "Semua stasiun TV mengabarkan berita ini. Indonesia diancam akan dikeluarkan dari PBB atas tindakannya. Namun siapa yang berani menggertak negara Indonesia sekarang?"
-            "Tidak ada satu negara pun yang berani menentang bahkan melawan Indonesia, hanya sumpah serapah yang bisa orang-orang lakukan melihat keputusan Indonesia dari TV masing-masing."
-
-            "Di tempat yang lain, akhirnya Anda bertemu dengan Dehen setelah beberapa tahun berpisah. Dehen menunjukkan wajah kecewanya ketik bertemu Anda."
-
-            "Apa kau puas? Ribuan orang mati, entah berapa juta orang yang terkena radiasi nuklir ini, bagaimana dengan bayi yang ada di kandungan seorang ibu?" 
-            "Bahkan sebelum lahir ia pasti sudah divonis terkena mutasi. KAU ITU MONSTER, KAU DAN KALIAN SEMUA ADALAH PENJAHAT SEBENARNYA"
-
-            "Tubuh Anda bergetar hebat, anda teringat mimpi yang terus berulang sebanyak 9x beberapa tahun itu. Kaki Anda yang bergetar sudah tak dapat menahan massa tubuh Anda sendiri." 
-            "Anda pun jatuh ke tanah dan mulaimenyesali semua hal yang dirii Anda sendiri lakukan. berbeda dengan Maura, ia justru menampar pipi kiri Dehen dengan sangat keras."
-
-            mau "Kau, kau tidak tahu apapun tentang ini, kau tak pantas mengatakan itu semua ke sahabatmu sendiri. setiap malam ia selalu memandang fotomu sebelum tidur, tak jarang ia terbangun dngan mata bengkak karena merindukanmu"
-            deh "sahabat? Aku tak mau bersahabat dengan pembunuh masal"
-            return
+            jump scene8_Bad_Ending
             
 
         #ini ending yang netral
@@ -1256,6 +1201,167 @@ label scene7_maura_drwisnu:
             jump scene8_mengambil_alih
         "Mulai menerima  pemikiran bahwa bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain.":
             jump scene8_demi_pertahanan
+label scene8_Bad_Ending:
+    stop music fadeout 1.0
+    scene filler with dissolve
+    play music "[END] SCENE 8_ Adidaya Lah Indonesiaku/Tegang.mp3" fadein 0.5 loop volume 0.6
+    show bg laboratorium
+    show dehen neutral at centerC
+    "Saat Anda kembali masuk, sudah waktu untuk istirahat siang. Anda lihat Dehen mendatangi Anda."
+    show dehen senang
+    deh "Hai sobat, apakah kau menyesal masuk ke dry lab hari ini?" 
+
+    "Anda hanya diam mendengar ejekan Dehen"
+
+    show dehen neutral at left
+    show maura neutral at right
+    mau "Tak ku sangka kau sangat jenius, kedepannya kita harus banyak berdiskusi."
+    hide maura with dissolve
+    "Dehen berbisik kepada Anda"
+    deh "Kau?"
+    prot "Iya aku melakukannya"
+
+    show dehen senang with dissolve
+    "Dehen tersenyum"
+    hide dehen with dissolve
+    "Setelah semua orang selesai makan, Dr. Wisnu meminta semua orang untuk masuk ke ruang dry lab. Setibanya di ruang dry lab"
+    "Dr. Wisnu menjelaskan hal yang kalian alami, termasuk membahas ide pembuatan bom nuklir."
+    show dehen marah at left
+    show dr_wisnu bingung at right
+    show dr_wisnu at x_flip
+    with dissolve
+    deh "Apa kau gila Dr. Wisnu? Rasa sakitmu dipermalukan saat Manhattan Project Meetings beberapa tahun yang lalu harus kau lupakan"
+    wis "Tidak, aku tidak akan pernah melupakan kejadian itu, kejadian saat Mr. Karan mempermalukanku di depan semua orang."
+    deh "Tapi dia sudah minta maaf kepadamu"
+    show dr_wisnu marah 
+    wis "Diam Dehen!! Kau ga tahu saat itu ideku dipakai untuk mengatasi masalah penelitian yang ia pimpin, namun ia memojokkanku dan membentakku. Apakah aku tidak pantas untuk sakit hati Dehen?"
+    show dr_wisnu at darken
+    show dehen at darken
+    "Dehen menggelengkan kepala melihat reaksi Dr.Wisnu. Kemudian Dehen mencoba untuk keluar ruangan"
+
+    show dehen at lighten
+    deh "Aku tidak mau ikut proyek kotormu itu Dr. Wisnu!"
+
+    "Ternyata Dr. Wisnu telah menyiapkan semuanya, beberapa anggota militer memegang lengan Dehen dengan kasar"
+    show dr_wisnu at lighten
+    wis "Tak masalah jika kau tak ingin ikut, namun kau tak akan bisa keluar dari pulau ini dan menghubungi siapapun sampai bom nuklir buatan kami siap diluncurkan."
+
+    "Dr. Wisnu memerintahkan anggota militernya untuk menahan Dehen di suatu tempat di mercusuar."
+    "Dehen memberontak dan sempat berbicara dengan Anda"
+
+    show dehen sedih
+    deh "Tolong, jangan lakukan itu, kau sudah berjanji keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
+    prot "(Diam)"
+    show dr_wisnu neutral
+    wis "Ini juga akan bermanfaat untuk Indonesia"
+    show dehen marah
+    deh "kau ingin mengorbankan anak-anak yang tidak berdosa serta lansia yang tidak berdaya demi membalas rasa sakit hatimu?"
+    show dr_wisnu marah
+    wis "Diam! Cepat bawa Dehen ke ruang itu."
+
+    hide dehen with dissolve
+    show dr_wisnu at darken
+    "Jauh didalam lubuk hati Anda, Anda merasa bersalah pada Dehen"
+    "Namun Anda juga sakit hati ketika mendengar kisah DR. Wisnu saat Manhattan Project Meetings."
+
+    show dr_wisnu at zoom05x, centerC, lighten
+    with dissolve
+    wis "Ada lagi yang mau jadi pembelot? Kondisi dunia saat ini sedang sangat genting. Teknologi sangat canggih, pilihannya hanya dua, menindas atau ditindas."
+    show dr_wisnu senang
+    wis "Sudah cukup Indonesia merasakan berbagai penindasan, sekarang saatnya Indonesia menyerang"
+
+    "Kata-kata dari Dr. Wisnu mengobarkan semangat semua orang termasuk Anda."
+
+    scene filler with dissolve
+    "6 Bulan kemudian PLTN pertama Indonesia mulai beroperasi, ingin sekali Anda menemui Dehen untuk memberitahukan kabar ini. Namun Anda tahu Dr. Wisnu Akan menolak permintaan Anda. Ketika sedang memikirkan Dehen, Maura datang"
+
+    show bg pabrik pltn
+    show maura neutral at centerC
+    with dissolve
+    mau "Aku sangat puas dengan kerja tim kita, PLTN pertama Indonesia akhirnya berdiri"
+    prot "(tersenyum)"
+    show maura bingung
+    mau "Apa kau sedang memikirkan Dehen?"
+    
+    "Anda terdiam"
+
+    show maura senang
+    mau "Tenang saja. Setelah peluncuran bom nuklir berhasil, Dehen akan dilepaskan. Walaupun dikurung Dehen mendapatkan perlakuan baik dari Dr. Wisnu, semua kebutuhannya terpenuhi."
+    mau "Bahkan kamarnya sekarang sama dengan kamar kita, walaupun tak ada alat komunikasi ataupun jaringan di sekitarnya."
+
+    scene filler with dissolve
+    "Anda tidak memperdulikan perkataan Maura, Anda pergi meninggalkan Maura"
+
+    show bg pantai siang with dissolve
+    "Percobaan PLTN selama satu bulan telah terlewati, tidak ditemukan hal ganjil di mesin yang digunakan ataupun komplain dari masyarakat. Dr. Wisnu mulai mempersiapkan laboratorium tambahan di mercusuar untuk proyek tambahannya."
+    "Laboratorium ini memang tidak sebagus laboratorium yang ada di lokasi proyek PLTN, namun Anda merasa peralatan yang digunakan lebih canggih." 
+    "Selama 3 tahun Anda terlibat proyek Dr. Wisnu dalam perakitan bom nuklir, selama itu pula Anda terus menerus memikirkan Dehen."
+    "Setiap malam Anda membuka foto-foto bersama Dehen sebelum berangkat ke pulau ini, tanpa sadar Anda meneteskan air mata. Anda benar-benar merasa bersalah karena Dehen ditahan di suatu tempat yang bahkan Anda tidak tahu."
+
+    show maura neutral at centerC
+    with dissolve
+    mau "Ayo ke lab utama, aku sudah menyempurnakan simulator sebelum bom ini diluncurkan"
+
+
+    "Rencananya bom ini akan diluncurkan di kota sekitar satu bulan lagi. Sesampainya di lab Anda melihat simulator sedang dinyalakan oleh asisten Dr. Wisnu lainnya."
+  
+    scene filler with dissolve
+
+    show bg laboratorium with dissolve
+    play sound "[END] SCENE 8_ Adidaya Lah Indonesiaku/Suara Bom Kecil.mp3" volume 0.8    
+    with hpunch
+    "{i} duarr {/i}"
+    "Terlihat kilatan merah yang disusul dengan suara yang amat keras dari posisi Anda berdiri. Tubuh Anda bergetar, Anda melihat ke sekeliling, terlihat Maura dan Dr. Wisnu tersenyum puas."
+
+    show maura neutral at centerC
+    with dissolve
+    mau "Simulator ini mampu memprediksi kemungkinan keadaan yang terjadi di tempat itu ketika bom nuklir di luncurkan dengan cukup akurat"
+    hide maura with dissolve
+    "Dr. Wisnu mengirim gambar hasil simulator ke presiden RI dan jendral TNI RI. Beberapa menit kemudian ada balasan dari mereka." 
+    "Mereka sudah mempersiapkan semua dengan baik, bahan jenderal TNI sudah menunjuk 1 tim yang akan melakukan eksekusi pelepasan bom nuklir ini"
+
+
+    "hari yang mendebarkan itu tiba, hari dimana bom nuklir pertama Indonesia akan dilepaskan sekaligus Dehen akan keluar dari kurungan Dr. Wisnu." 
+    "Anda, Dr. Wisnu, dan semua asistennya menyaksikan proses itu dari kamera yang disediakan oleh pemerintah pusat."
+
+    scene filler with Dissolve(2)
+    play sound "SCENE 6_ Alam Mimpi/Big Explosion Sound Effect.mp3" volume 0.8
+    show bg bad ending
+    with hpunch
+    "{i} DUARRRR {/i}"
+    "Bom nuklir itu meledak tepat sesuai perhitungan. Semua makhluk hidup yang ada di kota itu menjadi jasad seketika. Bahkan efek radiasinya menyebar hingga negara tetangganya." 
+    "Negara luasnya tidak sampai setengah dari luas Indonesia itu seketika porak-poranda."
+    "Semua stasiun TV mengabarkan berita ini. Indonesia diancam akan dikeluarkan dari PBB atas tindakannya. Namun siapa yang berani menggertak negara Indonesia sekarang?"
+    "Tidak ada satu negara pun yang berani menentang bahkan melawan Indonesia, hanya sumpah serapah yang bisa orang-orang lakukan melihat keputusan Indonesia dari TV masing-masing."
+    
+    show maura neutral at right, darken, x_flip
+      
+    show dehen sedih at darken
+    show dehen at left
+    
+    with dissolve
+    "Di tempat yang lain, akhirnya Anda bertemu dengan Dehen setelah beberapa tahun berpisah. Dehen menunjukkan wajah kecewanya ketik bertemu Anda."
+    
+    show dehen marah at lighten
+    "Apa kau puas? Ribuan orang mati, entah berapa juta orang yang terkena radiasi nuklir ini, bagaimana dengan bayi yang ada di kandungan seorang ibu?" 
+    
+    "Bahkan sebelum lahir ia pasti sudah divonis terkena mutasi. KAU ITU MONSTER, KAU DAN KALIAN SEMUA ADALAH PENJAHAT SEBENARNYA"
+
+    "Tubuh Anda bergetar hebat, anda teringat mimpi yang terus berulang sebanyak 9x beberapa tahun itu. Kaki Anda yang bergetar sudah tak dapat menahan massa tubuh Anda sendiri." 
+    "Anda pun jatuh ke tanah dan mulaimenyesali semua hal yang dirii Anda sendiri lakukan. berbeda dengan Maura, ia justru menampar pipi kiri Dehen dengan sangat keras."
+    show maura marah at right, lighten
+    mau "Kau, kau tidak tahu apapun tentang ini, kau tak pantas mengatakan itu semua ke sahabatmu sendiri. setiap malam ia selalu memandang fotomu sebelum tidur, tak jarang ia terbangun dngan mata bengkak karena merindukanmu"
+    deh "sahabat? Aku tak mau bersahabat dengan pembunuh masal"
+
+    scene filler with Dissolve(2)
+    centered "{size=*2}Pabrik PLTN{/size}\n\"Kekuatan atom berada di tangan garuda, Majulah terus Indonesia\""
+    show text "{size=*2}Good End{/size}\n" at truecenter
+    hide text with dissolve
+    pause 0.5
+    stop music fadeout 5
+    pause 6
+    $ persistent.main_menu_bg = "images/bg/bg bad ending.png"
+    return
 
 label scene8_demi_pertahanan:
     "Anda menghela nafas panjang dan berusaha menenangkan diri. Anda pun pergi mencari Dehen di ruangan wet lab."

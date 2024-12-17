@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 636: end of line expected.
-    with hpunch, hpunch, hpunch
-               ^
+File "game/script.rpy", line 1231: expected statement.
+    at x_flip
+             ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Dec 17 00:45:19 2024
+Tue Dec 17 13:00:12 2024

@@ -1,32 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 683, in script
-    show dehen bingung at centreC, lighten
-  File "game/script.rpy", line 683, in <module>
-    show dehen bingung at centreC, lighten
+  File "game/script.rpy", line 1301, in script
+    show maura neutral at centreC
+  File "game/script.rpy", line 1301, in <module>
+    show maura neutral at centreC
 NameError: name 'centreC' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 683, in script
-    show dehen bingung at centreC, lighten
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+  File "game/script.rpy", line 1301, in script
+    show maura neutral at centreC
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
     at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
     at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
+  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
     return py_eval_bytecode(code, globals, locals)
-  File "D:\mika\renpy\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+  File "C:\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 683, in <module>
-    show dehen bingung at centreC, lighten
+  File "game/script.rpy", line 1301, in <module>
+    show maura neutral at centreC
 NameError: name 'centreC' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 TUBES 1.0
-Tue Dec 17 01:25:53 2024
+Tue Dec 17 13:12:59 2024
