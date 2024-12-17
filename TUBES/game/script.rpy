@@ -562,7 +562,7 @@ label scene6:
             jump scene6a_alam_mimpi
 
         "Saat sedang berada di lokasi, Maura sempat menyinggung kegunaan radiator untuk membuat bom nuklir. Apa maksudnya itu?": #scene 6 maksud maura
-            
+            stop music fadeout 0.3
             jump scene6_maksud_maura
             
 
@@ -778,7 +778,7 @@ label scene6a_alam_mimpi:
 
 
 label scene6_maksud_maura:
-    
+    play music "SCENE 6_ Maksud Maura/Curious.mp3" loop volume 0.6 fadein 0.3
     wis "Ah itu hanya lelucon biasa Maura. Tidak usah dihiraukan, biarkan saja."
     prot "Namun terlihat dari desain radiator, sepertinya Maura mengatakan sejujurnya. Bagaimana itu pak?"
     
@@ -786,10 +786,11 @@ label scene6_maksud_maura:
     prot "Tidak perlu pak."
 
     wis "Baiklah, selalu jaga kesehatan, di pulau ini tidak ada rumah sakit jika ada apa apa."
-    
+    hide dr_wisnu with dissolve
+
     "Dr. Wisnu tersenyum lalu tertawa, lalu berjalan membelakangi Anda secara perlahan. Percakapan tersebut meninggalkan rasa tidak enak didalam pikiran Anda." 
     "Sepertinya, kedua belah pihak; Dr. Wisnu, maupun Maura sedang menyembunyikan sesuatu yang besar dan penting."
-
+    show dr_wisnu neutral at centerC
     "Dr Wisnu seketika berputar arah sebelum menjauh terlalu jauh, dan mencoba untuk mengatakan sesuatu."
 
     wis "Oh, ngomong-ngomong. Besok kamu akan ditempatkan di wet lab, sedangkan Dehen, aku dan Maura akan bekerja di dry lab." 
@@ -797,28 +798,32 @@ label scene6_maksud_maura:
 
     menu Anda_memilih_bekerja_di:
         "Wet Lab":
+            show dr_wisnu senang with dissolve 
+            wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di wet lab."
             jump scene_transisi_wet_lab
         "Dry Lab":
+            show dr_wisnu senang with dissolve
             wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di Dry lab."
             jump scene7_maura_drwisnu
             
 label scene_transisisi_wet_lab:
-
-    wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di wet lab."
-
+    scene filler with dissolve
+    stop music fadeout 0.5
+    show bg ruang tamu with dissolve
+    play music "SCENE TRANSISI/Cozy Home Music.mp3" loop volume 0.6 fadein 0.5
     "Setelah mengkonfirmasi ke Dr. Wisnu Anda kembali ke kamar Anda untuk beristirahat."
-
     "Anda masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen. Kali ini pintunya tidak tertutup dan terdengar suara, “You destroyed a turret”."
 
     prot "Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain game"
-
+    show kamar with dissolve
     "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda." 
     "Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
 
     "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
     "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
 
-    prot "Seandainya pulau cantik ini tidak terisolasi… Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
+    prot "Seandainya pulau cantik ini tidak terisolasi… "
+    prot "Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
 
     "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
     "Meskipun bisa menyimpan semua file itu di drive, Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
@@ -826,38 +831,59 @@ label scene_transisisi_wet_lab:
     prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
     prot "Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
 
+    scene filler with Dissolve(2)
+    stop music fadeout 1
+
+    show bg laboratiorium
+    play music "" volume 0.6 loop fadein 0.5
     "Pagi harinya, ketika Anda memasuki lab pulau Gelasa, terlihat Dr. Wisnu, Dehen, dan Maura sudah duduk di kursinya." 
     "Anda yakin mereka bekerja sangat keras semalam. Hari ini Anda berfokus untuk meningkatkan efisiensi bahan bakar nuklir."
 
-    "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari. Saat malam tiba.."
-
+    "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari."
+    scene filler with dissolve
+    "Saat malam tiba.."
+    show bg ruang tamu
+    show dehen at centerC
+    with dissolve
     deh "Bagaimana pekerjaanmu hari ini?"
     prot "Aku belum menemukan perbandingan yang pas antara Plutonium dan Thorium sejak pagi tadi."
     deh "Pantas, aku tidak melihatmu bersama asisten lain ketika makan siang tadi."
     prot "Harus aku akui. Meskipun proyek ini sulit, sampai saat ini aku sangat menikmatinya."
+    show dehen bingung with dissolve
     deh "Haih, itu hanya karena kau sangat terobsesi dengan nuklir."
     prot "Haha. Bagaimana dengan dry lab kalian?"
+    show dehen senang
     deh "Kau lihat saja Maura. Dia sampai bisa tertidur di sofa."
 
+    show dehen at bounce(2, 0.05)
     "Kalian berdua tertawa melihat Maura. Namun, Anda jadi teringat tentang percakapan Anda dengan Dr. Wisnu kemarin. Anda memberitahu Dehen jika ada sesuatu yang harus dibicarakan tentang percakapan kemarin."
 
+
     prot "Dehen."
+    show dehen senang
     deh "Ada apa?"
     prot "Ada sesuatu yang ingin kuucapkan, tapi disini terlalu ramai. Apakah kamu bisa ke kamarku nanti?"
+    show dehen neutral
     deh "Baiklah."
 
-    "Selesai makan malam, Dehen dan Anda menuju kamar Anda. Anda mengunci pintu kamar sembari Dehen menutup jendela, memastikan obrolan kalian tidak terdengar siapapun."
+    hide dehen with dissolve
 
+    "Selesai makan malam, Dehen dan Anda menuju kamar Anda."
+    "Anda mengunci pintu kamar sembari Dehen menutup jendela, memastikan obrolan kalian tidak terdengar siapapun."
+
+    show dehen neutral at centerC
+    with dissolve
     deh "Baiklah ada apa yang harus dibicarakan?"
 
     "Anda menceritakan omongan Maura dan tingkah laku Dr. Wisnu."
 
     deh "Hm, mengerti. Namun, aku tidak terima jika nantinya arah riset akan berujung ke pembuatan bom nuklir."
     prot "Aku sependapat denganmu."
-    prot "Baiklah. Mari lupakan hal tersebut sejenak, ngomong-ngomong aku juga harus memberitahumu sesuatu juga. Di dry lab, kami dari kemarin tidak menemukan solusi." 
-    prot "Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
+    deh "Baiklah. Mari lupakan hal tersebut sejenak, ngomong-ngomong aku juga harus memberitahumu sesuatu juga. Di dry lab, kami dari kemarin tidak menemukan solusi." 
+    deh "Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
     prot "…"
-    deh "Tapi aku teringat. Kau juga sedang mengembangkan penelitian mengenai nuklir kan? Penelitianmu sudah berjalan dari beberapa tahun yang lalu… Kau pasti sudah melakukan perhitungan bukan?"
+    deh "Tapi aku teringat. Kau juga sedang mengembangkan penelitian mengenai nuklir kan?"
+    deh "Penelitianmu sudah berjalan dari beberapa tahun yang lalu… Kau pasti sudah melakukan perhitungan bukan?"
     prot "…"
     deh "Aku tahu kau memang ingin menjadi peraih Nobel, tapi apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini?" 
     deh "Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
@@ -868,7 +894,8 @@ label scene_transisisi_wet_lab:
 
     prot "Akan aku pertimbangkan apa yang kau ucapkan malam ini Dehen."
 
-    "Dehen mengangguk tersenyum dan keluar dari kamar. Saat di pintu kamar Anda, Dehen mengatakan…"
+    "Dehen mengangguk tersenyum dan keluar dari kamar."
+    "Saat di pintu kamar Anda, Dehen mengatakan…"
 
     deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman." 
     deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
