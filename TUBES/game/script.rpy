@@ -1369,7 +1369,7 @@ label scene8_demi_pertahanan:
 
     prot "Terima kasih infonya, Maura"
     hide dehen neutral with dissolve
-    hide maura neutral with
+    hide maura neutral with dissolve
 
     show bg laboratorium
 
