@@ -797,81 +797,83 @@ label scene6_maksud_maura:
 
     menu Anda_memilih_bekerja_di:
         "Wet Lab":
-            wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di wet lab."
-
-            "Setelah mengkonfirmasi ke Dr. Wisnu Anda kembali ke kamar Anda untuk beristirahat."
-
-            "Anda masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen. Kali ini pintunya tidak tertutup dan terdengar suara, “You destroyed a turret”."
-
-            prot "Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain game"
-
-            "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda." 
-            "Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
-
-            "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
-            "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
-
-            prot "Seandainya pulau cantik ini tidak terisolasi… Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
-
-            "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
-            "Meskipun bisa menyimpan semua file itu di drive, Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
-
-            prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
-            prot "Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
-
-            "Pagi harinya, ketika Anda memasuki lab pulau Gelasa, terlihat Dr. Wisnu, Dehen, dan Maura sudah duduk di kursinya." 
-            "Anda yakin mereka bekerja sangat keras semalam. Hari ini Anda berfokus untuk meningkatkan efisiensi bahan bakar nuklir."
-
-            "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari. Saat malam tiba.."
-
-            deh "Bagaimana pekerjaanmu hari ini?"
-            prot "Aku belum menemukan perbandingan yang pas antara Plutonium dan Thorium sejak pagi tadi."
-            deh "Pantas, aku tidak melihatmu bersama asisten lain ketika makan siang tadi."
-            prot "Harus aku akui. Meskipun proyek ini sulit, sampai saat ini aku sangat menikmatinya."
-            deh "Haih, itu hanya karena kau sangat terobsesi dengan nuklir."
-            prot "Haha. Bagaimana dengan dry lab kalian?"
-            deh "Kau lihat saja Maura. Dia sampai bisa tertidur di sofa."
-
-            "Kalian berdua tertawa melihat Maura. Namun, Anda jadi teringat tentang percakapan Anda dengan Dr. Wisnu kemarin. Anda memberitahu Dehen jika ada sesuatu yang harus dibicarakan tentang percakapan kemarin."
-
-            prot "Dehen."
-            deh "Ada apa?"
-            prot "Ada sesuatu yang ingin kuucapkan, tapi disini terlalu ramai. Apakah kamu bisa ke kamarku nanti?"
-            deh "Baiklah."
-
-            "Selesai makan malam, Dehen dan Anda menuju kamar Anda. Anda mengunci pintu kamar sembari Dehen menutup jendela, memastikan obrolan kalian tidak terdengar siapapun."
-
-            deh "Baiklah ada apa yang harus dibicarakan?"
-
-            "Anda menceritakan omongan Maura dan tingkah laku Dr. Wisnu."
-
-            deh "Hm, mengerti. Namun, aku tidak terima jika nantinya arah riset akan berujung ke pembuatan bom nuklir."
-            prot "Aku sependapat denganmu."
-            prot "Baiklah. Mari lupakan hal tersebut sejenak, ngomong-ngomong aku juga harus memberitahumu sesuatu juga. Di dry lab, kami dari kemarin tidak menemukan solusi." 
-            prot "Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
-            prot "…"
-            deh "Tapi aku teringat. Kau juga sedang mengembangkan penelitian mengenai nuklir kan? Penelitianmu sudah berjalan dari beberapa tahun yang lalu… Kau pasti sudah melakukan perhitungan bukan?"
-            prot "…"
-            deh "Aku tahu kau memang ingin menjadi peraih Nobel, tapi apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini?" 
-            deh "Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
-            prot "…"
-            deh "Maaf… Aku terlalu berlebihan. Kau berhak mematenkan semua penelitianmu itu."
-
-            "Dehen menunggu jawaban Anda dengan sabar. Setelah menghela nafas panjang, Anda menjawab."
-
-            prot "Akan aku pertimbangkan apa yang kau ucapkan malam ini Dehen."
-
-            "Dehen mengangguk tersenyum dan keluar dari kamar. Saat di pintu kamar Anda, Dehen mengatakan…"
-
-            deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman." 
-            deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
-            prot "Ya, aku berjanji."
-            jump yang_anda_lakukan_sekarang
+            jump scene_transisi_wet_lab
         "Dry Lab":
             wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di Dry lab."
             jump scene7_maura_drwisnu
             
+label scene_transisisi_wet_lab:
 
+    wis "Baiklah akan aku koordinasikan kepada Dehen, kamu lebih memilih bekerja di wet lab."
+
+    "Setelah mengkonfirmasi ke Dr. Wisnu Anda kembali ke kamar Anda untuk beristirahat."
+
+    "Anda masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen. Kali ini pintunya tidak tertutup dan terdengar suara, “You destroyed a turret”."
+
+    prot "Umur berapa sih dia, masih saja suka mengisi waktu kosong dengan bermain game"
+
+    "Anda pun masuk kamar dan mandi. Setelah mandi, Anda memakai pakaian dan merebahkan diri. Anda membuka Instagram dan melihat berbagai Instastory teman-teman Anda." 
+    "Ada yang bermain dengan hewan peliharaannya, jalan-jalan bersama pasangan, liburan dengan keluarga, dan lainnya."
+
+    "Anda membuka galeri, tampak foto matahari pagi saat jogging tadi pagi dan foto keindahan Pulau Gelasa." 
+    "Ketika Anda ingin membuat story di Instagram, muncul foto-foto lokasi PLTN dan denah pemetaan mesin-mesin. Anda pun mengurungkan niat untuk mengunggah story itu."
+
+    prot "Seandainya pulau cantik ini tidak terisolasi… Seandainya proyek ini bukanlah rahasia negara, pasti aku akan mengunggah semuanya…"
+
+    "Di tengah keheningan itu, Anda teringat akan penelitian Nobel Anda. Anda mengambil flashdisk yang berisi file penelitian Nobel Anda." 
+    "Meskipun bisa menyimpan semua file itu di drive, Anda takut ada yang meretas komputer disini. Walaupun dengan semua keamanan yang ketat ini, kecil kemungkinan hal itu terjadi."
+
+    prot "Sepertinya bukan di tahun ini, tak mungkin aku menyelesaikan penelitianku bersamaan dengan pengerjaan proyek ini." 
+    prot "Aku akan tetap mengumpulkan lebih banyak data agar saat proyek PLTN ini selesai aku bisa melanjutkan penelitianku sendiri."
+
+    "Pagi harinya, ketika Anda memasuki lab pulau Gelasa, terlihat Dr. Wisnu, Dehen, dan Maura sudah duduk di kursinya." 
+    "Anda yakin mereka bekerja sangat keras semalam. Hari ini Anda berfokus untuk meningkatkan efisiensi bahan bakar nuklir."
+
+    "Saking fokusnya Anda dalam bekerja, Anda melewatkan makan siang bersama asisten wet lab lainnya, sehingga Anda merasa lemas di sore hari. Saat malam tiba.."
+
+    deh "Bagaimana pekerjaanmu hari ini?"
+    prot "Aku belum menemukan perbandingan yang pas antara Plutonium dan Thorium sejak pagi tadi."
+    deh "Pantas, aku tidak melihatmu bersama asisten lain ketika makan siang tadi."
+    prot "Harus aku akui. Meskipun proyek ini sulit, sampai saat ini aku sangat menikmatinya."
+    deh "Haih, itu hanya karena kau sangat terobsesi dengan nuklir."
+    prot "Haha. Bagaimana dengan dry lab kalian?"
+    deh "Kau lihat saja Maura. Dia sampai bisa tertidur di sofa."
+
+    "Kalian berdua tertawa melihat Maura. Namun, Anda jadi teringat tentang percakapan Anda dengan Dr. Wisnu kemarin. Anda memberitahu Dehen jika ada sesuatu yang harus dibicarakan tentang percakapan kemarin."
+
+    prot "Dehen."
+    deh "Ada apa?"
+    prot "Ada sesuatu yang ingin kuucapkan, tapi disini terlalu ramai. Apakah kamu bisa ke kamarku nanti?"
+    deh "Baiklah."
+
+    "Selesai makan malam, Dehen dan Anda menuju kamar Anda. Anda mengunci pintu kamar sembari Dehen menutup jendela, memastikan obrolan kalian tidak terdengar siapapun."
+
+    deh "Baiklah ada apa yang harus dibicarakan?"
+
+    "Anda menceritakan omongan Maura dan tingkah laku Dr. Wisnu."
+
+    deh "Hm, mengerti. Namun, aku tidak terima jika nantinya arah riset akan berujung ke pembuatan bom nuklir."
+    prot "Aku sependapat denganmu."
+    prot "Baiklah. Mari lupakan hal tersebut sejenak, ngomong-ngomong aku juga harus memberitahumu sesuatu juga. Di dry lab, kami dari kemarin tidak menemukan solusi." 
+    prot "Bahkan Maura yang menguasai berbagai teorema matematika dan fisika tak kunjung berhasil menemukan perhitungan yang sesuai."
+    prot "…"
+    deh "Tapi aku teringat. Kau juga sedang mengembangkan penelitian mengenai nuklir kan? Penelitianmu sudah berjalan dari beberapa tahun yang lalu… Kau pasti sudah melakukan perhitungan bukan?"
+    prot "…"
+    deh "Aku tahu kau memang ingin menjadi peraih Nobel, tapi apakah akan berdampak besar jika kau memberi tahu sedikit hasil perhitunganmu demi kelancaran proyek ini?" 
+    deh "Kau juga berkeinginan proyek ini sukses bukan? Kau ingin kebutuhan listrik semua rakyat Indonesia terpenuhi kan?"
+    prot "…"
+    deh "Maaf… Aku terlalu berlebihan. Kau berhak mematenkan semua penelitianmu itu."
+
+    "Dehen menunggu jawaban Anda dengan sabar. Setelah menghela nafas panjang, Anda menjawab."
+
+    prot "Akan aku pertimbangkan apa yang kau ucapkan malam ini Dehen."
+
+    "Dehen mengangguk tersenyum dan keluar dari kamar. Saat di pintu kamar Anda, Dehen mengatakan…"
+
+    deh "Dengar, aku akan mendukungmu, aku sengaja tidak memberitahu Dr. Wisnu tentang apa yang kau kerjakan dan tidak membahas ini di Jeep karena aku sangat menghormatimu sebagai teman." 
+    deh "Berjanjilah keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia."
+    prot "Ya, aku berjanji."
+    jump yang_anda_lakukan_sekarang
 
 label yang_anda_lakukan_sekarang:
     scene filler with Dissolve(2)
@@ -955,8 +957,8 @@ label scene7_Good_Ending: #Ini ending pltn scene 7
             "Rencananya akan ada proyek PLTN tambahan agar semua tenaga listrik hanya bersumber dari nuklir saja, tidak perlu mengandalkan batubara yang kurang ramah lingkungan."
     
     scene filler with Dissolve(2)
-    centered "{size=*2}Pabrik PLTN{/size}\n\"Kekuatan atom berada di tangan garuda, Majulah terus Indonesia\""
-    show text "{size=*2}Good End{/size}\n" at truecenter
+    centered "{size=*2}Good End{/size}\n\"Kekuatan atom berada di tangan garuda, Majulah terus Indonesia\""
+    show text "{size=*2}Good End{/size}\n\"Kekuatan atom berada di tangan garuda, Majulah terus Indonesia\"" at truecenter
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
@@ -1079,6 +1081,7 @@ label scene7_dr_wisnu:
 
 
 label scene7_maura_drwisnu:
+
     "Setelah mengkonfirmasi ke Dr.Wisnu Anda kembali ke kamar Anda untuk beristirahat."
 
     "Anda masuk ke mess dan menuju ke kamar. Lagi-lagi Anda melirik sebentar ke kamar Dehen. Kali ini pintunya tidak tertutup dan terdengar suara, “You destroyed a turret”."
@@ -1354,8 +1357,8 @@ label scene8_Bad_Ending:
     deh "sahabat? Aku tak mau bersahabat dengan pembunuh masal"
 
     scene filler with Dissolve(2)
-    centered "{size=*2}Pabrik PLTN{/size}\n\"Kekuatan atom berada di tangan garuda, Majulah terus Indonesia\""
-    show text "{size=*2}Good End{/size}\n" at truecenter
+    centered "{size=*2}Bad End{/size}\n\"Dengan adanya kekuatan tanpa batas pantaskah mengorbankan nyawa untuk mencapainya? Indonesia akan tercatat dalam sejarah sebagai negara hina.\""
+    show text "{size=*2}Bad End{/size}\n\"Dengan adanya kekuatan tanpa batas pantaskah mengorbankan nyawa untuk mencapainya? Indonesia akan tercatat dalam sejarah sebagai negara hina.\"" at truecenter
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
