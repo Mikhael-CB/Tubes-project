@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 default persistent.main_menu_bg = gui.main_menu_background
-define announcer = Character("Announcer", color = "#01070c")
+define announcer = Character("Announcer", color = "#dfe20a")
 define prot = Character("Aku", color = "#d9e7f1")
 define deh = Character("Dehen", color = "#2a506b") 
 define wis = Character("Dr. Wisnu", color = "#666666")
@@ -71,12 +71,9 @@ label start:
     play music "SCENE 1_ SAMARINDA/Chill and Happy.mp3" loop if_changed
     "Anda tinggal di Samarinda dan bekerja untuk Dr. W.R. Wisnu Raksa, ilmuwan paling cerdas di negara ini. {nw=1}"
     "Impianmu adalah menjadi ilmuwan terkemuka dan mampu memenangkan nobel di tahun ini."
-
-    
     
     prot "Aduh, proyek dari Pak Wisnu besar sekali, aku merasa sangat lelah.
     Sudah 5 hari aku tidur di laboratoriumnya yang sangat dingin itu"
-    
     
     "Anda saat ini sedang menuju perjalanan ke rumah setelah 5 hari tidak pulang." 
     stop music fadeout 1.0
@@ -148,6 +145,7 @@ label start:
             "Sempat terbesit di pikiran Anda seandainya ada daya listrik yang besar namun murah di seluruh penjuru di Indonesia."
             "Semakin lama, mata Anda semakin berat dan Anda pun tertidur"
             stop music fadeout 0.5
+            hide bg kamar with dissolve
             jump scene2
         "Membaca jurnal ilmiah":
             prot "Sepertinya menyenangkan. Aku ingin membaca jurnal saja, mengejar impianku menjadi pemenang nobel tahun ini. Penelitian Pak Wisnu membuatku terjeda melakukan penelitianku sendiri"
@@ -420,7 +418,6 @@ label scene4:
             
             show bg ruang tamu with dissolve
             "Saat sarapan Anda bertemu dengan Dehen dan Maura yang sudah berada di meja makan. Ada asisten Dr. Wisnu lainnya juga di sana"
-            hide bg ruang tamu with dissolve
 
         "kembali ke mess tanpa mempedulikan kedatangan Maura":
             "Anda segera kembali ke mess untuk membersihkan badan setelah jogging."
@@ -466,7 +463,6 @@ label scene4:
 label scene5:
     
     "Tak lama kemudian Dr. Wisnu meminta semua asistennya, termasuk Maura, untuk berkumpul."
-
     show dr_wisnu neutral at centerC
     with dissolve
     wis "Jarak 10 km ke utara dari mess ini, kalian akan menemukan lokasi proyek PLTN yang akan kita kerjakan."
@@ -775,8 +771,11 @@ label scene6_maksud_maura:
 
     "Dr. Wisnu tersenyum lalu tertawa, lalu berjalan membelakangi Anda secara perlahan. Percakapan tersebut meninggalkan rasa tidak enak didalam pikiran Anda." 
     "Sepertinya, kedua belah pihak; Dr. Wisnu, maupun Maura sedang menyembunyikan sesuatu yang besar dan penting."
+    
     show dr_wisnu neutral at centerC
+    show dr_wisnu at darken
     "Dr Wisnu seketika berputar arah sebelum menjauh terlalu jauh, dan mencoba untuk mengatakan sesuatu."
+    show dr_wisnu at lighten
 
     wis "Oh, ngomong-ngomong. Besok kamu akan ditempatkan di wet lab, sedangkan Dehen, aku dan Maura akan bekerja di dry lab." 
     wis "Dehen sempat menitipkan pesan kepadaku dia dapat bekerja di wet lab maupun dry lab sehingga kamu bebas memilih bisa kerja dimana. Gimana menurutmu?"
@@ -977,6 +976,7 @@ label good_ending: #Ini ending pltn scene 7
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
+    call credits
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg good ending.png"
     return
@@ -1247,6 +1247,7 @@ label scene8_Bad_Ending:
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
+    call credits
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg bad ending.png"
     return
@@ -1305,7 +1306,7 @@ label scene7_maura_drwisnu:
     pause 0.5
     play music "SCENE 7_ Maura & Dr. Wisnu\Lab Music.mp3" fadein 1.0 volume 0.5 loop
     show bg laboratorium with dissolve
-    "Keesokan paginya Anda pun memasuki ruang wet lab. Dr. Wisnu duduk di depan komputer sambil mencari data, sedangkan Maura mempersiapkan semua perhitungannya."
+    "Keesokan paginya Anda pun memasuki ruang dry lab. Dr. Wisnu duduk di depan komputer sambil mencari data, sedangkan Maura mempersiapkan semua perhitungannya."
 
     show maura neutral at centerC
     with dissolve
@@ -1525,12 +1526,16 @@ label scene8_demi_pertahanan:
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
+    call credits
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg netral.png"
     return
 
 
 label scene8_mengambil_alih:
+
+    "Anda bergegas ke wet lab dan Anda melihat Dehen baru saja kembali setelah makan siang."
+    
     centered "{size=*2}Wet lab{/size}\n"
     show text "{size=*2}Wet lab{/size}\n" at truecenter
     hide text with dissolve
@@ -1538,7 +1543,6 @@ label scene8_mengambil_alih:
     play music "SCENE 8_ Mengambil Alih\Tegang.mp3" fadein 1.0 volume 0.5 loop
     show bg laboratorium with dissolve
     show dehen neutral at centerC with dissolve
-    "Anda bergegas ke wet lab dan Anda melihat Dehen baru saja kembali setelah makan siang."
     
     deh "Eh, mengapa kamu tidak makan sia-"
 
@@ -1592,7 +1596,8 @@ label scene9_titik_darah_penghabisan:
     show bg laboratorium with dissolve
     
     show dr_wisnu neutral at left
-    show maura neutral at right, x_flip
+    show maura neutral at right
+    show maura at x_flip
     show maura at darken
     with dissolve
     wis "Maura, terima kasih banyak, ya, atas perhitungannya."
@@ -1604,6 +1609,7 @@ label scene9_titik_darah_penghabisan:
     wis "Hahaha! Dengan perhitungan ini saja, dan semua sumber daya yang kita miliki sekarang, sudah lebih dari cukup untuk membuat bom nuklir! Kita bahkan bisa mulai membuatnya sekarang dengan cepat!!"
     show maura at darken
     show dr_wisnu at darken
+    with dissolve
 
     "Anda, Dehen, dan para asisten akhirnya tiba di lab. Mereka menyaksikan Dr. Wisnu dan Maura yang baru saja selesai membangun bom nuklir bersama-sama."
 
@@ -1625,74 +1631,94 @@ label scene9_titik_darah_penghabisan:
     show dr_wisnu at darken
     show dehen at darken
     with Dissolve (0.3)
-    "Anda tampak gelisah, terdiam beberapa saat,{nw}"
+    "Anda tampak gelisah, terdiam beberapa saat, {nw}"
 
     show dehen at lighten
-    with dissolve
 
     extend "lalu menatap Dehen."
-    scene filler
-    show laboratorium
+    with dissolve
 
     prot "Apakah ini benar-benar jalan yang harus kita tempuh? Apa harga dari kekuatan ini tidak terlalu besar?"
     show dehen at centerC
 
     deh "Sudah kubilang, kekuatan seperti ini hanya akan membawa kehancuran... bukan kebangkitan."
-    play sound '[END] SCENE 9_ Titik Darah Penghabisan\Sirine.mp3' fadein 0.5 volume 0.4
+    show dehen at darken
+    stop music fadeout 0.5
+    play sound '[END] SCENE 9_ Titik Darah Penghabisan\Sirine.mp3' fadein 0.5 volume 0.6 loop
+
     announcer "Perhatian! Pengaktifan sistem utama dalam 10 detik."
 
-    "Anda berdiri, terbelah antara idealisme dan tekanan tim. Pandangannya beralih dari Dr. Wisnu, ke Maura, lalu ke Dehen."
+    "Anda berdiri, terbelah antara idealisme dan tekanan tim."
+    "Pandangannya beralih dari Dr. Wisnu, ke Maura, lalu ke Dehen."
 
-    prot "Tidak... Aku tidak akan membiarkan ini terjadi!(dengan suara tegas)"
-
+    prot "Tidak... Aku tidak akan membiarkan ini terjadi!"
+    
+    scene filler with dissolve
+    play music '[END] SCENE 9_ Titik Darah Penghabisan\Tegang.mp3' fadein 0.4 volume 0.7 loop
+    play audio '[END] SCENE 9_ Titik Darah Penghabisan\Suara langkah kaki cepat.mp3'
+    
     announcer "Pengaktifan sistem utama dalam 10 detik. Semua personel dimohon untuk bersiap."
 
     "Anda berlari ke panel kontrol, melirik ke layar yang menunjukkan hitungan mundur."
 
     prot "Ini bukan jalan yang benar. Aku tidak akan membiarkan kehancuran ini terjadi!"
 
+    show maura marah at right
+    show maura at x_flip
+    show maura at darken
+    show dr_wisnu marah at left
+    show dr_wisnu at darken
     "Dr. Wisnu dan Maura bergegas menghampiri Anda."
 
+    show dr_wisnu at lighten
     wis "Apa yang kau lakukan?! Kau tidak punya hak untuk menghentikan ini! Ini adalah masa depan bangsa!"
 
     prot "Tidak, ini bukan masa depan. Ini adalah akhir. Indonesia tidak butuh kehancuran untuk menjadi besar!"
 
+    hide dr_wisnu
     "Maura mencoba menarik tangan Anda dari panel kontrol."
 
+    show maura at lighten
     mau "Kau tidak mengerti! Ini bukan hanya tentang kita—ini tentang bangsa, tentang kedaulatan yang tidak bisa ditawar lagi!"
 
+    play audio '[END] SCENE 9_ Titik Darah Penghabisan\Suara langkah kaki cepat.mp3'
     deh "Lepaskan dia, Maura!"
 
+    hide maura with dissolve
     "Dehen menarik Maura, memberi ruang bagi Anda untuk mematikan sistem. Anda dengan cepat menekan serangkaian tombol."
 
     prot "Tidak ada waktu lagi. Kita harus mengakhiri ini sekarang!"
 
-    "Layar utama berkedip, muncul tulisan: (PEMBATALAN AKTIVASI BERHASIL.)"
-
-    wis "Kau akan menyesali ini! Apa yang kau pikirkan?!(berteriak marah)"
+    "Layar utama berkedip, apakah sudah selesai?"
+    announcer "PEMBATALAN AKTIVASI BERHASIL"
+    show dr_wisnu marah at left
+    wis "Kau akan menyesali ini! {b}Apa yang kau pikirkan?!{/b}"
 
     prot "Bahwa kita adalah manusia. Bahwa kita harus berjuang tanpa mengorbankan nyawa tak bersalah. Indonesia bisa besar dengan kedamaian, bukan ketakutan."
-
+    show dr_wisnu sedih at darken
     "Dr. Wisnu tampak terpukul, lalu berjalan pergi dengan wajah penuh kekecewaan. Maura hanya menunduk tanpa berkata apa-apa."
+    hide dr_wisnu
 
-    "Dehen yang mendekati Anda, menepuk pundaknya."
-
+    show dehen neutral at centerC
+    show dehen at darken
+    "Dehen yang mendekati Anda, menepuk pundakmu."
+    show dehen senang at lighten
     deh "Kau menyelamatkan kita semua… dan juga dirimu sendiri."
 
     "Anda dan Dehen berdiri di bawah langit Pulau Gelasa."
-
+    scene filler with dissolve
+    show bg good ending with dissolve
     prot "Kita mungkin belum menyelesaikan semuanya, tapi setidaknya kita masih memiliki kesempatan untuk memperbaikinya."
 
     deh "Dan kesempatan itu cukup. Mari kita buat masa depan yang lebih baik."
 
-    #tulisan di layar:
-    "Dengan keberanian untuk melawan ketidakadilan, masa depan selalu dapat diubah. Untuk Indonesia yang lebih damai."
     scene filler with Dissolve(2)
-    centered "{size=*2}Good End{/size}\n\"Kekuatan atom berada di tangan garuda, Majulah terus Indonesia\""
-    show text "{size=*2}Good End{/size}\n" at truecenter
+    centered "{size=*2}Good End{/size}\n\"Dengan keberanian untuk melawan ketidakadilan, masa depan selalu dapat diubah. Untuk Indonesia yang lebih damai.\""
+    show text "{size=*2}Good End{/size}\n\"Dengan keberanian untuk melawan ketidakadilan, masa depan selalu dapat diubah. Untuk Indonesia yang lebih damai.\"" at truecenter
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
+    call credits
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg good ending.png"
     return
@@ -1711,19 +1737,19 @@ label credits:
         xanchor 0.5 xpos 0.5
     with dissolve
     with Pause(3)
-    hide theend
-    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    hide theend with dissolve
+    show cred at Move((0.5, 4.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
     with Pause(credits_speed)
     show text ("{size=80}Thank you for playing!"):
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
     with dissolve
     with Pause(3.5)
-    hide thanks
+    hide text with dissolve
     return
 
 init python:
-    credits = ('Backgrounds', 'Airgoof'), ('Backgrounds', 'Dorktwerp'), ('Sprites and CG', 'Ballclown'), ('GUI', 'Cuddlywad'), ('Writing', 'Dorktwerp'), ('Writing', 'Fingerpookie'), ('Programming', 'Dorktwerp'), ('Music', 'Grumblemuck'), ('Music', 'Headwookum')
+    credits = ('Project manager', 'M. Raia Rafid'), ('Game Designer', 'Katarina Andrea'), ('Game Designer', 'Cindy Claudia'), ('Game Designer', 'Cantika Damayanti Putri Wardhani'), ('Game Designer', 'Eliana Aretha '), ('Game Designer', 'Kayla Vajira Susanto'), ('Script Writer', 'Rofifah Widad'), ('Script Writer', 'Hafiyyan Dhafin Athaillah'), ('Programming', 'Mikhael Chandra Bayu'), ('Programming', 'Frederick Daniel Gultom'), ('Programming', 'Farrel Mahardika'), ('UI/UX', 'Mikhael Chandra Bayu'), ('UI/UX', 'Maverick Tjo'), ('illustrator', 'Alicia Caitlin Kurniawan'), ('illustrator', 'Aliya Syafiqa'), ('Sound Design', 'Ida Ayu Purnabawati'), ('QA', 'Bilqish Rizqina Tis\'a Tiara'), ('Publication Specialist', 'Nilam Selapandan')
     credits_s = "{size=80}Credits\n\n"
     c1 = ''
     for c in credits:

@@ -1,18 +1,144 @@
-2024-12-24 13:37:47 UTC
+2024-12-25 07:04:56 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.3.24111502
 
-Early init took 0.36s
-Loading error handling took 0.11s
-Loading script took 1.39s
-Loading save slot metadata took 0.29s
+Early init took 0.22s
+Loading error handling took 0.08s
+Loading script took 1.29s
+Loading save slot metadata took 0.11s
 Loading persistent took 0.00s
-Running init code took 0.42s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.13s
+Running init code took 0.15s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.07s
 Index archives took 0.00s
-Dump and make backups took 0.38s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 200.67s
+Loading error handling took 0.06s
+Loading script took 0.91s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.16s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 204.72s
+Loading error handling took 0.04s
+Loading script took 0.33s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Dump and make backups took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 379.74s
+Loading error handling took 0.05s
+Loading script took 0.87s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.11s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.08s
@@ -21,16 +147,16 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.07s
 Build styles took 0.01s
-Load screen analysis took 0.12s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.23s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.31s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -43,68 +169,270 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 35.34s
-Loading error handling took 0.06s
-Loading script took 0.69s
-Loading save slot metadata took 0.10s
+Early init took 489.93s
+Loading error handling took 0.05s
+Loading script took 0.80s
+Loading save slot metadata took 0.08s
 Loading persistent took 0.00s
-
-File "game/script.rpy", line 1511: end of line expected.
-    with Dissolve 0.3
-                  ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.21s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 4000'
-Version: b'4.0.0 - Build 10.18.10.4425'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 43.34s
-Loading error handling took 0.06s
-Loading script took 0.58s
-Loading save slot metadata took 0.09s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 1511: end of line expected.
-    with Dissolve 0.3
-                  ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.17s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 4000'
-Version: b'4.0.0 - Build 10.18.10.4425'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 63.40s
-Loading error handling took 0.10s
-Loading script took 1.20s
-Loading save slot metadata took 0.10s
-Loading persistent took 0.00s
-Running init code took 0.25s
+Running init code took 0.07s
 Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.09s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
-Dump and make backups took 0.22s
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 872.67s
+Loading error handling took 0.04s
+Loading script took 0.72s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 937.49s
+Loading error handling took 0.04s
+Loading script took 0.82s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 952.31s
+Loading error handling took 0.04s
+Loading script took 1.03s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 976.60s
+Loading error handling took 0.05s
+Loading script took 0.88s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.18s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1009.86s
+Loading error handling took 0.06s
+Loading script took 0.70s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1024.66s
+Loading error handling took 0.04s
+Loading script took 0.86s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.15s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.11s
@@ -113,58 +441,16 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.12s
+Init translation took 0.10s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.04s
+Analyze screens took 0.02s
 Save screen analysis took 0.05s
-Prepare screens took 0.35s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 4000'
-Version: b'4.0.0 - Build 10.18.10.4425'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 525.23s
-Loading error handling took 0.07s
-Loading script took 1.08s
-Loading save slot metadata took 0.13s
-Loading persistent took 0.00s
-Running init code took 0.10s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.11s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
-Dump and make backups took 0.21s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.15s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.07s
-Prepare screens took 0.27s
+Prepare screens took 0.19s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.10s
+Interface start took 0.08s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -176,68 +462,35 @@ Version: b'4.0.0 - Build 10.18.10.4425'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+
+Full traceback:
+  File "game/script.rpy", line 1600, in script
+    show maura neutral at (right , x_flip)
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 489, in show
+    img = i(img) # type: ignore
+TypeError: 'tuple' object is not callable
+
+While running game code:
+  File "game/script.rpy", line 1600, in script
+    show maura neutral at (right , x_flip)
+TypeError: 'tuple' object is not callable
 Resetting cache.
-Early init took 687.71s
+Early init took 1037.83s
 Loading error handling took 0.06s
-Loading script took 1.41s
-Loading save slot metadata took 0.14s
-Loading persistent took 0.00s
-Running init code took 0.12s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.12s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
-Dump and make backups took 0.27s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.17s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.05s
-Prepare screens took 0.40s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 4000'
-Version: b'4.0.0 - Build 10.18.10.4425'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 49961.54s
-Loading error handling took 0.05s
-Loading script took 0.99s
-Loading save slot metadata took 0.09s
+Loading script took 0.74s
+Loading save slot metadata took 0.07s
 Loading persistent took 0.00s
 Running init code took 0.07s
-Loading analysis data took 0.04s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.08s
+Reloading save slot metadata took 0.07s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
-Dump and make backups took 0.17s
+Dump and make backups took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.09s
@@ -249,11 +502,179 @@ Cleaning stores took 0.00s
 Init translation took 0.07s
 Build styles took 0.00s
 Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1065.20s
+Loading error handling took 0.04s
+Loading script took 0.69s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1108.30s
+Loading error handling took 0.05s
+Loading script took 0.86s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
 Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1157.84s
+Loading error handling took 0.03s
+Loading script took 0.89s
+Loading save slot metadata took 0.10s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1238.17s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.09s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Interface start took 0.11s
 
@@ -268,13 +689,558 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 49998.43s
+Early init took 1263.92s
 Loading error handling took 0.06s
-Loading script took 1.20s
-Loading save slot metadata took 0.09s
+Loading script took 1.12s
+Loading save slot metadata took 0.10s
 Loading persistent took 0.00s
 Running init code took 0.11s
-Loading analysis data took 0.06s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.21s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.23s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1283.07s
+Loading error handling took 0.03s
+Loading script took 1.03s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.26s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1302.50s
+Loading error handling took 0.04s
+Loading script took 0.86s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1335.77s
+Loading error handling took 0.04s
+Loading script took 0.94s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.17s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1350.60s
+Loading error handling took 0.04s
+Loading script took 0.78s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1407.60s
+Loading error handling took 0.05s
+Loading script took 0.77s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1447.23s
+Loading error handling took 0.04s
+Loading script took 0.72s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.19s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1504.46s
+Loading error handling took 0.03s
+Loading script took 0.72s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1541.24s
+Loading error handling took 0.04s
+Loading script took 0.92s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1604.62s
+Loading error handling took 0.04s
+Loading script took 0.69s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1637.94s
+Loading error handling took 0.04s
+Loading script took 0.72s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1646.33s
+Loading error handling took 0.04s
+Loading script took 0.61s
+Loading save slot metadata took 0.14s
+Loading persistent took 0.00s
+Running init code took 0.12s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.10s
+Index archives took 0.00s
+Dump and make backups took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.10s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.24s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1675.15s
+Loading error handling took 0.05s
+Loading script took 0.94s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1694.51s
+Loading error handling took 0.05s
+Loading script took 0.96s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.09s
 Index archives took 0.00s
@@ -293,11 +1259,11 @@ Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.03s
 Save screen analysis took 0.04s
-Prepare screens took 0.21s
+Prepare screens took 0.17s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.11s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -310,18 +1276,270 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 54500.51s
-Loading error handling took 0.07s
-Loading script took 1.81s
-Loading save slot metadata took 0.08s
+Early init took 1742.07s
+Loading error handling took 0.05s
+Loading script took 1.08s
+Loading save slot metadata took 0.11s
 Loading persistent took 0.00s
-Running init code took 0.08s
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1793.73s
+Loading error handling took 0.04s
+Loading script took 0.83s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.09s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.07s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
-Dump and make backups took 0.14s
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1811.44s
+Loading error handling took 0.04s
+Loading script took 0.72s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1824.41s
+Loading error handling took 0.05s
+Loading script took 0.99s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1848.63s
+Loading error handling took 0.04s
+Loading script took 0.68s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1884.69s
+Loading error handling took 0.05s
+Loading script took 0.71s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1912.95s
+Loading error handling took 0.03s
+Loading script took 0.68s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.09s
@@ -335,10 +1553,52 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
+Prepare screens took 0.15s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1958.76s
+Loading error handling took 0.06s
+Loading script took 0.93s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.18s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.01s
 Interface start took 0.10s
 
 Initializing gl2 renderer:
@@ -351,3 +1611,205 @@ Version: b'4.0.0 - Build 10.18.10.4425'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1993.61s
+Loading error handling took 0.04s
+Loading script took 0.85s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.18s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.20s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 2022.37s
+Loading error handling took 0.04s
+Loading script took 1.14s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3156.52s
+Loading error handling took 0.06s
+Loading script took 1.68s
+Loading save slot metadata took 0.09s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.21s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Mikhael Chandra Bayu\\AppData\\Roaming/RenPy/backups\\TUBES':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.15s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1749, in script
+    return
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1493, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "C:\renpy-8.3.3-sdk\renpy\execution.py", line 744, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label ('game/script.rpy', 1735112319, 22).
+
+While running game code:
+  File "game/script.rpy", line 1749, in script
+    return
+Exception: Could not find return label ('game/script.rpy', 1735112319, 22).
+Resetting cache.
+Early init took 3184.64s
+Loading error handling took 0.05s
+Loading script took 0.28s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 4000'
+Version: b'4.0.0 - Build 10.18.10.4425'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1749, in script
+    return
+  File "C:\renpy-8.3.3-sdk\renpy\ast.py", line 1493, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "C:\renpy-8.3.3-sdk\renpy\execution.py", line 744, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label ('game/script.rpy', 1735112319, 22).
+
+While running game code:
+  File "game/script.rpy", line 1749, in script
+    return
+Exception: Could not find return label ('game/script.rpy', 1735112319, 22).
