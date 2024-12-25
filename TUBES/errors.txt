@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1372: expected 'simple_expression' not found.
-    hide maura neutral with
-                           ^
+File "game/script.rpy", line 1511: end of line expected.
+    with Dissolve 0.3
+                  ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Dec 17 15:42:12 2024
+Tue Dec 24 20:38:30 2024
