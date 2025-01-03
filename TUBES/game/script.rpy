@@ -995,6 +995,7 @@ label scene7_dr_wisnu:
     "Anda bergegas mencari Dr. Wisnu untuk memberitahukannya soal penelitian yang Anda sedang lakukan."
 
     show dr_wisnu bingung at centerC
+    show dr_wisnu at darken
     "Dengan matanya yang tajam tertuju pada laptopnya, Dr. Wisnu seolah hilang dalam pekerjaannya."
     show dr_wisnu neutral at lighten
     "Kedatangan Anda membuatnya tersentak dan seketika berfokus pada Anda."
@@ -1010,7 +1011,7 @@ label scene7_dr_wisnu:
     show maura neutral at centerC
     with dissolve
     mau "Ini perhitunganku kemarin, bagian ini aku hitung menggunakan teori fisi nuklir, yang ini difusi neutron, sedangkan ini untuk keamanan reaktor nuklir."
-    prot "(diam mendengarkan)"
+    "Anda diam mendengarkan dengan seksama"
     show maura bingung
     mau "Aku merasa perhitungan bersama Dehen sudah tepat, namun entah mengapa galat yang dihasilkan masih sangat tinggi. ini lah yang menyebabkan proses selanjutnya tidak bisa dikerjakan"
 
@@ -1050,7 +1051,7 @@ label scene7_dr_wisnu:
     "setelah 15 menit Maura berteriak kegirangan. Ia memegang tangan anda"
 
     mau "Kau sangat jenius, kau benar-benar jenius"
-    prot "(aku tersenyum)"
+    "anda tersenyum"
 
     show dr_wisnu at lighten
     wis "Tunggu"

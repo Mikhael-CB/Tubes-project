@@ -275,7 +275,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("settings") action ShowMenu('settings')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -327,7 +327,7 @@ screen navigation():
             
             textbutton _("Load") action ShowMenu("load")
             
-            textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("settings") action ShowMenu("settings")
             
             if _in_replay:
 
@@ -393,7 +393,7 @@ screen main_menu():
 
         imagebutton auto "gui/Load_game_startscreen_button_%s.png" xpos 818 ypos 549  action ShowMenu("load")
 
-        imagebutton auto "gui/Setting_game_startscreen_button_%s.png" xpos 818 ypos 620  action ShowMenu("preferences")
+        imagebutton auto "gui/Setting_game_startscreen_button_%s.png" xpos 818 ypos 620  action ShowMenu("settings")
 
     if gui.show_name:
 
@@ -759,11 +759,11 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen settings():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("settings"), scroll="viewport"):
 
         vbox:
 

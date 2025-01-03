@@ -23,13 +23,14 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.01 prototype"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+This game is made to fulfill a task requirement of PKWN under the guidance of Lecturer Dr. Harry Nuriman, M.Si.
 """)
 
 
@@ -37,7 +38,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Pulau_Gelasa"
+define build.name = "Pulau_Gelasa_prototype"
 
 
 ## Sounds and music ############################################################
