@@ -114,7 +114,7 @@ label start:
     prot "Memang sepantasnya kita mendapat komisi sebesar itu, penelitian Pak Wisnu ini memiliki risiko yang tinggi, salah sedikit saja kita bisa mengalami mutasi akibat radiasi sinar-sinar itu."
     show dehen at darken
     
-    "Setelah Anda dan Dehan selesai makan, Anda mencuci peralatan makan, sedangkan Dehan membersihkan dan merapikan kembali meja makan Anda."
+    "Setelah Anda dan dehen selesai makan, Anda mencuci peralatan makan, sedangkan dehen membersihkan dan merapikan kembali meja makan Anda."
     
     show dehen at lighten
     prot "Dehen, apa rencanamu sore ini?"
@@ -126,7 +126,7 @@ label start:
         "Bersantai untuk menikmati me time":
             prot "Yah, sepertinya aku juga akan melakukan hal yang sama. Aku ingin menonton serial favoritku"
             deh "Baiklah, selamat me time, aku pamit pulang"
-            prot "Terima kasih untuk makannya, Dehan"
+            prot "Terima kasih untuk makannya, dehen"
             deh "Tak masalah teman"
             hide kamar with dissolve
             hide dehen with dissolve
@@ -174,7 +174,7 @@ label start:
                     $ jawaban = "Enrico Fermi, seorang pemenang nobel fisika tahun 1938, karyanya mampu menjadi pionir dalam mengembangkan reaktor nuklir."
                 "Berita kondisi Indonesia saat ini":
                     "Anda membaca Berita kondisi Indonesia saat ini"
-                    $ jawaaban = "kondisi rakyat indonesia yang masih saja beberapa kali mengalami pemadaman listrik akibat jumlah listrik di Indonesia yang tidak terlalu besar."
+                    $ jawaban = "kondisi rakyat indonesia yang masih saja beberapa kali mengalami pemadaman listrik akibat jumlah listrik di Indonesia yang tidak terlalu besar."
                 "Berita kondisi negara-negara di dunia":
                     "Anda membaca Berita kondisi negara-negara di dunia"
                     $ jawaban = "negara yang sudah menerapkan PLTN sehingga listrik tidak pernah mengalami pemadaman dan harganya sangat murah."
@@ -902,7 +902,7 @@ label yang_anda_lakukan_sekarang:
         "Mempertahankan apa yang menjadi hak Anda":
             stop music fadeout 2
             scene filler with Dissolve(2)
-            ce  ntered "{size=*2}Pabrik PLTN{/size}"
+            centered "{size=*2}Pabrik PLTN{/size}"
             show text "{size=*2}Pabrik PLTN{/size}" at truecenter
             hide text with dissolve
             pause 0.5
@@ -976,7 +976,7 @@ label good_ending: #Ini ending pltn scene 7
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
-    call credits
+    call credits from _call_credits
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg good ending.png"
     return
@@ -1084,12 +1084,12 @@ label scene7_dr_wisnu:
         "Anda akhirnya berpikir bahwa…"
         #ini ending yang bad
         "Bom nuklir akan membuat semua negara, terutama di wilayah asia tenggara akan tunduk":
-            jump scene8_Bad_ending
+            jump scene8_bad_ending
         #ini ending yang netral
         "Bom nuklir akan memperkuat gerakan nonblok yang dilakukan oleh Indonesia, serta mengamankan negara Indonesia dari tekanan negara lain":
             jump scene8_demi_pertahanan
 
-label scene8_Bad_Ending:
+label scene8_bad_ending:
     stop music fadeout 1.0
     scene filler with dissolve
     play music "[END] SCENE 8_ Adidaya Lah Indonesiaku/Tegang.mp3" fadein 0.5 loop volume 0.6
@@ -1135,11 +1135,11 @@ label scene8_Bad_Ending:
     wis "Tak masalah jika kau tak ingin ikut, namun kau tak akan bisa keluar dari pulau ini dan menghubungi siapapun sampai bom nuklir buatan kami siap diluncurkan."
 
     "Dr. Wisnu memerintahkan anggota militernya untuk menahan Dehen di suatu tempat di mercusuar."
-    "Dehen memberontak dan sempat berbicara dengan Anda"
+    "Dehen memberontak dan berbicara dengan Anda"
 
     show dehen sedih
     deh "Tolong, jangan lakukan itu, kau sudah berjanji keputusan apapun yang kau ambil akan bermanfaat untuk Indonesia"
-    prot "(Diam)"
+    "Anda terdiam"
     show dr_wisnu neutral
     wis "Ini juga akan bermanfaat untuk Indonesia"
     show dehen marah
@@ -1167,7 +1167,8 @@ label scene8_Bad_Ending:
     show maura neutral at centerC
     with dissolve
     mau "Aku sangat puas dengan kerja tim kita, PLTN pertama Indonesia akhirnya berdiri"
-    prot "(tersenyum)"
+    "Anda tersenyum akan prospek ini"
+    "Namun ada hal lain yang menggangu pikiran anda"
     show maura bingung
     mau "Apa kau sedang memikirkan Dehen?"
     
@@ -1191,7 +1192,8 @@ label scene8_Bad_Ending:
     mau "Ayo ke lab utama, aku sudah menyempurnakan simulator sebelum bom ini diluncurkan"
 
 
-    "Rencananya bom ini akan diluncurkan di kota sekitar satu bulan lagi. Sesampainya di lab Anda melihat simulator sedang dinyalakan oleh asisten Dr. Wisnu lainnya."
+    "Rencananya bom ini akan diluncurkan di kota sekitar satu bulan lagi."
+    "Sesampainya di lab Anda melihat simulator sedang dinyalakan oleh asisten Dr. Wisnu lainnya."
   
     scene filler with dissolve
 
@@ -1247,7 +1249,7 @@ label scene8_Bad_Ending:
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
-    call credits
+    call credits from _call_credits_1
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg bad ending.png"
     return
@@ -1526,7 +1528,7 @@ label scene8_demi_pertahanan:
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
-    call credits
+    call credits from _call_credits_2
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg netral.png"
     return
@@ -1718,7 +1720,7 @@ label scene9_titik_darah_penghabisan:
     hide text with dissolve
     pause 0.5
     stop music fadeout 5
-    call credits
+    call credits from _call_credits_3
     pause 6
     $ persistent.main_menu_bg = "images/bg/bg good ending.png"
     return
